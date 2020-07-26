@@ -6,6 +6,9 @@
   "repository": "https://github.com/cenk1cenk2/cz-cc",
   "author": "Cenk Kilic <cenk@kilic.dev> & Jim Cummins <jimthedev@gmail.com>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "babel src --out-dir dist/",
     "lint": "prettier --write src/ && eslint --ext .ts,.js,.tsx,.jsx --fix src/",
