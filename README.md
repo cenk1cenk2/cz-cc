@@ -5,6 +5,14 @@
 ![Demo](./demo/demo.gif)
 
 <!-- toc -->
+
+- [Description](#description)
+- [Usage](#usage)
+- [Configuration](#configuration)
+  - [package.json](#packagejson)
+  - [Environment variables](#environment-variables)
+  - [Commitlint](#commitlint)
+
 <!-- tocstop -->
 
 # Description

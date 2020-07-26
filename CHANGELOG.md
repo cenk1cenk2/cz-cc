@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/cenk1cenk2/cz-cc/compare/v1.0.1...v1.0.2) (2020-07-26)
+
+
+### Bug Fixes
+
+* update readme ([81385a6](https://github.com/cenk1cenk2/cz-cc/commit/81385a613587470a1bc5d6838049aebc43f34e51))
+
 ## [1.0.1](https://github.com/cenk1cenk2/cz-cc/compare/v1.0.0...v1.0.1) (2020-07-26)
 
 
