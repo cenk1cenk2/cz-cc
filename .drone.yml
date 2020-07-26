@@ -1,0 +1,46 @@
+kind: pipeline
+name: default
+
+trigger:
+  branch:
+    - master
+  event:
+    - push
+
+steps:
+  - name: install
+    image: node:current-alpine
+    commands:
+      - yarn --frozen-lockfile
+
+  - name: lint
+    image: node:current-alpine
+    commands:
+      - yarn --frozen-lockfile
+      - yarn lint:check
+
+  - name: build
+    image: node:current-alpine
+    commands:
+      - yarn build
+
+  - name: semantic-release
+    image: cenk1cenk2/drone-semantic-release
+    settings:
+      mode: release
+      git_method: gh
+      git_user_email:
+        from_secret: GITHUB_EMAIL
+      github_token:
+        from_secret: GITHUB_TOKEN
+      npm_token:
+        from_secret: NPM_TOKEN
+      update_readme_toc: true
+    when:
+      branch:
+        - master
+        - alpha
+        - beta
+        - rc
+      event:
+        - push

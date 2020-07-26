@@ -7,8 +7,6 @@ exports.default = _default;
 
 var _chalk = _interopRequireDefault(require("chalk"));
 
-var _enquirer = require("enquirer");
-
 var _listr = require("listr2");
 
 var _lodash = _interopRequireDefault(require("lodash.map"));
@@ -164,7 +162,7 @@ function _default(options) {
         commit(filter([head, body, breaking, issues]).join('\n\n'));
       }).catch(() => {
         // eslint-disable-next-line no-console
-        console.log('Cancelled. Skipping...');
+        console.log(_chalk.default.yellow('Cancelled. Skipping...'));
       });
     }
 
