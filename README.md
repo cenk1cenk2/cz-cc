@@ -31,12 +31,13 @@ npm install -g commitizen
 ```
 
 - Initiate this adapter in a project. If already initiated you can add `--force` flag to swap this adapter with the older one.
+  - Currently has a bit of problems with yarn workspaces do to `commitizen`.
 
 ```shell
 # yarn
-commitizen init @cenk1cenk2/cz-cc --yarn --dev --exact
+commitizen init @cenk1cenk2/cz-cc --yarn --dev
 # npm
-commitizen init @cenk1cenk2/cz-cc --dev --exact
+commitizen init @cenk1cenk2/cz-cc --dev
 ```
 
 - Add [husky](https://github.com/typicode/husky) hooks for convienence and quality assurance.
