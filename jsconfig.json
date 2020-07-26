@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "lib": ["es2019"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "checkJs": true,
+    "baseUrl": "./src/",
+    "resolveJsonModule": true,
+    "paths": {
+      "@root/*": ["./*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
