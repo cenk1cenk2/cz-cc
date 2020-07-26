@@ -35,13 +35,13 @@
   },
   "dependencies": {
     "chalk": "^4.1.0",
-    "commitizen": "^4.0.3",
+    "commitizen": "^4.1.2",
     "conventional-commit-types": "^3.0.0",
     "enquirer": "^2.3.6",
-    "listr2": "^2.3.3",
-    "lodash.map": "^4.5.1",
+    "listr2": "^2.3.4",
+    "lodash.map": "^4.6.0",
     "longest": "^2.0.1",
-    "word-wrap": "^1.0.3"
+    "word-wrap": "^1.2.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
