@@ -4,15 +4,50 @@
 
 ![Demo](./demo/demo.gif)
 
+<!-- toc -->
+<!-- tocstop -->
+
 # Description
 
 This is a direct fork of [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog), while it swaps `inquirer` for `enquirer` for speed and adds auto compelete to commit types as well as reducing overal questions and making many optional.
 
+# Usage
+
+- Install commitizen. Either globally or in the project.
+
+```shell
+# yarn
+yarn global add commitizen
+# npm
+npm install -g commitizen
+```
+
+- Initiate this adapter in a project. If already initiated you can add `--force` flag to swap this adapter with the older one.
+
+```shell
+# yarn
+commitizen init @cenk1cenk2/cz-cc --yarn --dev --exact
+# npm
+commitizen init @cenk1cenk2/cz-cc --dev --exact
+```
+
+- Add [husky](https://github.com/typicode/husky) hooks for convienence and quality assurance.
+
+```json
+{
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  }
+}
+```
+
+- Add [commit-lint](https://github.com/conventional-changelog/commitlint#readme) if desired.
+
 # Configuration
 
 Install the adapter by utilizing global commitizen installation.
-
-`commitizen init @cenk1cenk2/cz-cc --yarn --dev --exact`
 
 Configuration settings are down below.
 
