@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/cenk1cenk2/cz-cc/compare/v1.0.2...v1.0.3) (2020-07-26)
+
+
+### Bug Fixes
+
+* **deps:** update all minor dependency updates ([61f51e1](https://github.com/cenk1cenk2/cz-cc/commit/61f51e10984da6d059a80328282d8bc595780525))
+
 ## [1.0.2](https://github.com/cenk1cenk2/cz-cc/compare/v1.0.1...v1.0.2) (2020-07-26)
 
 
