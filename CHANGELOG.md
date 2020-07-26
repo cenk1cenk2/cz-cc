@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/cenk1cenk2/cz-cc/compare/v1.0.0...v1.0.1) (2020-07-26)
+
+
+### Bug Fixes
+
+* publish access to public ([c3d65a1](https://github.com/cenk1cenk2/cz-cc/commit/c3d65a17998b020e25644c508f110e0da2f8c9c0))
+
 # 1.0.0 (2020-07-26)
 
 
