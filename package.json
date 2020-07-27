@@ -38,7 +38,7 @@
     "commitizen": "^4.1.2",
     "conventional-commit-types": "^3.0.0",
     "enquirer": "^2.3.6",
-    "listr2": "^2.3.6",
+    "listr2": "^2.4.0",
     "lodash.map": "^4.6.0",
     "longest": "^2.0.1",
     "word-wrap": "^1.2.3"
