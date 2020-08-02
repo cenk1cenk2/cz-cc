@@ -1,9 +1,12 @@
 import chalk from 'chalk'
 import Enquirer from 'enquirer'
 import Editor from 'enquirer-editor'
+import findGitRoot from 'find-git-root'
+import fs from 'fs'
 import { Listr } from 'listr2'
 import map from 'lodash.map'
 import longest from 'longest'
+import { join } from 'path'
 import wrap from 'word-wrap'
 
 function filter (array) {
@@ -48,8 +51,41 @@ export default function (options) {
   return {
     prompter (cz, commit) {
 
+      // try for merge message
+      const gitRoot = findGitRoot(process.cwd())
+      const commitMsg = join(gitRoot, 'COMMIT_EDITMSG')
+      let merge = false
+      if (gitRoot) {
+        try {
+          fs.accessSync(commitMsg)
+          const lastCommit = fs.readFileSync(commitMsg, 'utf-8')
+
+          if (lastCommit.match(new RegExp('^Merge branch.*'))) {
+            merge = true
+          }
+
+        // eslint-disable-next-line no-empty
+        } catch {}
+      }
+
       new Listr(
         [
+          {
+            title: 'Merge commit found.',
+            enabled: merge,
+            task: async (ctx, task) => {
+              if (await task.prompt({
+                type: 'Toggle',
+                message: 'Last commit was found as merge commit do you want to skip?',
+                initial: true
+              })) {
+                // eslint-disable-next-line no-console
+                console.log(chalk.yellow('Skipping because of merge commit.'))
+                process.exit(0)
+              }
+            }
+          },
+
           {
             title: 'Please provide the general commit details.',
             task: async (ctx, task) =>
@@ -114,12 +150,11 @@ export default function (options) {
                 {
                   skip: (ctx) => !ctx.prompts.additional.some((property) => [ 'issue', 'long-description', 'breaking-changes' ].includes(property)),
                   task: async (ctx, task) => {
-                    ctx.prompts.body = (await task.prompt({
+                    ctx.prompts.body = await task.prompt({
                       type: 'editor',
-                      name: 'default',
                       message: 'Please give a long description:\n',
                       initial: options.defaultBody
-                    })).default
+                    })
                   }
                 },
 
@@ -137,11 +172,10 @@ export default function (options) {
                 {
                   skip: (ctx) => !ctx.prompts.additional.includes('breaking-changes'),
                   task: async (ctx, task) => {
-                    ctx.prompts.breaking = (await task.prompt({
+                    ctx.prompts.breaking = await task.prompt({
                       type: 'editor',
-                      name: 'default',
                       message: 'Describe the breaking changes:\n'
-                    })).default
+                    })
                   }
                 }
               ])
