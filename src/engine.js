@@ -137,17 +137,18 @@ export default function (options) {
                 {
                   skip: (ctx) => !ctx.prompts.additional.includes('breaking-changes'),
                   task: async (ctx, task) => {
-                    ctx.prompts.breaking = await task.prompt({
-                      type: 'Input',
+                    ctx.prompts.breaking = (await task.prompt({
+                      type: 'editor',
+                      name: 'default',
                       message: 'Describe the breaking changes:\n'
-                    })
+                    })).default
                   }
                 }
               ])
           }
         ],
         {
-          rendererOptions: { collapse: false }, rendererFallback: true, injectWrapper: { enquirer }
+          rendererOptions: { collapse: false }, rendererFallback: false, injectWrapper: { enquirer }
         }
       )
         .run()
