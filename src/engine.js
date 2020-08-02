@@ -136,6 +136,7 @@ export default function (options) {
                       type: 'Input',
                       message: 'Please state the scope of the change:\n',
                       initial: options.defaultScope,
+
                       format: (value) => {
                         return options.disableScopeLowerCase ? value.trim() : value.trim().toLowerCase()
                       }
