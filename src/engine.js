@@ -51,37 +51,33 @@ export default function (options) {
   return {
     prompter (cz, commit) {
 
-      // try for merge message
-      const gitRoot = findGitRoot(process.cwd())
-      const commitMsg = join(gitRoot, 'COMMIT_EDITMSG')
-      let merge = false
-      if (gitRoot) {
-        try {
-          fs.accessSync(commitMsg)
-          const lastCommit = fs.readFileSync(commitMsg, 'utf-8')
-
-          if (lastCommit.match(new RegExp('^Merge branch.*'))) {
-            merge = true
-          }
-
-        // eslint-disable-next-line no-empty
-        } catch {}
-      }
-
       new Listr(
         [
           {
             title: 'Merge commit found.',
-            enabled: merge,
+            enabled: () => {
+              // try for merge message
+              const gitRoot = findGitRoot(process.cwd())
+              const commitMsg = join(gitRoot, 'COMMIT_EDITMSG')
+              if (gitRoot) {
+                try {
+                  const lastCommit = fs.readFileSync(commitMsg, 'utf-8')
+
+                  if (new RegExp(/^Merge branch/).test(lastCommit)) {
+                    return true
+                  }
+
+                  // eslint-disable-next-line no-empty
+                } catch {}
+              }
+            },
             task: async (ctx, task) => {
               if (await task.prompt({
                 type: 'Toggle',
                 message: 'Last commit was found as merge commit do you want to skip?',
                 initial: true
               })) {
-                // eslint-disable-next-line no-console
-                console.log(chalk.yellow('Skipping because of merge commit.'))
-                process.exit(0)
+                throw new Error('Skipping because of merge commit.')
               }
             }
           },
