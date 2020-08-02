@@ -1,4 +1,6 @@
 import chalk from 'chalk'
+import Enquirer from 'enquirer'
+import Editor from 'enquirer-editor'
 import { Listr } from 'listr2'
 import map from 'lodash.map'
 import longest from 'longest'
@@ -40,8 +42,12 @@ export default function (options) {
     }
   })
 
+  let enquirer = new Enquirer()
+  enquirer = enquirer.register('editor', Editor)
+
   return {
     prompter (cz, commit) {
+
       new Listr(
         [
           {
@@ -108,12 +114,12 @@ export default function (options) {
                 {
                   skip: (ctx) => !ctx.prompts.additional.some((property) => [ 'issue', 'long-description', 'breaking-changes' ].includes(property)),
                   task: async (ctx, task) => {
-                    ctx.prompts.body = await task.prompt({
-                      type: 'Input',
+                    ctx.prompts.body = (await task.prompt({
+                      type: 'editor',
+                      name: 'default',
                       message: 'Please give a long description:\n',
-                      initial: options.defaultBody,
-                      required: false
-                    })
+                      initial: options.defaultBody
+                    })).default
                   }
                 },
 
@@ -141,7 +147,7 @@ export default function (options) {
           }
         ],
         {
-          rendererOptions: { collapse: false }
+          rendererOptions: { collapse: false }, rendererFallback: true, injectWrapper: { enquirer }
         }
       )
         .run()
