@@ -139,6 +139,7 @@ export default function (options) {
                         return options.disableScopeLowerCase ? value.trim() : value.trim().toLowerCase()
                       }
                     })
+                    console.log(ctx.prompts.scope)
                   }
                 },
 
