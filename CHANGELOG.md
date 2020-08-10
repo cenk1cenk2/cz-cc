@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/cenk1cenk2/cz-cc/compare/v1.1.0...v1.1.1) (2020-08-10)
+
+
+### Bug Fixes
+
+* bump listr2 dep before renovate ([a509411](https://github.com/cenk1cenk2/cz-cc/commit/a509411b86bda40d01dfd7b5cc4a50383ad1d059))
+
 # [1.1.0](https://github.com/cenk1cenk2/cz-cc/compare/v1.0.5...v1.1.0) (2020-08-10)
 
 
