@@ -5,7 +5,6 @@ import findGitRoot from 'find-git-root'
 import fs from 'fs'
 import { Listr } from 'listr2'
 import map from 'lodash.map'
-import longest from 'longest'
 import { join } from 'path'
 import wrap from 'word-wrap'
 
@@ -38,9 +37,9 @@ export default function (options) {
   const types = options.types
 
   const choices = map(types, function (type, key) {
-    const length = longest(Object.keys(types)).length + 1
     return {
-      name: (key + ':').padEnd(length) + ' ' + type.description,
+      name: key,
+      hint: type.description,
       value: key
     }
   })
@@ -105,7 +104,7 @@ export default function (options) {
                   validate: (value) => {
                     const filteredSubject = filterSubject(value)
 
-                    return filteredSubject.length <= options.maxHeaderWidth
+                    return filteredSubject.length <= options.maxHeaderWidth && filteredSubject.length > 0
                       ? true
                       : `Subject length must be less than or equal to ${options.maxHeaderWidth} characters. Current length is ${filteredSubject.length} characters.`
                   }
@@ -146,11 +145,12 @@ export default function (options) {
                 {
                   skip: (ctx) => !ctx.prompts.additional.some((property) => [ 'issue', 'long-description', 'breaking-changes' ].includes(property)),
                   task: async (ctx, task) => {
-                    ctx.prompts.body = await task.prompt({
+                    ctx.prompts.body = await (task.prompt({
                       type: 'editor',
                       message: 'Please give a long description:\n',
                       initial: options.defaultBody
-                    })
+                    // @ts-ignore
+                    })).default
                   }
                 },
 
@@ -178,7 +178,7 @@ export default function (options) {
           }
         ],
         {
-          rendererOptions: { collapse: false }, rendererFallback: false, injectWrapper: { enquirer }
+          rendererOptions: { collapse: false }, rendererFallback: true, injectWrapper: { enquirer }
         }
       )
         .run()
