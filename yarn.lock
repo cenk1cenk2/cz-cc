@@ -2645,7 +2645,7 @@ lint-staged@^10.2.11:
     string-argv "0.3.1"
     stringify-object "^3.3.0"
 
-listr2@^2.1.0, listr2@^2.4.1:
+listr2@^2.1.0:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/listr2/-/listr2-2.4.1.tgz#006fc94ae77b3195403cbf3a4a563e2d6366224f"
   integrity sha512-8pYsCZCztr5+KAjReLyBeGhLV0vaQ2Du/eMe/ux9QAfQl7efiWejM1IWjALh0zHIRYuIbhQ8N2KztZ4ci56pnQ==
@@ -2657,6 +2657,20 @@ listr2@^2.1.0, listr2@^2.4.1:
     log-update "^4.0.0"
     p-map "^4.0.0"
     rxjs "^6.6.0"
+    through "^2.3.8"
+
+listr2@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/listr2/-/listr2-2.5.0.tgz#87d40dae3f0c6676be8995ef2e4449fb3979f408"
+  integrity sha512-C7GqFmf+C7LglqYJU1feOBw46hvCRO1Ja58TmKZtXP+JyyHE2m1+ZhoBfliIGeUuiT9PuPU1OJ9kbky93+Qziw==
+  dependencies:
+    chalk "^4.1.0"
+    cli-truncate "^2.1.0"
+    figures "^3.2.0"
+    indent-string "^4.0.0"
+    log-update "^4.0.0"
+    p-map "^4.0.0"
+    rxjs "^6.6.2"
     through "^2.3.8"
 
 load-json-file@^2.0.0:
@@ -3374,7 +3388,7 @@ run-async@^2.2.0:
   resolved "https://registry.yarnpkg.com/run-async/-/run-async-2.4.1.tgz#8440eccf99ea3e70bd409d49aab88e10c189a455"
   integrity sha512-tvVnVv01b8c1RrA6Ep7JkStj85Guv/YrMcwqYQnwjsAS2cTmmPGBBjAjpCW7RrSodNSoE2/qg9O4bceNvUuDgQ==
 
-rxjs@^6.4.0, rxjs@^6.6.0:
+rxjs@^6.4.0, rxjs@^6.6.0, rxjs@^6.6.2:
   version "6.6.2"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.2.tgz#8096a7ac03f2cc4fe5860ef6e572810d9e01c0d2"
   integrity sha512-BHdBMVoWC2sL26w//BCu3YzKT4s2jip/WhwsGEDmeKYBhKDZeYezVUnHatYB7L85v5xs0BAQmg6BEYJEKxBabg==
