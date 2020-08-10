@@ -1,3 +1,22 @@
+# [1.1.0](https://github.com/cenk1cenk2/cz-cc/compare/v1.0.5...v1.1.0) (2020-08-10)
+
+
+### Bug Fixes
+
+* test ([11e7f8f](https://github.com/cenk1cenk2/cz-cc/commit/11e7f8fd81cd42877667c49f507cab9efe36c20c))
+* **[object Object]:** added fixes to merge commit back ([aad0084](https://github.com/cenk1cenk2/cz-cc/commit/aad00843e478428fd1778a237d9fbe8d1d15528b))
+* **[object Object]:** test ([2d1da90](https://github.com/cenk1cenk2/cz-cc/commit/2d1da90c01fdc3eb0b32b53a7c3d2e9a7d8ab709))
+* **[object Object]:** test ([cf6eef6](https://github.com/cenk1cenk2/cz-cc/commit/cf6eef6bf07632709cd2c5f3399fb84f5b674d17))
+* fix commit message ([22334eb](https://github.com/cenk1cenk2/cz-cc/commit/22334eb0f5a009508fbae24693309439a274e993))
+* fixed example ([a76693f](https://github.com/cenk1cenk2/cz-cc/commit/a76693ff2317ac20a6b460dec281c2ed0d7f78f7))
+* test ([734a6be](https://github.com/cenk1cenk2/cz-cc/commit/734a6be6cad4a65c533556b16ab8b1e60fe72088))
+* test ([9a84642](https://github.com/cenk1cenk2/cz-cc/commit/9a8464226bd368edbb036d711d6448c3962ba5de))
+
+
+### Features
+
+* made the interface clean with editor ([03a5326](https://github.com/cenk1cenk2/cz-cc/commit/03a5326c0fd2aaf3a064504b665e39a8af023289))
+
 ## [1.0.5](https://github.com/cenk1cenk2/cz-cc/compare/v1.0.4...v1.0.5) (2020-07-29)
 
 
