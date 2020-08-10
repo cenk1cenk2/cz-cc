@@ -1,7 +1,11 @@
 import chalk from 'chalk'
+import Enquirer from 'enquirer'
+import Editor from 'enquirer-editor'
+import findGitRoot from 'find-git-root'
+import fs from 'fs'
 import { Listr } from 'listr2'
 import map from 'lodash.map'
-import longest from 'longest'
+import { join } from 'path'
 import wrap from 'word-wrap'
 
 function filter (array) {
@@ -33,17 +37,50 @@ export default function (options) {
   const types = options.types
 
   const choices = map(types, function (type, key) {
-    const length = longest(Object.keys(types)).length + 1
     return {
-      name: (key + ':').padEnd(length) + ' ' + type.description,
+      name: key,
+      hint: type.description,
       value: key
     }
   })
 
+  let enquirer = new Enquirer()
+  enquirer = enquirer.register('editor', Editor)
+
   return {
     prompter (cz, commit) {
+
       new Listr(
         [
+          {
+            title: 'Merge commit found.',
+            enabled: () => {
+              // try for merge message
+              const gitRoot = findGitRoot(process.cwd())
+              const commitMsg = join(gitRoot, 'COMMIT_EDITMSG')
+              if (gitRoot) {
+                try {
+                  const lastCommit = fs.readFileSync(commitMsg, 'utf-8')
+
+                  if (new RegExp(/^Merge branch/).test(lastCommit)) {
+                    return true
+                  }
+
+                  // eslint-disable-next-line no-empty
+                } catch {}
+              }
+            },
+            task: async (ctx, task) => {
+              if (await task.prompt({
+                type: 'Toggle',
+                message: 'Last commit was found as merge commit do you want to skip?',
+                initial: true
+              })) {
+                throw new Error('Skipping because of merge commit.')
+              }
+            }
+          },
+
           {
             title: 'Please provide the general commit details.',
             task: async (ctx, task) =>
@@ -67,7 +104,7 @@ export default function (options) {
                   validate: (value) => {
                     const filteredSubject = filterSubject(value)
 
-                    return filteredSubject.length <= options.maxHeaderWidth
+                    return filteredSubject.length <= options.maxHeaderWidth && filteredSubject.length > 0
                       ? true
                       : `Subject length must be less than or equal to ${options.maxHeaderWidth} characters. Current length is ${filteredSubject.length} characters.`
                   }
@@ -108,12 +145,14 @@ export default function (options) {
                 {
                   skip: (ctx) => !ctx.prompts.additional.some((property) => [ 'issue', 'long-description', 'breaking-changes' ].includes(property)),
                   task: async (ctx, task) => {
-                    ctx.prompts.body = await task.prompt({
-                      type: 'Input',
-                      message: 'Please give a long description:\n',
-                      initial: options.defaultBody,
-                      required: false
-                    })
+                    ctx.prompts.body = (await task.prompt([
+                      {
+                        type: 'editor',
+                        name: 'default',
+                        message: 'Please give a long description:\n',
+                        initial: options.defaultBody
+                      }
+                    ])).default
                   }
                 },
 
@@ -122,7 +161,7 @@ export default function (options) {
                   task: async (ctx, task) => {
                     ctx.prompts.issue = await task.prompt({
                       type: 'Input',
-                      message: 'Add issue references (e.g. "fix #123", "re #123".):\n',
+                      message: 'Add issue references (e.g. "fix #123, re #124".):\n',
                       initial: options.defaultIssues
                     })
                   }
@@ -131,17 +170,17 @@ export default function (options) {
                 {
                   skip: (ctx) => !ctx.prompts.additional.includes('breaking-changes'),
                   task: async (ctx, task) => {
-                    ctx.prompts.breaking = await task.prompt({
-                      type: 'Input',
+                    ctx.prompts.breaking = (await task.prompt({
+                      type: 'editor',
                       message: 'Describe the breaking changes:\n'
-                    })
+                    })).default
                   }
                 }
               ])
           }
         ],
         {
-          rendererOptions: { collapse: false }
+          rendererOptions: { collapse: false }, rendererFallback: false, injectWrapper: { enquirer }
         }
       )
         .run()
