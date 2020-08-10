@@ -145,12 +145,14 @@ export default function (options) {
                 {
                   skip: (ctx) => !ctx.prompts.additional.some((property) => [ 'issue', 'long-description', 'breaking-changes' ].includes(property)),
                   task: async (ctx, task) => {
-                    ctx.prompts.body = await (task.prompt({
-                      type: 'editor',
-                      message: 'Please give a long description:\n',
-                      initial: options.defaultBody
-                    // @ts-ignore
-                    })).default
+                    ctx.prompts.body = (await task.prompt([
+                      {
+                        type: 'editor',
+                        name: 'default',
+                        message: 'Please give a long description:\n',
+                        initial: options.defaultBody
+                      }
+                    ])).default
                   }
                 },
 
@@ -168,17 +170,17 @@ export default function (options) {
                 {
                   skip: (ctx) => !ctx.prompts.additional.includes('breaking-changes'),
                   task: async (ctx, task) => {
-                    ctx.prompts.breaking = await task.prompt({
+                    ctx.prompts.breaking = (await task.prompt({
                       type: 'editor',
                       message: 'Describe the breaking changes:\n'
-                    })
+                    })).default
                   }
                 }
               ])
           }
         ],
         {
-          rendererOptions: { collapse: false }, rendererFallback: true, injectWrapper: { enquirer }
+          rendererOptions: { collapse: false }, rendererFallback: false, injectWrapper: { enquirer }
         }
       )
         .run()
