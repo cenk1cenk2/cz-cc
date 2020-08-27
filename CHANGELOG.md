@@ -1,3 +1,14 @@
+## [1.1.4](https://github.com/cenk1cenk2/cz-cc/compare/v1.1.3...v1.1.4) (2020-08-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency commitizen to ^4.1.3 ([d424aae](https://github.com/cenk1cenk2/cz-cc/commit/d424aae6eecffd9bef490cda6bae290b666e232e))
+* **deps:** update dependency commitizen to ^4.1.5 ([b091bb6](https://github.com/cenk1cenk2/cz-cc/commit/b091bb674d7d9b292c5c6fc9a34e7fe62fb0860c))
+* **deps:** update dependency commitizen to ^4.2.0 ([2ff3f60](https://github.com/cenk1cenk2/cz-cc/commit/2ff3f60f576990e387f0df1d769ab4536f8daaa2))
+* **deps:** update dependency commitizen to ^4.2.1 ([81e8fbc](https://github.com/cenk1cenk2/cz-cc/commit/81e8fbca4ec961257a38b40fcc659108145ffec3))
+* **deps:** update dependency listr2 to ^2.6.1 ([d453715](https://github.com/cenk1cenk2/cz-cc/commit/d453715da14995b5ac8bdecb5a67b68cbdd676e1))
+
 ## [1.1.3](https://github.com/cenk1cenk2/cz-cc/compare/v1.1.2...v1.1.3) (2020-08-16)
 
 
