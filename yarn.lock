@@ -1580,9 +1580,9 @@ edit-briefly@^1.0.0:
     tempy "0.2.1"
 
 electron-to-chromium@^1.3.523:
-  version "1.3.554"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.554.tgz#11d0619b927a25f300b787ad7ee1ece91384dde9"
-  integrity sha512-Vtz2dVH5nMtKK4brahmgScwFS8PBnpA4VObYXtlsqN8ZpT9IFelv0Rpflc1+NIILjGVaj6vEiXQbhrs3Pl8O7g==
+  version "1.3.555"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.555.tgz#a096716ff77cf8da9a608eb628fd6927869503d2"
+  integrity sha512-/55x3nF2feXFZ5tdGUOr00TxnUjUgdxhrn+eCJ1FAcoAt+cKQTjQkUC5XF4frMWE1R5sjHk+JueuBalimfe5Pg==
 
 emoji-regex@^7.0.1:
   version "7.0.3"
@@ -2654,21 +2654,7 @@ lint-staged@^10.2.11:
     string-argv "0.3.1"
     stringify-object "^3.3.0"
 
-listr2@^2.6.0:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/listr2/-/listr2-2.6.1.tgz#fbbabd8eea723924df7530042c1990b346e81706"
-  integrity sha512-1aPX9GkS+W0aHfPUDedJqeqj0DOe1605NaNoqdwEYw/UF2UbZgCIIMpXXZALeG/8xzwMBztguzQEubU5Xw1Qbw==
-  dependencies:
-    chalk "^4.1.0"
-    cli-truncate "^2.1.0"
-    figures "^3.2.0"
-    indent-string "^4.0.0"
-    log-update "^4.0.0"
-    p-map "^4.0.0"
-    rxjs "^6.6.2"
-    through "^2.3.8"
-
-listr2@^2.6.2:
+listr2@^2.6.0, listr2@^2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/listr2/-/listr2-2.6.2.tgz#4912eb01e1e2dd72ec37f3895a56bf2622d6f36a"
   integrity sha512-6x6pKEMs8DSIpA/tixiYY2m/GcbgMplMVmhQAaLFxEtNSKLeWTGjtmU57xvv6QCm2XcqzyNXL/cTSVf4IChCRA==
