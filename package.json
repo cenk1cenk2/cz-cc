@@ -56,7 +56,7 @@
     "prettier": "^2.0.5"
   },
   "optionalDependencies": {
-    "@commitlint/load": "^9.1.1"
+    "@commitlint/load": "^9.1.2"
   },
   "config": {
     "commitizen": {
