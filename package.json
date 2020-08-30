@@ -52,8 +52,8 @@
     "@cenk1cenk2/eslint-config": "^0.4.9",
     "eslint": "^7.7.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
-    "prettier": "^2.0.5"
+    "lint-staged": "^10.2.13",
+    "prettier": "^2.1.1"
   },
   "optionalDependencies": {
     "@commitlint/load": "^9.1.2"
