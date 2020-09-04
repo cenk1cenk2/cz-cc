@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/cenk1cenk2/cz-cc/compare/v1.1.5...v1.2.0) (2020-09-04)
+
+
+### Features
+
+* clened up the interface fixed the bug with listr prompt ([2374396](https://github.com/cenk1cenk2/cz-cc/commit/23743963ae0006c4939367384452bb04f4fed568))
+
 ## [1.1.5](https://github.com/cenk1cenk2/cz-cc/compare/v1.1.4...v1.1.5) (2020-08-29)
 
 
