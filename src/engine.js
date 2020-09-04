@@ -53,7 +53,6 @@ export default function (options) {
       new Listr(
         [
           {
-            title: 'Merge commit found.',
             enabled: () => {
               // try for merge message
               const gitRoot = findGitRoot(process.cwd())
@@ -82,7 +81,6 @@ export default function (options) {
           },
 
           {
-            title: 'Please provide the general commit details.',
             task: async (ctx, task) =>
               (ctx.prompts = await task.prompt([
                 {
@@ -125,7 +123,6 @@ export default function (options) {
           },
 
           {
-            title: 'Please provide additional details for the commit.',
             task: (ctx, task) =>
               task.newListr([
                 {
@@ -145,14 +142,14 @@ export default function (options) {
                 {
                   skip: (ctx) => !ctx.prompts.additional.some((property) => [ 'issue', 'long-description', 'breaking-changes' ].includes(property)),
                   task: async (ctx, task) => {
-                    ctx.prompts.body = (await task.prompt([
+                    ctx.prompts.body = await task.prompt([
                       {
                         type: 'editor',
                         name: 'default',
                         message: 'Please give a long description:\n',
                         initial: options.defaultBody
                       }
-                    ])).default
+                    ])
                   }
                 },
 
@@ -170,10 +167,10 @@ export default function (options) {
                 {
                   skip: (ctx) => !ctx.prompts.additional.includes('breaking-changes'),
                   task: async (ctx, task) => {
-                    ctx.prompts.breaking = (await task.prompt({
+                    ctx.prompts.breaking = await task.prompt({
                       type: 'editor',
                       message: 'Describe the breaking changes:\n'
-                    })).default
+                    })
                   }
                 }
               ])
