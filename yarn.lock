@@ -844,7 +844,7 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@cenk1cenk2/eslint-config@^0.4.12":
+"@cenk1cenk2/eslint-config@^0.4.13":
   version "0.4.13"
   resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-0.4.13.tgz#3c280d588ac9d780ad9535bae25f40318bec9cfe"
   integrity sha512-fItNlfGNzql21aGhRc+zGhLmc65fVkzeNsOuvpr1cquhtFONy977fkUPb5LfAWQPX+hxw/u8MJblZE2epna85Q==
