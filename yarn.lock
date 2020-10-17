@@ -841,10 +841,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@cenk1cenk2/eslint-config@^0.4.16":
-  version "0.4.16"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-0.4.16.tgz#1b410a7101e3a70cc846075da66c9ddb6e7b4470"
-  integrity sha512-uPdw6IR6gSEVqYwCOWMsF4rxYj0zht+kNlh/bKCFXJhFvBkPPF02o+Si1v2bNA5K/VfajXQlrJHAI3mrFsbvDg==
+"@cenk1cenk2/eslint-config@^0.4.17":
+  version "0.4.17"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-0.4.17.tgz#431d7aae1067cf0155e78424e970a42d9a26a80b"
+  integrity sha512-9OE3c0RpyOnLA+Dzzb7hnZTcYs/jWZhiFcrbJ66+F4QO1pDsSQ/4+3m02uHKSMu/u9ZdDmA/mFp0j+CbXv8a6w==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.4.1"
     "@typescript-eslint/parser" "^4.4.1"
