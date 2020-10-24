@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/cenk1cenk2/cz-cc/compare/v1.2.5...v1.2.6) (2020-10-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency listr2 to ^3.2.1 ([91870fb](https://github.com/cenk1cenk2/cz-cc/commit/91870fbab60e2d6e40f384c408b5607187a30cdb))
+
 ## [1.2.5](https://github.com/cenk1cenk2/cz-cc/compare/v1.2.4...v1.2.5) (2020-10-24)
 
 
