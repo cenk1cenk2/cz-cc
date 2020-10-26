@@ -2802,10 +2802,10 @@ listr2@^2.6.0:
     rxjs "^6.6.2"
     through "^2.3.8"
 
-listr2@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/listr2/-/listr2-3.2.1.tgz#46e712443e2be18707a4876083c004e6eb3fbc73"
-  integrity sha512-MFhP21BpsiRYZzVu3N9YV4oz/8/+lzMC+RhSRwdDkDCF9Z/1uNquHFji9NZ7HpiCzpccQ/mHYrS+dbyn3T8dcQ==
+listr2@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/listr2/-/listr2-3.2.2.tgz#d20feb75015e506992b55af40722ba1af168b8f1"
+  integrity sha512-AajqcZEUikF2ioph6PfH3dIuxJclhr3i3kHgTOP0xeXdWQohrvJAAmqVcV43/GI987HFY/vzT73jYXoa4esDHg==
   dependencies:
     chalk "^4.1.0"
     cli-truncate "^2.1.0"
