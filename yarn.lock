@@ -833,12 +833,12 @@
     to-fast-properties "^2.0.0"
 
 "@cenk1cenk2/eslint-config@^0.4.26":
-  version "0.4.26"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-0.4.26.tgz#f0b8013a3acaecc4ba53ff3abe6a8f0b03e29ced"
-  integrity sha512-jJPTaKx0BG/FHXtmiMQKzN6jDjECFpz5jwRk3CJC/ro3KTzBsyO+JElzjyRcqP+MrdRK35qKjN8NCuc+rBTMOQ==
+  version "0.4.27"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-0.4.27.tgz#0227eab4cba88a57750bf9c96fa782353a55eb21"
+  integrity sha512-ybo/rQPT7gdeoXsQsSk5I7cdG6E7axKIhRZK0oxY+BlJD9HKG9NWFtzo0iOR2LL/TxVp9YmX+1i2p43PQWRidQ==
   dependencies:
-    "@typescript-eslint/eslint-plugin" "^4.8.2"
-    "@typescript-eslint/parser" "^4.8.2"
+    "@typescript-eslint/eslint-plugin" "^4.9.0"
+    "@typescript-eslint/parser" "^4.9.0"
     eslint-config-react "^1.1.7"
     eslint-plugin-import "^2.22.1"
     eslint-plugin-react-hooks "^4.2.0"
@@ -950,7 +950,7 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
-"@typescript-eslint/eslint-plugin@^4.8.2":
+"@typescript-eslint/eslint-plugin@^4.9.0":
   version "4.9.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.9.0.tgz#8fde15743413661fdc086c9f1f5d74a80b856113"
   integrity sha512-WrVzGMzzCrgrpnQMQm4Tnf+dk+wdl/YbgIgd5hKGa2P+lnJ2MON+nQnbwgbxtN9QDLi8HO+JAq0/krMnjQK6Cw==
@@ -975,7 +975,7 @@
     eslint-scope "^5.0.0"
     eslint-utils "^2.0.0"
 
-"@typescript-eslint/parser@^4.8.2":
+"@typescript-eslint/parser@^4.9.0":
   version "4.9.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-4.9.0.tgz#bb65f1214b5e221604996db53ef77c9d62b09249"
   integrity sha512-QRSDAV8tGZoQye/ogp28ypb8qpsZPV6FOLD+tbN4ohKUWHD2n/u0Q2tIBnCsGwQCiD94RdtLkcqpdK4vKcLCCw==
