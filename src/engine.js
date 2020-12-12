@@ -49,7 +49,6 @@ export default function (options) {
 
   return {
     prompter (cz, commit) {
-
       new Listr(
         [
           {
@@ -70,11 +69,13 @@ export default function (options) {
               }
             },
             task: async (ctx, task) => {
-              if (await task.prompt({
-                type: 'Toggle',
-                message: 'Last commit was found as merge commit do you want to skip?',
-                initial: true
-              })) {
+              if (
+                await task.prompt({
+                  type: 'Toggle',
+                  message: 'Last commit was found as merge commit do you want to skip?',
+                  initial: true
+                })
+              ) {
                 throw new Error('Skipping because of merge commit.')
               }
             }
@@ -116,7 +117,8 @@ export default function (options) {
                     { name: 'scope', message: 'add a scope' },
                     { name: 'issue', message: 'resolves issues' },
                     { name: 'breaking-changes', message: 'introduces breaking changes' },
-                    { name: 'long-description', message: 'add a long description' }
+                    { name: 'long-description', message: 'add a long description' },
+                    { name: 'skip-ci', message: 'skip ci/cd setups' }
                   ]
                 }
               ]))
@@ -140,7 +142,7 @@ export default function (options) {
                 },
 
                 {
-                  skip: (ctx) => !ctx.prompts.additional.some((property) => [ 'issue', 'long-description', 'breaking-changes' ].includes(property)),
+                  skip: (ctx) => !ctx.prompts.additional.some((property) => [ 'long-description' ].includes(property)),
                   task: async (ctx, task) => {
                     ctx.prompts.body = await task.prompt([
                       {
@@ -177,7 +179,9 @@ export default function (options) {
           }
         ],
         {
-          rendererOptions: { collapse: false }, rendererFallback: false, injectWrapper: { enquirer }
+          rendererOptions: { collapse: false },
+          rendererFallback: false,
+          injectWrapper: { enquirer }
         }
       )
         .run()
@@ -194,7 +198,11 @@ export default function (options) {
           const scope = ctx.prompts.scope ? `(${ctx.prompts.scope})` : ''
 
           // Hard limit this line in the validate
-          const head = ctx.prompts.type + scope + ': ' + ctx.prompts.subject
+          let head = ctx.prompts.type + scope + ': ' + ctx.prompts.subject
+
+          if (ctx.prompts.additional.includes('skip-ci')) {
+            head = head + ' [skip ci]'
+          }
 
           // Wrap these lines at options.maxLineWidth characters
           const body = ctx.prompts.body ? wrap(ctx.prompts.body, wrapOptions) : false
