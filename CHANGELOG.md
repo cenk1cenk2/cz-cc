@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/cenk1cenk2/cz-cc/compare/v1.2.8...v1.3.0) (2020-12-12)
+
+
+### Features
+
+* update long description requirements and add skip-ci option ([98176a3](https://github.com/cenk1cenk2/cz-cc/commit/98176a3646dad33bf86368e1ce1f9a3192828506))
+
 ## [1.2.8](https://github.com/cenk1cenk2/cz-cc/compare/v1.2.7...v1.2.8) (2020-11-26)
 
 
