@@ -51,7 +51,7 @@
     "@babel/preset-env": "^7.12.10",
     "@cenk1cenk2/eslint-config": "^0.4.28",
     "eslint": "^7.15.0",
-    "husky": "^4.3.4",
+    "husky": "^4.3.6",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1"
   },
