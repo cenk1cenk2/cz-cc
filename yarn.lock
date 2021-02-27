@@ -2808,7 +2808,7 @@ lint-staged@^10.5.4:
     string-argv "0.3.1"
     stringify-object "^3.3.0"
 
-listr2@^3.2.2, listr2@^3.3.3:
+listr2@^3.2.2:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/listr2/-/listr2-3.3.3.tgz#af44f6a4cb76d17d293aa5cb88ea84b67bc6144e"
   integrity sha512-CeQrTeot/OQTrd2loXEBMfwlOjlPeHu/9alA8UyEoiEyncpj/mv2zRLgx32JzO62wbJIBSKgGM2L23XeOwrRlg==
@@ -2820,6 +2820,21 @@ listr2@^3.2.2, listr2@^3.3.3:
     log-update "^4.0.0"
     p-map "^4.0.0"
     rxjs "^6.6.3"
+    through "^2.3.8"
+    wrap-ansi "^7.0.0"
+
+listr2@^3.3.4:
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/listr2/-/listr2-3.3.4.tgz#bca480e784877330b9d96d6cdc613ad243332e20"
+  integrity sha512-b0lhLAvXSr63AtPF9Dgn6tyxm8Kiz6JXpVGM0uZJdnDcZp02jt7FehgAnMfA9R7riQimOKjQgLknBTdz2nmXwQ==
+  dependencies:
+    chalk "^4.1.0"
+    cli-truncate "^2.1.0"
+    figures "^3.2.0"
+    indent-string "^4.0.0"
+    log-update "^4.0.0"
+    p-map "^4.0.0"
+    rxjs "^6.6.6"
     through "^2.3.8"
     wrap-ansi "^7.0.0"
 
@@ -3556,7 +3571,7 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-rxjs@^6.4.0, rxjs@^6.6.3:
+rxjs@^6.4.0, rxjs@^6.6.3, rxjs@^6.6.6:
   version "6.6.6"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.6.tgz#14d8417aa5a07c5e633995b525e1e3c0dec03b70"
   integrity sha512-/oTwee4N4iWzAMAL9xdGKjkEHmIwupR3oXbQjCKywF1BeFohswF3vZdogbmEF6pZkOsXTzWkrZszrWpQTByYVg==
