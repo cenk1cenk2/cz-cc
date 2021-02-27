@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/cenk1cenk2/cz-cc/compare/v1.3.4...v1.3.5) (2021-02-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency listr2 to ^3.3.4 ([14b31a5](https://github.com/cenk1cenk2/cz-cc/commit/14b31a5a90a286d496078ebcc7a1a8f3e7c7456c))
+
 ## [1.3.4](https://github.com/cenk1cenk2/cz-cc/compare/v1.3.3...v1.3.4) (2021-02-23)
 
 
