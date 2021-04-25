@@ -1,3 +1,11 @@
+## [1.3.18](https://github.com/cenk1cenk2/cz-cc/compare/v1.3.17...v1.3.18) (2021-04-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency chalk to ^4.1.1 ([ac37f08](https://github.com/cenk1cenk2/cz-cc/commit/ac37f089d2d5ca9914935054536d2b4b5b1e974f))
+* **deps:** update dependency listr2 to ^3.8.0 ([87b29ab](https://github.com/cenk1cenk2/cz-cc/commit/87b29abe3899d16e9f8bbf85e54436d5ae0032d5))
+
 ## [1.3.17](https://github.com/cenk1cenk2/cz-cc/compare/v1.3.16...v1.3.17) (2021-04-19)
 
 
