@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "chalk": "^4.1.1",
-    "commitizen": "^4.2.3",
+    "commitizen": "^4.2.4",
     "conventional-commit-types": "^3.0.0",
     "enquirer": "^2.3.6",
     "enquirer-editor": "^1.0.0",
