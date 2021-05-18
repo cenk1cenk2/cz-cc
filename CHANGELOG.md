@@ -1,3 +1,10 @@
+## [1.3.21](https://github.com/cenk1cenk2/cz-cc/compare/v1.3.20...v1.3.21) (2021-05-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency commitizen to ^4.2.4 ([7d47db8](https://github.com/cenk1cenk2/cz-cc/commit/7d47db849b9d67e94c21933f256b33f7276125cb))
+
 ## [1.3.20](https://github.com/cenk1cenk2/cz-cc/compare/v1.3.19...v1.3.20) (2021-05-03)
 
 
