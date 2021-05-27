@@ -2856,10 +2856,25 @@ lint-staged@^11.0.0:
     string-argv "0.3.1"
     stringify-object "^3.3.0"
 
-listr2@^3.8.2, listr2@^3.8.4:
+listr2@^3.8.2:
   version "3.8.4"
   resolved "https://registry.yarnpkg.com/listr2/-/listr2-3.8.4.tgz#58ef278a430509d072c568d96d87a4357813638b"
   integrity sha512-DX+iKRcxaGbBjoLJBQlGceZoqdhV6Z54wpsvIVoVKNJ/lEXK8KhGhLaZnIGKRQmDmtJOtyNSnnKFUS1qn+jqsw==
+  dependencies:
+    cli-truncate "^2.1.0"
+    colorette "^1.2.2"
+    figures "^3.2.0"
+    indent-string "^4.0.0"
+    log-update "^4.0.0"
+    p-map "^4.0.0"
+    rxjs "^6.6.7"
+    through "^2.3.8"
+    wrap-ansi "^7.0.0"
+
+listr2@^3.8.6:
+  version "3.8.6"
+  resolved "https://registry.yarnpkg.com/listr2/-/listr2-3.8.6.tgz#d761d04d9e9de0a26d610b5cdc155f725f16190c"
+  integrity sha512-MHtGao/HDw1Wmbivu+bQ6Cr0oiyPYtk4owMx4chXBcBGYdVLfNimIh5rXjtrTXBCfeYPvG3Bfk6VWx1yr0PkTA==
   dependencies:
     cli-truncate "^2.1.0"
     colorette "^1.2.2"
