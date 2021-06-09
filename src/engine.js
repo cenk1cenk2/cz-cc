@@ -202,9 +202,7 @@ export default function (options) {
           const body = ctx.prompts.body ? wrap(ctx.prompts.body, wrapOptions) : false
 
           // Apply breaking change prefix, removing it if already present
-          let breaking = ctx.prompts.breaking ? ctx.prompts.breaking.trim() : ''
-          breaking = breaking ? 'BREAKING CHANGE: ' + breaking.replace(/^BREAKING CHANGE: /, '') : ''
-          breaking = breaking ? wrap(breaking, wrapOptions) : false
+          const breaking = ctx.prompts.breaking ? wrap('BREAKING CHANGE: ' + ctx.prompts.breaking.trim().replace(/^BREAKING CHANGE: /, ''), wrapOptions) : false
 
           const issues = ctx.prompts.issues ? wrap(ctx.prompts.issues, wrapOptions) : false
 
