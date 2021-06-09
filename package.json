@@ -15,7 +15,7 @@
     "lint:check": "eslint --ext .ts,.js,.tsx,.jsx src/"
   },
   "simple-git-hooks": {
-    "pre-commit": "yarn lint-staged",
+    "pre-commit": "yarn exec lint-staged",
     "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
   },
   "lint-staged": {
