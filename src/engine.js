@@ -152,7 +152,7 @@ export default function (options) {
                 {
                   skip: (ctx) => !ctx.prompts.additional.includes('issue'),
                   task: async (ctx, task) => {
-                    ctx.prompts.issue = await task.prompt({
+                    ctx.prompts.issues = await task.prompt({
                       type: 'Input',
                       message: 'Add issue references (e.g. "fix #123, re #124".):\n',
                       initial: options.defaultIssues
@@ -205,8 +205,6 @@ export default function (options) {
           const breaking = ctx.prompts.breaking ? wrap('BREAKING CHANGE: ' + ctx.prompts.breaking.trim().replace(/^BREAKING CHANGE: /, ''), wrapOptions) : false
 
           const issues = ctx.prompts.issues ? wrap(ctx.prompts.issues, wrapOptions) : false
-
-          console.log([ head, body, breaking, issues ])
 
           commit([ head, body, breaking, issues ].filter(Boolean).join('\n\n'))
         })
