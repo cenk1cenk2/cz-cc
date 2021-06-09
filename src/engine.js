@@ -1,4 +1,4 @@
-import chalk from 'chalk'
+import colorette from 'colorette'
 import Enquirer from 'enquirer'
 import Editor from 'enquirer-editor'
 import findGitRoot from 'find-git-root'
@@ -7,12 +7,6 @@ import { Listr } from 'listr2'
 import map from 'lodash.map'
 import { join } from 'path'
 import wrap from 'word-wrap'
-
-function filter (array) {
-  return array.filter(function (x) {
-    return x
-  })
-}
 
 function headerLength (answers) {
   return answers.type.length + 2 + (answers.scope ? answers.scope.length + 2 : 0)
@@ -214,11 +208,11 @@ export default function (options) {
 
           const issues = ctx.prompts.issues ? wrap(ctx.prompts.issues, wrapOptions) : false
 
-          commit(filter([ head, body, breaking, issues ]).join('\n\n'))
+          commit([ head, body, breaking, issues ].filter(Boolean).join('\n\n'))
         })
         .catch(() => {
           // eslint-disable-next-line no-console
-          console.log(chalk.yellow('Cancelled. Skipping...'))
+          console.log(colorette.yellow('Cancelled. Skipping...'))
         })
     }
   }

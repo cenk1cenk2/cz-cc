@@ -14,11 +14,9 @@
     "lint": "prettier --write src/ && eslint --ext .ts,.js,.tsx,.jsx --fix src/",
     "lint:check": "eslint --ext .ts,.js,.tsx,.jsx src/"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-    }
+  "simple-git-hooks": {
+    "pre-commit": "yarn lint-staged",
+    "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
   },
   "lint-staged": {
     "./*.{ts,js,tsx,jsx}": [
@@ -34,7 +32,7 @@
     "node": ">= 10"
   },
   "dependencies": {
-    "chalk": "^4.1.1",
+    "colorette": "^1.2.2",
     "commitizen": "^4.2.4",
     "conventional-commit-types": "^3.0.0",
     "enquirer": "^2.3.6",
@@ -51,9 +49,9 @@
     "@babel/preset-env": "^7.14.4",
     "@cenk1cenk2/eslint-config": "^0.4.39",
     "eslint": "^7.27.0",
-    "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
-    "prettier": "^2.3.0"
+    "prettier": "^2.3.0",
+    "simple-git-hooks": "^2.4.1"
   },
   "optionalDependencies": {
     "@commitlint/load": "^12.1.4"
