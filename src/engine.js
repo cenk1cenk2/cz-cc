@@ -204,7 +204,9 @@ export default function (options) {
           // Apply breaking change prefix, removing it if already present
           const breaking = ctx.prompts.breaking ? wrap('BREAKING CHANGE: ' + ctx.prompts.breaking.trim().replace(/^BREAKING CHANGE: /, ''), wrapOptions) : false
 
-          const issues = ctx.prompts.issues ? ctx.prompts.issues : false
+          const issues = ctx.prompts.issues ? wrap(ctx.prompts.issues, wrapOptions) : false
+
+          console.log([ head, body, breaking, issues ])
 
           commit([ head, body, breaking, issues ].filter(Boolean).join('\n\n'))
         })
