@@ -1,3 +1,9 @@
+## [1.4.2](https://github.com/cenk1cenk2/cz-cc/compare/v1.4.1...v1.4.2) (2021-08-10)
+
+### Bug Fixes
+
+- **deps:** update dependency colorette to ^1.3.0 ([41bb2df](https://github.com/cenk1cenk2/cz-cc/commit/41bb2dfae0bbd0141b64aec56248f16994cf724b))
+
 ## [1.4.1](https://github.com/cenk1cenk2/cz-cc/compare/v1.4.0...v1.4.1) (2021-07-22)
 
 ### Bug Fixes
