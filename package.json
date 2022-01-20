@@ -54,7 +54,7 @@
     "simple-git-hooks": "^2.7.0"
   },
   "optionalDependencies": {
-    "@commitlint/load": "^12.1.4"
+    "@commitlint/load": "^16.1.0"
   },
   "config": {
     "commitizen": {
