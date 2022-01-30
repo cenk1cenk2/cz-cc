@@ -904,7 +904,7 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@cenk1cenk2/eslint-config@^2.2.2":
+"@cenk1cenk2/eslint-config@^2.2.3":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-2.2.3.tgz#03a34bbd22f6dd96c58aed1ce278b76572c15b73"
   integrity sha512-9UPT6EXirS/LSUoefmbTkSRfxexVEm66jSnnNySQGnJ9ofq4dhJGcoWb/tz7OMJTrdN2VwR+BrV7bLzxuyfbDw==
