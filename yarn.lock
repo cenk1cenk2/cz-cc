@@ -904,10 +904,10 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@cenk1cenk2/eslint-config@^2.2.4":
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-2.2.4.tgz#bcdf11398ba2bd65f5d7e41ca031194b2f9c45b0"
-  integrity sha512-KThNXDN2udsKuufIBXyMSZSHKE2RvMmULHOPvmWdER0aWMFIVx2hMwjYyQaUAMCPxQfEow68aEYU+c/rx4PR5A==
+"@cenk1cenk2/eslint-config@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-2.3.1.tgz#243c1ad90a9d722615e7815baa0e9a6ab537ab8b"
+  integrity sha512-mdP0Zw6XB9p9ccF/+K83P4RZXqk7htuhjz8yghdGh/QgLR6tTgiTmdjr+aWG/0D69gxXzcXqbXmG8vcNusp2AQ==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^5.9.0"
     "@typescript-eslint/parser" "^5.9.0"
