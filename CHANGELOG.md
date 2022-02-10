@@ -1,3 +1,16 @@
+# [1.5.0](https://github.com/cenk1cenk2/cz-cc/compare/v1.4.11...v1.5.0) (2022-02-10)
+
+### Bug Fixes
+
+- go back to the non esm lint-staged ([999f4e9](https://github.com/cenk1cenk2/cz-cc/commit/999f4e9406b04a424e87302c7b01740eb246fbd6))
+- update the hint ([6275ec5](https://github.com/cenk1cenk2/cz-cc/commit/6275ec5be0ce539cc4a32f7024c581b549ff95f2))
+- **deps:** update dependency listr2 to ^3.13.5 ([240435e](https://github.com/cenk1cenk2/cz-cc/commit/240435efbfdfb1cb5035b0f840a96fa06362368c))
+- **deps:** update dependency listr2 to ^3.14.0 ([95decf1](https://github.com/cenk1cenk2/cz-cc/commit/95decf1acb681f279f172c8bda36ca5bf0fe9a22))
+
+### Features
+
+- update build method ([20cb37a](https://github.com/cenk1cenk2/cz-cc/commit/20cb37a9bf6b2874a3cde3cc83a7952ee6f34329))
+
 ## [1.4.11](https://github.com/cenk1cenk2/cz-cc/compare/v1.4.10...v1.4.11) (2021-11-17)
 
 ### Bug Fixes
