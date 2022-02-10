@@ -1,6 +1,5 @@
 import colorette from 'colorette'
 import Enquirer from 'enquirer'
-import Editor from 'enquirer-editor'
 import findGitRoot from 'find-git-root'
 import fs from 'fs'
 import { Listr } from 'listr2'
@@ -8,24 +7,8 @@ import map from 'lodash.map'
 import { join } from 'path'
 import wrap from 'word-wrap'
 
-function headerLength (answers) {
-  return answers.type.length + 2 + (answers.scope ? answers.scope.length + 2 : 0)
-}
-
-function maxSummaryLength (options, answers) {
-  return options.maxHeaderWidth - headerLength(answers)
-}
-
-function filterSubject (subject) {
-  subject = subject.trim()
-  if (subject.charAt(0).toLowerCase() !== subject.charAt(0)) {
-    subject = subject.charAt(0).toLowerCase() + subject.slice(1, subject.length)
-  }
-  while (subject.endsWith('.')) {
-    subject = subject.slice(0, subject.length - 1)
-  }
-  return subject
-}
+import { Editor } from './prompt'
+import { filterSubject, maxSummaryLength } from './utils'
 
 export default function (options) {
   const types = options.types
@@ -39,6 +22,7 @@ export default function (options) {
   })
 
   let enquirer = new Enquirer()
+
   enquirer = enquirer.register('editor', Editor)
 
   return {
@@ -50,6 +34,7 @@ export default function (options) {
               // try for merge message
               const gitRoot = findGitRoot(process.cwd())
               const commitMsg = join(gitRoot, 'COMMIT_EDITMSG')
+
               if (gitRoot) {
                 try {
                   const lastCommit = fs.readFileSync(commitMsg, 'utf-8')
