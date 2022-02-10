@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es2015",
-    "lib": ["es2019"],
+    "target": "es2021",
+    "lib": ["es2021"],
     "module": "commonjs",
     "moduleResolution": "node",
-    "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "checkJs": true,
+    "esModuleInterop": true,
+    "checkJs": false,
     "baseUrl": "./src/",
     "resolveJsonModule": true,
     "paths": {

@@ -1,7 +1,7 @@
 {
-  "extends": ["@cenk1cenk2"],
+  "extends": ["@cenk1cenk2", "@cenk1cenk2/eslint-config/import-strict"],
   "parserOptions": {
-    "ecmaVersion": 2019,
+    "ecmaVersion": 2021,
     "sourceType": "module"
   }
 }
