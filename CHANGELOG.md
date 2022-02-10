@@ -1,3 +1,15 @@
+## [1.5.1](https://github.com/cenk1cenk2/cz-cc/compare/v1.5.0...v1.5.1) (2022-02-10)
+
+### Bug Fixes
+
+- import bug ([f5fcadc](https://github.com/cenk1cenk2/cz-cc/commit/f5fcadc87a5da33c6696af93cd9f6f90bc79ccb8))
+- retry ([4c47e3f](https://github.com/cenk1cenk2/cz-cc/commit/4c47e3fd8f62aa8905b73a6ccf334ffc1b4a2655))
+- test ([95ad68f](https://github.com/cenk1cenk2/cz-cc/commit/95ad68f3faeef20974647f9e2d7bd22ea46d1d36))
+- test ([2b393a2](https://github.com/cenk1cenk2/cz-cc/commit/2b393a28a4505a8bead184e54932f747f08fb60b))
+- update ([5426b0d](https://github.com/cenk1cenk2/cz-cc/commit/5426b0d4fc9dec9513c13fc34b8b15f7d32ad7c2))
+- update edit ([7a3ef6b](https://github.com/cenk1cenk2/cz-cc/commit/7a3ef6b523868eb9d30a59ca1b02ba7f4cede4af))
+- update import ([131c202](https://github.com/cenk1cenk2/cz-cc/commit/131c2028e9c871a417e2d5860b6e639bb5013455))
+
 # [1.5.0](https://github.com/cenk1cenk2/cz-cc/compare/v1.4.11...v1.5.0) (2022-02-10)
 
 ### Bug Fixes
