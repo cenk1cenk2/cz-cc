@@ -139,7 +139,8 @@ export default function (options) {
                   task: async (ctx, task) => {
                     ctx.prompts.issues = await task.prompt({
                       type: 'Input',
-                      message: 'Add issue references (e.g. "fix #123, re #124".):\n',
+                      message: 'Add issue references:\n',
+                      hint: 'fix #123, re #124',
                       initial: options.defaultIssues
                     })
                   }
