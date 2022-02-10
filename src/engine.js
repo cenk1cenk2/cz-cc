@@ -7,7 +7,7 @@ import map from 'lodash.map'
 import { join } from 'path'
 import wrap from 'word-wrap'
 
-import { Editor } from './prompt'
+import { EditorPrompt } from './prompt'
 import { filterSubject, maxSummaryLength } from './utils'
 
 export default function (options) {
@@ -23,7 +23,7 @@ export default function (options) {
 
   let enquirer = new Enquirer()
 
-  enquirer = enquirer.register('editor', Editor)
+  enquirer = enquirer.register('editor', EditorPrompt)
 
   return {
     prompter (cz, commit) {
