@@ -1,5 +1,5 @@
 import { Prompt } from 'enquirer'
-import Editor from 'external-editor'
+import { edit } from 'external-editor'
 
 export class EditorPrompt extends Prompt {
   constructor (options = {}) {
@@ -15,7 +15,7 @@ export class EditorPrompt extends Prompt {
 
   // Intercept submit and launch the editor
   async submit () {
-    this.value = Editor.edit(this.value)
+    this.value = edit(this.value)
 
     return super.submit()
   }

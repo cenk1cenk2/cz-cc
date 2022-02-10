@@ -40,14 +40,12 @@ commitizen init @cenk1cenk2/cz-cc --yarn --dev
 commitizen init @cenk1cenk2/cz-cc --dev
 ```
 
-- Add [husky](https://github.com/typicode/husky) hooks for convienence and quality assurance.
+- Add git-hooks.
 
 ```json
 {
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-    }
+  "simple-git-hooks": {
+    "prepare-commit-msg": "[ -t 1 ] && exec < /dev/tty && git cz --hook || true"
   }
 }
 ```
