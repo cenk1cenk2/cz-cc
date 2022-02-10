@@ -15,7 +15,7 @@ export class EditorPrompt extends Prompt {
 
   // Intercept submit and launch the editor
   async submit () {
-    this.value = await edit(this.value)
+    this.value = edit(this.value)
 
     return super.submit()
   }
