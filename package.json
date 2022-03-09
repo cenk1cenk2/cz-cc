@@ -39,7 +39,7 @@
     "enquirer": "^2.3.6",
     "enquirer-editor": "^1.0.0",
     "find-git-root": "^1.0.4",
-    "listr2": "^4.0.4",
+    "listr2": "^4.0.5",
     "lodash.map": "^4.6.0",
     "word-wrap": "^1.2.3"
   },
