@@ -53,7 +53,7 @@
     "lint-staged": "^11",
     "prettier": "^2.5.1",
     "simple-git-hooks": "^2.7.0",
-    "tsup": "^5.12.1"
+    "tsup": "^5.12.2"
   },
   "optionalDependencies": {
     "@commitlint/load": "^16.1.0"
