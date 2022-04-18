@@ -2,7 +2,7 @@
   "name": "@cenk1cenk2/cz-cc",
   "version": "1.0.0-development",
   "description": "Commitizen adapter following the conventional-changelog format.",
-  "repository": "https://github.com/cenk1cenk2/cz-cc",
+  "repository": "git@gitlab.kilic.dev:libraries/cz-cc.git",
   "author": "Cenk Kilic <cenk@kilic.dev>",
   "license": "MIT",
   "type": "commonjs",
