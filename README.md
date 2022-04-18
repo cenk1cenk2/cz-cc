@@ -50,7 +50,7 @@ commitizen init @cenk1cenk2/cz-cc --dev
 }
 ```
 
-- Add [commit-lint](https://github.com/conventional-changelog/commitlint#readme) if desired.
+- Add [commitlint](https://github.com/conventional-changelog/commitlint#readme) if desired.
 
 ## Configuration
 
