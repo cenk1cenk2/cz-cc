@@ -1,3 +1,11 @@
+## [1.5.3](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.5.2...v1.5.3) (2022-04-18)
+
+
+### Bug Fixes
+
+* migrate to gitlab ([0926e23](https://gitlab.kilic.dev/libraries/cz-cc/commit/0926e238a60fbddd49e3bd4d9dbb858e97593796))
+* update git attributes ([399d425](https://gitlab.kilic.dev/libraries/cz-cc/commit/399d4259a8de588dd9a2ce21cd58ff8969bece65))
+
 ## [1.5.2](https://github.com/cenk1cenk2/cz-cc/compare/v1.5.1...v1.5.2) (2022-03-09)
 
 ### Bug Fixes
