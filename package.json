@@ -13,7 +13,7 @@
   "scripts": {
     "build": "tsup-node",
     "dev:start": "tsup-node --watch",
-    "lint": "prettier --write src/ && eslint --ext .ts,.js,.tsx,.jsx --fix src/",
+    "lint": "prettier --loglevel warn --write src/ && eslint --ext .ts,.js,.tsx,.jsx --fix src/",
     "lint:check": "eslint --ext .ts,.js,.tsx,.jsx src/"
   },
   "simple-git-hooks": {

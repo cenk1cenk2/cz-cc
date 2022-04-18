@@ -1,6 +1,6 @@
 # @cenk1cenk2/cz-cc
 
-[![Build Status](https://drone.kilic.dev/api/badges/cenk1cenk2/cz-cc/status.svg)](https://drone.kilic.dev/cenk1cenk2/cz-cc) [![Version](https://img.shields.io/npm/v/@cenk1cenk2/cz-cc.svg)](https://npmjs.org/package/@cenk1cenk2/cz-cc) [![Downloads/week](https://img.shields.io/npm/dw/@cenk1cenk2/cz-cc.svg)](https://npmjs.org/package/@cenk1cenk2/cz-cc) [![Dependencies](https://img.shields.io/librariesio/release/npm/@cenk1cenk2/cz-cc)](https://npmjs.org/package/@cenk1cenk2/cz-cc) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![pipeline status](https://gitlab.kilic.dev/CHANGE_ME/badges/master/pipeline.svg)](https://gitlab.kilic.dev/CHANGE_ME/-/commits/master) [![Version](https://img.shields.io/npm/v/@cenk1cenk2/cz-cc.svg)](https://npmjs.org/package/@cenk1cenk2/cz-cc) [![Downloads/week](https://img.shields.io/npm/dw/@cenk1cenk2/cz-cc.svg)](https://npmjs.org/package/@cenk1cenk2/cz-cc) [![Dependencies](https://img.shields.io/librariesio/release/npm/@cenk1cenk2/cz-cc)](https://npmjs.org/package/@cenk1cenk2/cz-cc) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 ![Demo](./demo/demo.gif)
 
@@ -10,16 +10,16 @@
 - [Usage](#usage)
 - [Configuration](#configuration)
   - [package.json](#packagejson)
-  - [Environment variables](#environment-variables)
-  - [Commitlint](#commitlint)
+  - [Environment Variables](#environment-variables)
+- [Commitlint](#commitlint)
 
 <!-- tocstop -->
 
-# Description
+## Description
 
-This is a direct fork of [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog), while it swaps `inquirer` for `enquirer` for speed and adds auto compelete to commit types as well as reducing overal questions and making many optional.
+This is a direct fork of [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog), while it swaps `inquirer` for `enquirer` for speed and adds autocomplete to commit types as well as reducing overall questions and making many optional.
 
-# Usage
+## Usage
 
 - Install commitizen. Either globally or in the project.
 
@@ -30,7 +30,7 @@ yarn global add commitizen
 npm install -g commitizen
 ```
 
-- Initiate this adapter in a project. If already initiated you can add `--force` flag to swap this adapter with the older one.
+- Initiate this adapter in a project. If already initiated you can add the `--force` flag to swap this adapter with the older one.
   - Currently has a bit of problems with yarn workspaces do to `commitizen`.
 
 ```shell
@@ -52,13 +52,13 @@ commitizen init @cenk1cenk2/cz-cc --dev
 
 - Add [commit-lint](https://github.com/conventional-changelog/commitlint#readme) if desired.
 
-# Configuration
+## Configuration
 
 Install the adapter by utilizing global commitizen installation.
 
 Configuration settings are down below.
 
-## package.json
+### package.json
 
 Like commitizen, you specify the configuration of cz-conventional-changelog through the package.json's `config.commitizen` key.
 
@@ -89,7 +89,7 @@ Like commitizen, you specify the configuration of cz-conventional-changelog thro
 }
 ```
 
-## Environment variables
+### Environment Variables
 
 The following environment varibles can be used to override any default configuration or package.json based configuration.
 
@@ -102,4 +102,4 @@ The following environment varibles can be used to override any default configura
 
 ## Commitlint
 
-If using the [commitlint](https://github.com/conventional-changelog/commitlint) js library, the "maxHeaderWidth" configuration property will default to the configuration of the "header-max-length" rule instead of the hard coded value of 100. This can be ovewritten by setting the 'maxHeaderWidth' configuration in package.json or the CZ_MAX_HEADER_WIDTH environment variable.
+If using the [commitlint](https://github.com/conventional-changelog/commitlint) js library, the "maxHeaderWidth" configuration property will default to the configuration of the "header-max-length" rule instead of the hard coded value of 100. This can be overwritten by setting the 'maxHeaderWidth' configuration in package.json or the CZ_MAX_HEADER_WIDTH environment variable.
