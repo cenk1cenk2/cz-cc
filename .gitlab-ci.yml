@@ -5,7 +5,7 @@ stages:
 
 include:
   - project: devops/pipes
-    file: /templates/node-build.gitlab-ci.yml
+    file: /templates/node.gitlab-ci.yml
 
   - project: devops/pipes
     file: /templates/semantic-release.gitlab-ci.yml
