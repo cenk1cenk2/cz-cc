@@ -1061,9 +1061,9 @@
     strip-json-comments "^3.1.1"
 
 "@humanwhocodes/config-array@^0.10.5":
-  version "0.10.5"
-  resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.10.5.tgz#bb679745224745fff1e9a41961c1d45a49f81c04"
-  integrity sha512-XVVDtp+dVvRxMoxSiSfasYaG02VEe1qH5cKgMQJWhol6HwzbcqoCMJi8dAGoYAO57jhUyhI6cWuRiTcRaDaYug==
+  version "0.10.6"
+  resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.10.6.tgz#70b53559baf544dc2cc5eea6082bf90467ccb1dc"
+  integrity sha512-U/piU+VwXZsIgwnl+N+nRK12jCpHdc3s0UAc6zc1+HUgiESJxClpvYao/x9JwaN7onNeVb7kTlxlAvuEoaJ3ig==
   dependencies:
     "@humanwhocodes/object-schema" "^1.2.1"
     debug "^4.1.1"
@@ -1721,9 +1721,9 @@ cosmiconfig-typescript-loader@^2.0.0:
     ts-node "^10.8.1"
 
 cosmiconfig-typescript-loader@^4.0.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/cosmiconfig-typescript-loader/-/cosmiconfig-typescript-loader-4.1.0.tgz#39b2f8e302d587d27a2d5fc10106635abef4a6e4"
-  integrity sha512-HbWIuR5O+XO5Oj9SZ5bzgrD4nN+rfhrm2PMb0FVx+t+XIvC45n8F0oTNnztXtspWGw0i2IzHaUWFD5LzV1JB4A==
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/cosmiconfig-typescript-loader/-/cosmiconfig-typescript-loader-4.1.1.tgz#38dd3578344038dae40fdf09792bc2e9df529f78"
+  integrity sha512-9DHpa379Gp0o0Zefii35fcmuuin6q92FnLDffzdZ0l9tVd3nEobG3O+MZ06+kuBvFTSVScvNb/oHA13Nd4iipg==
 
 cosmiconfig@^7, cosmiconfig@^7.0.0:
   version "7.0.1"
@@ -1852,9 +1852,9 @@ eastasianwidth@^0.2.0:
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
 
 electron-to-chromium@^1.4.251:
-  version "1.4.265"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.265.tgz#45630ae190228f945ff79c060b99574b1347e5a7"
-  integrity sha512-38KaYBNs0oCzWCpr6j7fY/W9vF0vSp4tKFIshQTgdZMhUpkxgotkQgjJP6iGMdmlsgMs3i0/Hkko4UXLTrkYVQ==
+  version "1.4.267"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.267.tgz#77d7de2b92806e3e1df8882a982aece815d6b6ea"
+  integrity sha512-ik4QnU3vFRsVgwt0vsn7og28++2cGnsdgqYagaE3ur1f3wj5AzmWu+1k3//SOc6CwkP2xfu46PNfVP6X+SRepg==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
