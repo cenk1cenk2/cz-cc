@@ -1,6 +1,6 @@
 {
   "name": "@cenk1cenk2/cz-cc",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "Commitizen adapter following the conventional-changelog format.",
   "repository": "git@gitlab.kilic.dev:libraries/cz-cc.git",
   "author": "Cenk Kilic <cenk@kilic.dev>",

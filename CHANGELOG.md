@@ -1,3 +1,12 @@
+## [1.5.4](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.5.3...v1.5.4) (2022-09-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency colorette to ^2.0.17 ([0b51d97](https://gitlab.kilic.dev/libraries/cz-cc/commit/0b51d97be97891c3b38d70c529f64e555965df0c))
+* **deps:** update dependency colorette to ^2.0.19 ([a002e27](https://gitlab.kilic.dev/libraries/cz-cc/commit/a002e273acfba28401ab5d817e4e430bae9b2abe))
+* **deps:** update dependency listr2 to v5 ([0751e78](https://gitlab.kilic.dev/libraries/cz-cc/commit/0751e78c6868ee5f8991898a2be4cb6d4869911d))
+
 ## [1.5.3](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.5.2...v1.5.3) (2022-04-18)
 
 
