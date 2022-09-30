@@ -56,7 +56,7 @@
     "tsup": "^6.2.3"
   },
   "optionalDependencies": {
-    "@commitlint/load": "^16.2.4"
+    "@commitlint/load": "^17.1.2"
   },
   "config": {
     "commitizen": {
