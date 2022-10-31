@@ -939,7 +939,7 @@
   resolved "https://registry.yarnpkg.com/@commitlint/execute-rule/-/execute-rule-17.0.0.tgz#186e9261fd36733922ae617497888c4bdb6e5c92"
   integrity sha512-nVjL/w/zuqjCqSJm8UfpNaw66V9WzuJtQvEnCrK4jDw6qKTmZB+1JQ8m6BQVZbNBcwfYdDNKnhIhqI0Rk7lgpQ==
 
-"@commitlint/load@>6.1.1", "@commitlint/load@^17.1.2":
+"@commitlint/load@>6.1.1", "@commitlint/load@^17.2.0":
   version "17.2.0"
   resolved "https://registry.yarnpkg.com/@commitlint/load/-/load-17.2.0.tgz#11c9fb23a967ff1507a28931c91aae7f978ea4ae"
   integrity sha512-HDD57qSqNrk399R4TIjw31AWBG8dBjNj1MrDKZKmC/wvimtnIFlqzcu1+sxfXIOHj/+M6tcMWDtvknGUd7SU+g==
