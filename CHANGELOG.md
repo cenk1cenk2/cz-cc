@@ -1,3 +1,10 @@
+## [1.5.6](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.5.5...v1.5.6) (2022-12-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency commitizen to ^4.2.6 ([21dfed3](https://gitlab.kilic.dev/libraries/cz-cc/commit/21dfed315df5d43c512bd70a153ea3e282b85353))
+
 ## [1.5.5](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.5.4...v1.5.5) (2022-11-29)
 
 
