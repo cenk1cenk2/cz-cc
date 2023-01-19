@@ -1,40 +1,41 @@
-## [1.5.7](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.5.6...v1.5.7) (2023-01-18)
-
+## [1.5.8](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.5.7...v1.5.8) (2023-01-19)
 
 ### Bug Fixes
 
-* **deps:** update dependency listr2 to ^5.0.7 ([39cce24](https://gitlab.kilic.dev/libraries/cz-cc/commit/39cce249a738b1df023daf9349e3a7b7bdf8f373))
+- **deps:** update dependency commitizen to ^4.3.0 ([d130c0b](https://gitlab.kilic.dev/libraries/cz-cc/commit/d130c0b73019f53daecd53cc99b86dfc77c4afac))
+
+## [1.5.7](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.5.6...v1.5.7) (2023-01-18)
+
+### Bug Fixes
+
+- **deps:** update dependency listr2 to ^5.0.7 ([39cce24](https://gitlab.kilic.dev/libraries/cz-cc/commit/39cce249a738b1df023daf9349e3a7b7bdf8f373))
 
 ## [1.5.6](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.5.5...v1.5.6) (2022-12-06)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency commitizen to ^4.2.6 ([21dfed3](https://gitlab.kilic.dev/libraries/cz-cc/commit/21dfed315df5d43c512bd70a153ea3e282b85353))
+- **deps:** update dependency commitizen to ^4.2.6 ([21dfed3](https://gitlab.kilic.dev/libraries/cz-cc/commit/21dfed315df5d43c512bd70a153ea3e282b85353))
 
 ## [1.5.5](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.5.4...v1.5.5) (2022-11-29)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency listr2 to ^5.0.6 ([7fef270](https://gitlab.kilic.dev/libraries/cz-cc/commit/7fef2706967e5ba856b851c2b32706fb6167fbfc))
+- **deps:** update dependency listr2 to ^5.0.6 ([7fef270](https://gitlab.kilic.dev/libraries/cz-cc/commit/7fef2706967e5ba856b851c2b32706fb6167fbfc))
 
 ## [1.5.4](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.5.3...v1.5.4) (2022-09-30)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency colorette to ^2.0.17 ([0b51d97](https://gitlab.kilic.dev/libraries/cz-cc/commit/0b51d97be97891c3b38d70c529f64e555965df0c))
-* **deps:** update dependency colorette to ^2.0.19 ([a002e27](https://gitlab.kilic.dev/libraries/cz-cc/commit/a002e273acfba28401ab5d817e4e430bae9b2abe))
-* **deps:** update dependency listr2 to v5 ([0751e78](https://gitlab.kilic.dev/libraries/cz-cc/commit/0751e78c6868ee5f8991898a2be4cb6d4869911d))
+- **deps:** update dependency colorette to ^2.0.17 ([0b51d97](https://gitlab.kilic.dev/libraries/cz-cc/commit/0b51d97be97891c3b38d70c529f64e555965df0c))
+- **deps:** update dependency colorette to ^2.0.19 ([a002e27](https://gitlab.kilic.dev/libraries/cz-cc/commit/a002e273acfba28401ab5d817e4e430bae9b2abe))
+- **deps:** update dependency listr2 to v5 ([0751e78](https://gitlab.kilic.dev/libraries/cz-cc/commit/0751e78c6868ee5f8991898a2be4cb6d4869911d))
 
 ## [1.5.3](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.5.2...v1.5.3) (2022-04-18)
 
-
 ### Bug Fixes
 
-* migrate to gitlab ([0926e23](https://gitlab.kilic.dev/libraries/cz-cc/commit/0926e238a60fbddd49e3bd4d9dbb858e97593796))
-* update git attributes ([399d425](https://gitlab.kilic.dev/libraries/cz-cc/commit/399d4259a8de588dd9a2ce21cd58ff8969bece65))
+- migrate to gitlab ([0926e23](https://gitlab.kilic.dev/libraries/cz-cc/commit/0926e238a60fbddd49e3bd4d9dbb858e97593796))
+- update git attributes ([399d425](https://gitlab.kilic.dev/libraries/cz-cc/commit/399d4259a8de588dd9a2ce21cd58ff8969bece65))
 
 ## [1.5.2](https://github.com/cenk1cenk2/cz-cc/compare/v1.5.1...v1.5.2) (2022-03-09)
 
