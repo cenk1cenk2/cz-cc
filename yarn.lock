@@ -920,13 +920,13 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@cenk1cenk2/eslint-config@^2.5.47":
-  version "2.5.47"
-  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-2.5.47.tgz#467bdcfc0468d5c730e32dafd8f8aef6f3635816"
-  integrity sha512-fVZtLOn8nkgKv5GMnJbwKWcht5/kXXgW/MJ7OiNQivIrBwdNGzPUECVe6L9zx6VMvKnvqZBAyJFwPcKm8bAAQQ==
+"@cenk1cenk2/eslint-config@^2.5.48":
+  version "2.5.48"
+  resolved "https://registry.yarnpkg.com/@cenk1cenk2/eslint-config/-/eslint-config-2.5.48.tgz#5967552cb0251de2fbd8a2a50d1397a531008cdb"
+  integrity sha512-9ttoKmZk916bVSEE5yrvk+lJexSPjzZJ7WeJoLqdsT4Ts7e12LkkTJGTLQ0R13hb4oPgineBP10GUTg3WiF+OA==
   dependencies:
-    "@typescript-eslint/eslint-plugin" "^5.49.0"
-    "@typescript-eslint/parser" "^5.49.0"
+    "@typescript-eslint/eslint-plugin" "^5.50.0"
+    "@typescript-eslint/parser" "^5.50.0"
     eslint-plugin-import "^2.27.5"
     load-tsconfig "^0.2.3"
 
@@ -1147,7 +1147,7 @@
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.3.13.tgz#da4bfd73f49bd541d28920ab0e2bf0ee80f71c91"
   integrity sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==
 
-"@typescript-eslint/eslint-plugin@^5.49.0":
+"@typescript-eslint/eslint-plugin@^5.50.0":
   version "5.50.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-5.50.0.tgz#fb48c31cadc853ffc1dc35373f56b5e2a8908fe9"
   integrity sha512-vwksQWSFZiUhgq3Kv7o1Jcj0DUNylwnIlGvKvLLYsq8pAWha6/WCnXUeaSoNNha/K7QSf2+jvmkxggC1u3pIwQ==
@@ -1163,7 +1163,7 @@
     semver "^7.3.7"
     tsutils "^3.21.0"
 
-"@typescript-eslint/parser@^5.49.0":
+"@typescript-eslint/parser@^5.50.0":
   version "5.50.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.50.0.tgz#a33f44b2cc83d1b7176ec854fbecd55605b0b032"
   integrity sha512-KCcSyNaogUDftK2G9RXfQyOCt51uB5yqC6pkUYqhYh8Kgt+DwR5M0EwEAxGPy/+DH6hnmKeGsNhiZRQxjH71uQ==
