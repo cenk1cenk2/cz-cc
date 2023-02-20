@@ -44,8 +44,8 @@
     "word-wrap": "^1.2.3"
   },
   "devDependencies": {
-    "@babel/cli": "^7.20.7",
-    "@babel/core": "^7.20.12",
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
     "@babel/preset-env": "^7.20.2",
     "@cenk1cenk2/eslint-config": "^2.5.50",
     "eslint": "^8.34.0",
