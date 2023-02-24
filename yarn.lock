@@ -1778,9 +1778,9 @@ cosmiconfig-typescript-loader@^4.0.0:
   integrity sha512-NTxV1MFfZDLPiBMjxbHRwSh5LaLcPMwNdCutmnHJCKoVnlvldPWlllonKwrsRJ5pYZBIBGRWWU2tfvzxgeSW5Q==
 
 cosmiconfig@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-8.0.0.tgz#e9feae014eab580f858f8a0288f38997a7bebe97"
-  integrity sha512-da1EafcpH6b/TD8vDRaWV7xFINlHlF6zKsGwS1TsuVJTZRkquaS5HTMq7uq6h31619QjbsYl21gVDOm32KM1vQ==
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-8.1.0.tgz#947e174c796483ccf0a48476c24e4fefb7e1aea8"
+  integrity sha512-0tLZ9URlPGU7JsKq0DQOQ3FoRsYX8xDZ7xMiATQfaiGMz7EHowNkbU9u1coAOmnh9p/1ySpm0RB3JNWRXM5GCg==
   dependencies:
     import-fresh "^3.2.1"
     js-yaml "^4.1.0"
@@ -1896,9 +1896,9 @@ eastasianwidth@^0.2.0:
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
 
 electron-to-chromium@^1.4.284:
-  version "1.4.309"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.309.tgz#82158606da135ffffc16a2e1eb853fa0a10955e7"
-  integrity sha512-U7DTiKe4h+irqBG6h4EZ0XXaZuJj4md3xIXXaGSYhwiumPZ4BSc6rgf9UD0hVUMaeP/jB0q5pKWCPxvhO8fvZA==
+  version "1.4.311"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.311.tgz#953bc9a4767f5ce8ec125f9a1ad8e00e8f67e479"
+  integrity sha512-RoDlZufvrtr2Nx3Yx5MB8jX3aHIxm8nRWPJm3yVvyHmyKaRvn90RjzB6hNnt0AkhS3IInJdyRfQb4mWhPvUjVw==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
