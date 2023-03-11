@@ -1,3 +1,9 @@
+## [1.5.9](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.5.8...v1.5.9) (2023-03-11)
+
+### Bug Fixes
+
+- **deps:** update dependency listr2 to ^5.0.8 ([47a66fa](https://gitlab.kilic.dev/libraries/cz-cc/commit/47a66fa43c767c8c544c2a8a7804bac0a0066f13))
+
 ## [1.5.8](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.5.7...v1.5.8) (2023-01-19)
 
 ### Bug Fixes
