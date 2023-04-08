@@ -6,7 +6,7 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "checkJs": false,
+    "checkJs": true,
     "baseUrl": "./src/",
     "resolveJsonModule": true,
     "paths": {

@@ -1,5 +1,7 @@
+// @ts-nocheck
 import { Prompt } from 'enquirer'
 import { edit } from 'external-editor'
+import { EOL } from 'os'
 
 export class EditorPrompt extends Prompt {
   constructor (options = {}) {
@@ -32,7 +34,7 @@ export class EditorPrompt extends Prompt {
     this.write(this.style.bold(prefix) + message + suffix)
 
     if (error) {
-      this.write('\n' + error.split('\n').join(''))
+      this.write(EOL + error.split(EOL).join(''))
     }
   }
 }

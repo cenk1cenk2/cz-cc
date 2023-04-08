@@ -1,19 +1,16 @@
-import colorette from 'colorette'
 import Enquirer from 'enquirer'
 import findGitRoot from 'find-git-root'
 import fs from 'fs'
-import { Listr } from 'listr2'
-import map from 'lodash.map'
+import { Listr, color } from 'listr2'
+import { EOL } from 'os'
 import { join } from 'path'
-import wrap from 'word-wrap'
 
 import { EditorPrompt } from './prompt'
 import { filterSubject, maxSummaryLength } from './utils'
 
 export default function (options) {
-  const types = options.types
-
-  const choices = map(types, function (type, key) {
+  console.log(options.types)
+  const choices = Object.entries(options.types).map(([ key, type ]) => {
     return {
       name: key,
       hint: type.description,
@@ -64,7 +61,7 @@ export default function (options) {
             task: async (ctx, task) =>
               (ctx.prompts = await task.prompt([
                 {
-                  type: 'AutoComplete',
+                  type: 'autocomplete',
                   name: 'type',
                   message: 'Type of commit:',
                   choices,
@@ -75,7 +72,7 @@ export default function (options) {
                   type: 'Input',
                   name: 'subject',
                   message: (answers) => {
-                    return `Write a short description (max ${maxSummaryLength(options, answers)} chars):\n`
+                    return `Write a short description (max ${maxSummaryLength(options, answers)} chars):` + EOL
                   },
                   initial: options.defaultSubject,
                   required: true,
@@ -111,7 +108,7 @@ export default function (options) {
                   task: async (ctx, task) => {
                     ctx.prompts.scope = await task.prompt({
                       type: 'Input',
-                      message: 'Please state the scope of the change:\n',
+                      message: 'Please state the scope of the change:' + EOL,
                       initial: options.defaultScope,
                       format: (value) => {
                         return options.disableScopeLowerCase ? value.trim() : value.trim().toLowerCase()
@@ -127,7 +124,7 @@ export default function (options) {
                       {
                         type: 'editor',
                         name: 'default',
-                        message: 'Please give a long description:\n',
+                        message: 'Please give a long description:' + EOL,
                         initial: options.defaultBody
                       }
                     ])
@@ -138,8 +135,8 @@ export default function (options) {
                   skip: (ctx) => !ctx.prompts.additional.includes('issue'),
                   task: async (ctx, task) => {
                     ctx.prompts.issues = await task.prompt({
-                      type: 'Input',
-                      message: 'Add issue references:\n',
+                      type: 'input',
+                      message: 'Add issue references:' + EOL,
                       hint: 'fix #123, re #124',
                       initial: options.defaultIssues
                     })
@@ -151,7 +148,7 @@ export default function (options) {
                   task: async (ctx, task) => {
                     ctx.prompts.breaking = await task.prompt({
                       type: 'editor',
-                      message: 'Describe the breaking changes:\n'
+                      message: 'Describe the breaking changes:' + EOL
                     })
                   }
                 }
@@ -159,21 +156,13 @@ export default function (options) {
           }
         ],
         {
-          rendererOptions: { collapse: false },
-          rendererFallback: false,
+          rendererOptions: { collapseSubtasks: false },
+          fallbackRendererCondition: false,
           injectWrapper: { enquirer }
         }
       )
         .run()
         .then((ctx) => {
-          const wrapOptions = {
-            trim: true,
-            cut: false,
-            newline: '\n',
-            indent: '',
-            width: options.maxLineWidth
-          }
-
           // parentheses are only needed when a scope is present
           const scope = ctx.prompts.scope ? `(${ctx.prompts.scope})` : ''
 
@@ -185,18 +174,18 @@ export default function (options) {
           }
 
           // Wrap these lines at options.maxLineWidth characters
-          const body = ctx.prompts.body ? wrap(ctx.prompts.body, wrapOptions) : false
+          const body = ctx.prompts.body
 
           // Apply breaking change prefix, removing it if already present
-          const breaking = ctx.prompts.breaking ? wrap('BREAKING CHANGE: ' + ctx.prompts.breaking.trim().replace(/^BREAKING CHANGE: /, ''), wrapOptions) : false
+          const breaking = ctx.prompts.breaking ? 'BREAKING CHANGE: ' + ctx.prompts.breaking.trim().replace(/^BREAKING CHANGE: /, '') : false
 
-          const issues = ctx.prompts.issues ? wrap(ctx.prompts.issues, wrapOptions) : false
+          const issues = ctx.prompts.issues
 
-          commit([ head, body, breaking, issues ].filter(Boolean).join('\n\n'))
+          commit([ head, body, breaking, issues ].filter(Boolean).join(EOL + EOL))
         })
         .catch(() => {
           // eslint-disable-next-line no-console
-          console.log(colorette.yellow('Cancelled. Skipping...'))
+          console.log(color.yellow('Cancelled. Skipping...'))
         })
     }
   }
