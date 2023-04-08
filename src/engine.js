@@ -9,7 +9,6 @@ import { EditorPrompt } from './prompt'
 import { filterSubject, maxSummaryLength } from './utils'
 
 export default function (options) {
-  console.log(options.types)
   const choices = Object.entries(options.types).map(([ key, type ]) => {
     return {
       name: key,
