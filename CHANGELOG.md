@@ -1,3 +1,13 @@
+# [1.6.0](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.5.9...v1.6.0) (2023-04-08)
+
+### Bug Fixes
+
+- remove the logs ([cf90282](https://gitlab.kilic.dev/libraries/cz-cc/commit/cf902822028e1b22290130ebd6dc8a5c2d2098b9))
+
+### Features
+
+- drop word wrap, update listr ([9884f28](https://gitlab.kilic.dev/libraries/cz-cc/commit/9884f28ec983b6e9a9f0ea4985633d8b0f41ecf8))
+
 ## [1.5.9](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.5.8...v1.5.9) (2023-03-11)
 
 ### Bug Fixes
