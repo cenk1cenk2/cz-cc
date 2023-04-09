@@ -36,8 +36,8 @@ devDependencies:
     specifier: ^7.21.4
     version: 7.21.4(@babel/core@7.21.4)
   '@cenk1cenk2/eslint-config':
-    specifier: ^2.6.4
-    version: 2.6.4(eslint@8.38.0)(typescript@5.0.4)
+    specifier: ^2.6.5
+    version: 2.6.5(eslint@8.38.0)(typescript@5.0.4)
   eslint:
     specifier: ^8.38.0
     version: 8.38.0
@@ -1227,8 +1227,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@cenk1cenk2/eslint-config@2.6.4(eslint@8.38.0)(typescript@5.0.4):
-    resolution: {integrity: sha512-kRICZMFF/1Nqm1ZES7ppPSgk7lTkcgQVRjpQLiQNb0GaszvPEX0IqwDdBMBlaunpMoJ5Q2V2CePoCKfRYcgi+g==}
+  /@cenk1cenk2/eslint-config@2.6.5(eslint@8.38.0)(typescript@5.0.4):
+    resolution: {integrity: sha512-qRDdyAntIpNxAkFkGL+BHaF9flGcN3DtOlM+K4Y5pcjzILeT1e2xBxG+f1aq3KCtyjeZ8fgOUOGbkVt2gPWw3A==}
     peerDependencies:
       '@nuxtjs/eslint-config': '>= 7'
       '@nuxtjs/eslint-config-typescript': '>= 7'
