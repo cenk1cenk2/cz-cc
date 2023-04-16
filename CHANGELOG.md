@@ -1,9 +1,14 @@
-## [1.6.2](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.6.1...v1.6.2) (2023-04-11)
-
+## [1.6.3](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.6.2...v1.6.3) (2023-04-16)
 
 ### Bug Fixes
 
-* **deps:** update dependency listr2 to ^6.2.0 ([615e500](https://gitlab.kilic.dev/libraries/cz-cc/commit/615e50007a278e937b0b1801d8fe3926fa6cbc26))
+- **deps:** update dependency listr2 to ^6.3.0 ([0f378f2](https://gitlab.kilic.dev/libraries/cz-cc/commit/0f378f27dc2b6e07bd8607d26297549d61d980e8))
+
+## [1.6.2](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.6.1...v1.6.2) (2023-04-11)
+
+### Bug Fixes
+
+- **deps:** update dependency listr2 to ^6.2.0 ([615e500](https://gitlab.kilic.dev/libraries/cz-cc/commit/615e50007a278e937b0b1801d8fe3926fa6cbc26))
 
 ## [1.6.1](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.6.0...v1.6.1) (2023-04-11)
 
