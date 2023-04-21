@@ -36,8 +36,8 @@ devDependencies:
     specifier: ^7.21.4
     version: 7.21.4(@babel/core@7.21.4)
   '@cenk1cenk2/eslint-config':
-    specifier: ^2.6.6
-    version: 2.6.6(eslint@8.38.0)(typescript@5.0.4)
+    specifier: ^2.7.0
+    version: 2.7.0(eslint@8.38.0)(typescript@5.0.4)
   eslint:
     specifier: ^8.38.0
     version: 8.38.0
@@ -1227,14 +1227,16 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@cenk1cenk2/eslint-config@2.6.6(eslint@8.38.0)(typescript@5.0.4):
-    resolution: {integrity: sha512-c6UcELV4TQD1nxFiDkEPSOcfqNt2YpTacRStZiRSA+C4oWas4Gnl9FxHxXdFofDA7jRbzzTl0MvpQ9ZZOOsOkg==}
+  /@cenk1cenk2/eslint-config@2.7.0(eslint@8.38.0)(typescript@5.0.4):
+    resolution: {integrity: sha512-2olmM5gZjuB1G8IhOUBrR5Gmz0pbrcN6e+l2WfNgM35ZC5tQzni6vFzfpzJL/S/3zu05oQx2dRFcSRinyiB/iw==}
     peerDependencies:
       '@nuxtjs/eslint-config': '>= 7'
       '@nuxtjs/eslint-config-typescript': '>= 7'
       eslint: '>= 8'
       eslint-config-react: '>= 1'
       eslint-plugin-react-hooks: '>= 4'
+      eslint-plugin-svelte: '>= 2'
+      svelte-eslint-parser: '>= 0.26.0'
     peerDependenciesMeta:
       '@nuxtjs/eslint-config':
         optional: true
@@ -1243,6 +1245,10 @@ packages:
       eslint-config-react:
         optional: true
       eslint-plugin-react-hooks:
+        optional: true
+      eslint-plugin-svelte:
+        optional: true
+      svelte-eslint-parser:
         optional: true
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.59.0(@typescript-eslint/parser@5.59.0)(eslint@8.38.0)(typescript@5.0.4)
