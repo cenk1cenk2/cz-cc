@@ -45,9 +45,9 @@
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
     "@cenk1cenk2/eslint-config": "^2.7.0",
-    "eslint": "^8.38.0",
+    "eslint": "^8.39.0",
     "lint-staged": "^13.2.1",
-    "prettier": "^2.8.7",
+    "prettier": "^2.8.8",
     "simple-git-hooks": "^2.8.1",
     "tsup": "^6.7.0"
   },
