@@ -1,11 +1,11 @@
+---
 stages:
   - install
   - build
   - publish
 
 variables:
-  NODE_PACKAGE_MANAGER: pnpm
-  NODE_LINT_COMMAND: lint
+  NODE_VERSION: 20-alpine
 
 include:
   - project: devops/pipes
