@@ -43,7 +43,7 @@
   "devDependencies": {
     "@babel/cli": "^7.21.5",
     "@babel/core": "^7.22.1",
-    "@babel/preset-env": "^7.22.1",
+    "@babel/preset-env": "^7.22.2",
     "@cenk1cenk2/eslint-config": "^2.7.5",
     "eslint": "^8.41.0",
     "lint-staged": "^13.2.2",
