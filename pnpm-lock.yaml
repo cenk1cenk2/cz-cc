@@ -33,8 +33,8 @@ devDependencies:
     specifier: ^7.22.1
     version: 7.22.1
   '@babel/preset-env':
-    specifier: ^7.22.1
-    version: 7.22.1(@babel/core@7.22.1)
+    specifier: ^7.22.2
+    version: 7.22.2(@babel/core@7.22.1)
   '@cenk1cenk2/eslint-config':
     specifier: ^2.7.5
     version: 2.7.5(eslint@8.41.0)(typescript@5.0.4)
@@ -202,11 +202,6 @@ packages:
       semver: 6.3.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@babel/helper-environment-visitor@7.21.5:
-    resolution: {integrity: sha512-IYl4gZ3ETsWocUWgsFZLM5i1BYx9SoemminVEXadgLBa9TdeorzgLKm8wWLA6J1N/kT3Kch8XIk1laNzYoHKvQ==}
-    engines: {node: '>=6.9.0'}
     dev: true
 
   /@babel/helper-environment-visitor@7.22.1:
@@ -608,7 +603,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.22.1
-      '@babel/helper-environment-visitor': 7.21.5
+      '@babel/helper-environment-visitor': 7.22.1
       '@babel/helper-plugin-utils': 7.21.5
       '@babel/helper-remap-async-to-generator': 7.18.9(@babel/core@7.22.1)
       '@babel/plugin-syntax-async-generators': 7.8.4(@babel/core@7.22.1)
@@ -1147,8 +1142,8 @@ packages:
       '@babel/helper-plugin-utils': 7.21.5
     dev: true
 
-  /@babel/preset-env@7.22.1(@babel/core@7.22.1):
-    resolution: {integrity: sha512-jAKppxizRS4oCSxC8RU/5By5fAzaQHuCy4vpZ55FM+iN7Fc7PQrpY9f1uTDL1hTgevU2TUbhUcKHXpqMYTzw9w==}
+  /@babel/preset-env@7.22.2(@babel/core@7.22.1):
+    resolution: {integrity: sha512-UPNK9pgphMULvA2EMKIWHU90C47PKyuvQ8pE1MzH7l9PgFcRabdrHhlePpBuWxYZQ+TziP2nycKoI5C1Yhdm9Q==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -1229,7 +1224,7 @@ packages:
       '@babel/plugin-transform-unicode-sets-regex': 7.22.0(@babel/core@7.22.1)
       '@babel/preset-modules': 0.1.5(@babel/core@7.22.1)
       '@babel/types': 7.22.0
-      babel-plugin-polyfill-corejs2: 0.4.1(@babel/core@7.22.1)
+      babel-plugin-polyfill-corejs2: 0.4.2(@babel/core@7.22.1)
       babel-plugin-polyfill-corejs3: 0.8.1(@babel/core@7.22.1)
       babel-plugin-polyfill-regenerator: 0.5.0(@babel/core@7.22.1)
       core-js-compat: 3.30.2
@@ -2044,8 +2039,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /babel-plugin-polyfill-corejs2@0.4.1(@babel/core@7.22.1):
-    resolution: {integrity: sha512-7gKaNF3qkEt1w2p3Q2D2f+UofAKtjWT5B82VXKdDlPqJI8eLT8phBKHq6uLEOCAEtnAWW3lomu3+X6VJrFMoSg==}
+  /babel-plugin-polyfill-corejs2@0.4.2(@babel/core@7.22.1):
+    resolution: {integrity: sha512-hnfNY+kHQc4227pQJ9gzziiF9iDOzccPKlisfH1+B9EZrC36V+JcwSApxZsj6tD2jbBthKO3l4XpQeCVa2pRbQ==}
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
