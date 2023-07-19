@@ -1295,8 +1295,8 @@ packages:
       - typescript
     dev: true
 
-  /@commitlint/config-validator@17.4.4:
-    resolution: {integrity: sha512-bi0+TstqMiqoBAQDvdEP4AFh0GaKyLFlPPEObgI29utoKEYoPQTvF0EYqIwYYLEoJYhj5GfMIhPHJkTJhagfeg==}
+  /@commitlint/config-validator@17.6.7:
+    resolution: {integrity: sha512-vJSncmnzwMvpr3lIcm0I8YVVDJTzyjy7NZAeXbTXy+MPUdAr9pKyyg7Tx/ebOQ9kqzE6O9WT6jg2164br5UdsQ==}
     engines: {node: '>=v14'}
     dependencies:
       '@commitlint/types': 17.4.4
@@ -1315,9 +1315,9 @@ packages:
     engines: {node: '>=v14'}
     requiresBuild: true
     dependencies:
-      '@commitlint/config-validator': 17.4.4
+      '@commitlint/config-validator': 17.6.7
       '@commitlint/execute-rule': 17.4.0
-      '@commitlint/resolve-extends': 17.4.4
+      '@commitlint/resolve-extends': 17.6.7
       '@commitlint/types': 17.4.4
       '@types/node': 20.4.2
       chalk: 4.1.2
@@ -1335,11 +1335,11 @@ packages:
     dev: false
     optional: true
 
-  /@commitlint/resolve-extends@17.4.4:
-    resolution: {integrity: sha512-znXr1S0Rr8adInptHw0JeLgumS11lWbk5xAWFVno+HUFVN45875kUtqjrI6AppmD3JI+4s0uZlqqlkepjJd99A==}
+  /@commitlint/resolve-extends@17.6.7:
+    resolution: {integrity: sha512-PfeoAwLHtbOaC9bGn/FADN156CqkFz6ZKiVDMjuC2N5N0740Ke56rKU7Wxdwya8R8xzLK9vZzHgNbuGhaOVKIg==}
     engines: {node: '>=v14'}
     dependencies:
-      '@commitlint/config-validator': 17.4.4
+      '@commitlint/config-validator': 17.6.7
       '@commitlint/types': 17.4.4
       import-fresh: 3.3.0
       lodash.mergewith: 4.6.2
@@ -2095,8 +2095,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001516
-      electron-to-chromium: 1.4.464
+      caniuse-lite: 1.0.30001517
+      electron-to-chromium: 1.4.465
       node-releases: 2.0.13
       update-browserslist-db: 1.0.11(browserslist@4.21.9)
     dev: true
@@ -2139,8 +2139,8 @@ packages:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
 
-  /caniuse-lite@1.0.30001516:
-    resolution: {integrity: sha512-Wmec9pCBY8CWbmI4HsjBeQLqDTqV91nFVR83DnZpYyRnPI1wePDsTg0bGLPC5VU/3OIZV1fmxEea1b+tFKe86g==}
+  /caniuse-lite@1.0.30001517:
+    resolution: {integrity: sha512-Vdhm5S11DaFVLlyiKu4hiUTkpZu+y1KA/rZZqVQfOD5YdDT/eQKlkt7NaE0WGOFgX32diqt9MiP9CAiFeRklaA==}
     dev: true
 
   /chalk@2.4.2:
@@ -2440,8 +2440,8 @@ packages:
   /eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  /electron-to-chromium@1.4.464:
-    resolution: {integrity: sha512-guZ84yoou4+ILNdj0XEbmGs6DEWj6zpVOWYpY09GU66yEb0DSYvP/biBPzHn0GuW/3RC/pnaYNUWlQE1fJYtgA==}
+  /electron-to-chromium@1.4.465:
+    resolution: {integrity: sha512-XQcuHvEJRMU97UJ75e170mgcITZoz0lIyiaVjk6R+NMTJ8KBIvUHYd1779swgOppUlzxR+JsLpq59PumaXS1jQ==}
     dev: true
 
   /emoji-regex@8.0.0:
@@ -4295,8 +4295,8 @@ packages:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
 
-  /sucrase@3.33.0:
-    resolution: {integrity: sha512-ARGC7vbufOHfpvyGcZZXFaXCMZ9A4fffOGC5ucOW7+WHDGlAe8LJdf3Jts1sWhDeiI1RSWrKy5Hodl+JWGdW2A==}
+  /sucrase@3.34.0:
+    resolution: {integrity: sha512-70/LQEZ07TEcxiU2dz51FKaE6hCTWC6vr7FOk3Gr0U60C3shtAN+H+BFr9XlYe5xqf3RA8nrc+VIwzCfnxuXJw==}
     engines: {node: '>=8'}
     hasBin: true
     dependencies:
@@ -4453,7 +4453,7 @@ packages:
       resolve-from: 5.0.0
       rollup: 3.26.3
       source-map: 0.8.0-beta.0
-      sucrase: 3.33.0
+      sucrase: 3.34.0
       tree-kill: 1.2.2
       typescript: 5.1.6
     transitivePeerDependencies:
