@@ -1,3 +1,12 @@
+## [1.6.7](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.6.6...v1.6.7) (2023-07-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency enquirer to ^2.4.0 ([598bea2](https://gitlab.kilic.dev/libraries/cz-cc/commit/598bea21d29893ab8503078d76788dd3d537b9bc))
+* **deps:** update dependency enquirer to ^2.4.1 ([76467c4](https://gitlab.kilic.dev/libraries/cz-cc/commit/76467c4d38baf4b1f01ec1f508a3f674688c2b15))
+* **deps:** update dependency listr2 to ^6.6.1 ([b4fd22e](https://gitlab.kilic.dev/libraries/cz-cc/commit/b4fd22efacc43821bfc0ccb43c96fe7962694be4))
+
 ## [1.6.6](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.6.5...v1.6.6) (2023-05-17)
 
 
