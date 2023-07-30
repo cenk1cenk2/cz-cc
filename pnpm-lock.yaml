@@ -21,8 +21,8 @@ dependencies:
     specifier: ^1.0.4
     version: 1.0.4
   listr2:
-    specifier: ^6.6.0
-    version: 6.6.0(enquirer@2.4.1)
+    specifier: ^6.6.1
+    version: 6.6.1(enquirer@2.4.1)
 
 optionalDependencies:
   '@commitlint/load':
@@ -3545,8 +3545,8 @@ packages:
       wrap-ansi: 7.0.0
     dev: true
 
-  /listr2@6.6.0(enquirer@2.4.1):
-    resolution: {integrity: sha512-qkLg7IeYcZGkxo5sZzl676xHwQzNZ8qAQLQSDMA88sLM1SDcabwyXD1mXHi/PGQHyt/mu81adJdkqsCSUSuQzQ==}
+  /listr2@6.6.1(enquirer@2.4.1):
+    resolution: {integrity: sha512-+rAXGHh0fkEWdXBmX+L6mmfmXmXvDGEKzkjxO+8mP3+nI/r/CWznVBvsibXdxda9Zz0OW2e2ikphN3OwCT/jSg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       enquirer: '>= 2.3.0 < 3'
