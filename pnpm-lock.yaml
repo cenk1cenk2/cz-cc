@@ -40,8 +40,8 @@ devDependencies:
     specifier: ^7.22.10
     version: 7.22.10(@babel/core@7.22.10)
   '@cenk1cenk2/eslint-config':
-    specifier: ^2.7.14
-    version: 2.7.14(eslint@8.47.0)(typescript@5.1.6)
+    specifier: ^2.7.15
+    version: 2.7.15(eslint@8.47.0)(typescript@5.1.6)
   eslint:
     specifier: ^8.47.0
     version: 8.47.0
@@ -1244,8 +1244,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@cenk1cenk2/eslint-config@2.7.14(eslint@8.47.0)(typescript@5.1.6):
-    resolution: {integrity: sha512-MbPYkW7PC/Z7m5X7Astmqt/6zgzdELHVnxcIvuPgRyP4RP6A04ko+IFhMfzs+y9PJxxlOv9E9ShnnlDRW9/MVQ==}
+  /@cenk1cenk2/eslint-config@2.7.15(eslint@8.47.0)(typescript@5.1.6):
+    resolution: {integrity: sha512-1xjafiPAlVneTr06lZKAkGYOq2lJP1jZwR/IywTkxUhsS2Rb1IRdVEGGJhIY0bf6k+1rH/AP1PACW8yfZbZp+w==}
     peerDependencies:
       '@nuxtjs/eslint-config': '>= 7'
       '@nuxtjs/eslint-config-typescript': '>= 7'
@@ -2125,6 +2125,7 @@ packages:
   /callsites@3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
+    requiresBuild: true
 
   /caniuse-lite@1.0.30001520:
     resolution: {integrity: sha512-tahF5O9EiiTzwTUqAeFjIZbn4Dnqxzz7ktrgGlMYNLH43Ul26IgTMH/zvL3DG0lZxBYnlT04axvInszUsZULdA==}
@@ -3782,6 +3783,7 @@ packages:
   /parent-module@1.0.1:
     resolution: {integrity: sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==}
     engines: {node: '>=6'}
+    requiresBuild: true
     dependencies:
       callsites: 3.1.0
 
@@ -3973,6 +3975,7 @@ packages:
   /resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
+    requiresBuild: true
 
   /resolve-from@5.0.0:
     resolution: {integrity: sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==}
