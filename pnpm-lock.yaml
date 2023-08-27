@@ -43,7 +43,7 @@ devDependencies:
     specifier: ^2.7.16
     version: 2.7.16(eslint@8.48.0)(typescript@5.2.2)
   eslint:
-    specifier: ^8.47.0
+    specifier: ^8.48.0
     version: 8.48.0
   lint-staged:
     specifier: ^13.3.0
