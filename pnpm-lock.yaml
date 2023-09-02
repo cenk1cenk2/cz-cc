@@ -388,7 +388,6 @@ packages:
   /@babel/plugin-proposal-private-property-in-object@7.21.0-placeholder-for-preset-env.2(@babel/core@7.22.11):
     resolution: {integrity: sha512-SOSkfJDddaM7mak6cPEpswyTRnuRltl429hMraQEglW+OkovnCzsiszTmsrlY//qLFjCpQDFRvjdm2wA5pPm9w==}
     engines: {node: '>=6.9.0'}
-    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-property-in-object instead.
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
@@ -1309,8 +1308,8 @@ packages:
       '@commitlint/types': 17.4.4
       '@types/node': 20.4.7
       chalk: 4.1.2
-      cosmiconfig: 8.2.0
-      cosmiconfig-typescript-loader: 4.4.0(@types/node@20.4.7)(cosmiconfig@8.2.0)(ts-node@10.9.1)(typescript@5.2.2)
+      cosmiconfig: 8.3.2(typescript@5.2.2)
+      cosmiconfig-typescript-loader: 4.4.0(@types/node@20.4.7)(cosmiconfig@8.3.2)(ts-node@10.9.1)(typescript@5.2.2)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -2275,7 +2274,7 @@ packages:
       browserslist: 4.21.10
     dev: true
 
-  /cosmiconfig-typescript-loader@4.4.0(@types/node@20.4.7)(cosmiconfig@8.2.0)(ts-node@10.9.1)(typescript@5.2.2):
+  /cosmiconfig-typescript-loader@4.4.0(@types/node@20.4.7)(cosmiconfig@8.3.2)(ts-node@10.9.1)(typescript@5.2.2):
     resolution: {integrity: sha512-BabizFdC3wBHhbI4kJh0VkQP9GkBfoHPydD0COMce1nJ1kJAB3F2TmJ/I7diULBKtmEWSwEbuN/KDtgnmUUVmw==}
     engines: {node: '>=v14.21.3'}
     requiresBuild: true
@@ -2286,21 +2285,27 @@ packages:
       typescript: '>=4'
     dependencies:
       '@types/node': 20.4.7
-      cosmiconfig: 8.2.0
+      cosmiconfig: 8.3.2(typescript@5.2.2)
       ts-node: 10.9.1(@types/node@20.4.7)(typescript@5.2.2)
       typescript: 5.2.2
     dev: false
     optional: true
 
-  /cosmiconfig@8.2.0:
-    resolution: {integrity: sha512-3rTMnFJA1tCOPwRxtgF4wd7Ab2qvDbL8jX+3smjIbS4HlZBagTlpERbdN7iAbWlrfxE3M8c27kTwTawQ7st+OQ==}
-    engines: {node: '>=14'}
+  /cosmiconfig@8.3.2(typescript@5.2.2):
+    resolution: {integrity: sha512-/PvU3MjSLVKJMRHsL6GW+wHQ9RaJuMW6fnn56sXNy+kP1L8nI/SHk9F9giIA+dnfzjKNJAulRjOR/fi9kzGuNA==}
+    engines: {node: '>=18'}
     requiresBuild: true
+    peerDependencies:
+      typescript: '>=4.9.5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     dependencies:
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
       path-type: 4.0.0
+      typescript: 5.2.2
     dev: false
     optional: true
 
