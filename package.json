@@ -44,7 +44,7 @@
     "@babel/cli": "^7.22.10",
     "@babel/core": "^7.22.11",
     "@babel/preset-env": "^7.22.14",
-    "@cenk1cenk2/eslint-config": "^2.7.17",
+    "@cenk1cenk2/eslint-config": "^2.7.18",
     "eslint": "^8.48.0",
     "lint-staged": "^13.3.0",
     "prettier": "^3.0.3",
