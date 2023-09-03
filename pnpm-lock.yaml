@@ -49,7 +49,7 @@ devDependencies:
     specifier: ^13.3.0
     version: 13.3.0(enquirer@2.4.1)
   prettier:
-    specifier: ^3.0.2
+    specifier: ^3.0.3
     version: 3.0.3
   simple-git-hooks:
     specifier: ^2.9.0
