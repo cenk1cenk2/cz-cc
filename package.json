@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.22.15",
-    "@babel/core": "^7.22.15",
+    "@babel/core": "^7.22.17",
     "@babel/preset-env": "^7.22.15",
     "@cenk1cenk2/eslint-config": "^2.7.18",
     "eslint": "^8.48.0",
