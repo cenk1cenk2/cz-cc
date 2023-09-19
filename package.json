@@ -17,7 +17,7 @@
     "lint": "eslint --ext .ts,.js,.tsx,.jsx src/"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm exec lint-staged",
+    "pre-commit": "[ -n \"$SKIP_GIT_HOOKS\" ] && true || pnpm exec lint-staged",
     "prepare-commit-msg": "[ -t 1 ] && exec < /dev/tty && git cz --hook || true"
   },
   "lint-staged": {
@@ -33,17 +33,15 @@
     "node": ">= 16"
   },
   "dependencies": {
+    "@listr2/prompt-adapter-enquirer": "^1.0.0-beta.2",
     "commitizen": "^4.3.0",
     "conventional-commit-types": "^3.0.0",
     "enquirer": "^2.4.1",
     "external-editor": "^3.1.0",
     "find-git-root": "^1.0.4",
-    "listr2": "^6.6.1"
+    "listr2": "^7.0.0-beta.5"
   },
   "devDependencies": {
-    "@babel/cli": "^7.22.15",
-    "@babel/core": "^7.22.20",
-    "@babel/preset-env": "^7.22.20",
     "@cenk1cenk2/eslint-config": "^2.7.20",
     "eslint": "^8.49.0",
     "lint-staged": "^14.0.1",

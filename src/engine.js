@@ -1,3 +1,4 @@
+import { ListrEnquirerPromptAdapter } from '@listr2/prompt-adapter-enquirer'
 import Enquirer from 'enquirer'
 import findGitRoot from 'find-git-root'
 import fs from 'fs'
@@ -16,10 +17,6 @@ export default function (options) {
       value: key
     }
   })
-
-  let enquirer = new Enquirer()
-
-  enquirer = enquirer.register('editor', EditorPrompt)
 
   return {
     prompter (cz, commit) {
@@ -45,7 +42,7 @@ export default function (options) {
             },
             task: async (ctx, task) => {
               if (
-                await task.prompt({
+                await task.prompt(ListrEnquirerPromptAdapter).run({
                   type: 'Toggle',
                   message: 'Last commit was found as merge commit do you want to skip?',
                   initial: true
@@ -58,7 +55,7 @@ export default function (options) {
 
           {
             task: async (ctx, task) =>
-              (ctx.prompts = await task.prompt([
+              (ctx.prompts = await task.prompt(ListrEnquirerPromptAdapter).run([
                 {
                   type: 'autocomplete',
                   name: 'type',
@@ -105,7 +102,7 @@ export default function (options) {
                 {
                   skip: (ctx) => !ctx.prompts.additional.includes('scope'),
                   task: async (ctx, task) => {
-                    ctx.prompts.scope = await task.prompt({
+                    ctx.prompts.scope = await task.prompt(ListrEnquirerPromptAdapter).run({
                       type: 'Input',
                       message: 'Please state the scope of the change:' + EOL,
                       initial: options.defaultScope,
@@ -119,21 +116,26 @@ export default function (options) {
                 {
                   skip: (ctx) => !ctx.prompts.additional.some((property) => [ 'long-description' ].includes(property)),
                   task: async (ctx, task) => {
-                    ctx.prompts.body = await task.prompt([
-                      {
-                        type: 'editor',
-                        name: 'default',
-                        message: 'Please give a long description:' + EOL,
-                        initial: options.defaultBody
-                      }
-                    ])
+                    const enquirer = new Enquirer().register('editor', EditorPrompt)
+
+                    ctx.prompts.body = await task.prompt(ListrEnquirerPromptAdapter).run(
+                      [
+                        {
+                          type: 'editor',
+                          name: 'default',
+                          message: 'Please give a long description:' + EOL,
+                          initial: options.defaultBody
+                        }
+                      ],
+                      { enquirer }
+                    )
                   }
                 },
 
                 {
                   skip: (ctx) => !ctx.prompts.additional.includes('issue'),
                   task: async (ctx, task) => {
-                    ctx.prompts.issues = await task.prompt({
+                    ctx.prompts.issues = await task.prompt(ListrEnquirerPromptAdapter).run({
                       type: 'input',
                       message: 'Add issue references:' + EOL,
                       hint: 'fix #123, re #124',
@@ -145,7 +147,7 @@ export default function (options) {
                 {
                   skip: (ctx) => !ctx.prompts.additional.includes('breaking-changes'),
                   task: async (ctx, task) => {
-                    ctx.prompts.breaking = await task.prompt({
+                    ctx.prompts.breaking = await task.prompt(ListrEnquirerPromptAdapter).run({
                       type: 'editor',
                       message: 'Describe the breaking changes:' + EOL
                     })
@@ -156,8 +158,7 @@ export default function (options) {
         ],
         {
           rendererOptions: { collapseSubtasks: false },
-          fallbackRendererCondition: false,
-          injectWrapper: { enquirer }
+          fallbackRendererCondition: false
         }
       )
         .run()
