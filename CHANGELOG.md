@@ -1,3 +1,10 @@
+## [1.7.1](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.7.0...v1.7.1) (2023-09-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @listr2/prompt-adapter-enquirer to ^1.0.1 ([54bcb48](https://gitlab.kilic.dev/libraries/cz-cc/commit/54bcb48aa697ab833398d05d873aecff45cdc078))
+
 # [1.7.0](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.6.7...v1.7.0) (2023-09-19)
 
 
