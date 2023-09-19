@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@listr2/prompt-adapter-enquirer':
-    specifier: ^1.0.0
-    version: 1.0.0(enquirer@2.4.1)
+    specifier: ^1.0.1
+    version: 1.0.1(enquirer@2.4.1)
   commitizen:
     specifier: ^4.3.0
     version: 4.3.0
@@ -485,8 +485,8 @@ packages:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@listr2/prompt-adapter-enquirer@1.0.0(enquirer@2.4.1):
-    resolution: {integrity: sha512-cZEUCulSIKN2ov3thGjlhk7XxmIePIouK2BDvp7Ciffclf2U/kMalA4L3n4s7W2a2hR3Vvw+/XSIIKsND9Hg7g==}
+  /@listr2/prompt-adapter-enquirer@1.0.1(enquirer@2.4.1):
+    resolution: {integrity: sha512-gC+0QFhX9ysk0n40036Fvt8U7ZIu805gSO4vVQBlOw2syPr60vWWgNI9hONPq47XOOqAMdax8fEcwlYsB7KtSg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       enquirer: '>= 2.3.0 < 3'
