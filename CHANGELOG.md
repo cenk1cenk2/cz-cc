@@ -1,3 +1,10 @@
+# [1.7.0](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.6.7...v1.7.0) (2023-09-19)
+
+
+### Features
+
+* **deps:** update with new lsitr version ([a5bea64](https://gitlab.kilic.dev/libraries/cz-cc/commit/a5bea64bf6613933823f07f131bd945865cbfeae))
+
 ## [1.6.7](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.6.6...v1.6.7) (2023-07-30)
 
 
