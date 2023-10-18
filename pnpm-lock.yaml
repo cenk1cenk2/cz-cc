@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@listr2/prompt-adapter-enquirer':
-    specifier: ^1.0.1
-    version: 1.0.1(enquirer@2.4.1)
+    specifier: ^1.0.2
+    version: 1.0.2(enquirer@2.4.1)
   commitizen:
     specifier: ^4.3.0
     version: 4.3.0
@@ -24,8 +24,8 @@ dependencies:
     specifier: ^1.0.4
     version: 1.0.4
   listr2:
-    specifier: ^7.0.1
-    version: 7.0.1
+    specifier: ^7.0.2
+    version: 7.0.2
 
 optionalDependencies:
   '@commitlint/load':
@@ -485,8 +485,8 @@ packages:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@listr2/prompt-adapter-enquirer@1.0.1(enquirer@2.4.1):
-    resolution: {integrity: sha512-gC+0QFhX9ysk0n40036Fvt8U7ZIu805gSO4vVQBlOw2syPr60vWWgNI9hONPq47XOOqAMdax8fEcwlYsB7KtSg==}
+  /@listr2/prompt-adapter-enquirer@1.0.2(enquirer@2.4.1):
+    resolution: {integrity: sha512-+hFHGKuACQ/0FRMmnwRe8QpdXlYJG8LhkKC0/ftf6LptWAZDBuziWnqilWHCcInnQTtUsYXD2Sra1Oxjb5q0Dg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       enquirer: '>= 2.3.0 < 3'
@@ -2247,8 +2247,8 @@ packages:
       wrap-ansi: 8.1.0
     dev: true
 
-  /listr2@7.0.1:
-    resolution: {integrity: sha512-nz+7hwgbDp8eWNoDgzdl4hA/xDSLrNRzPu1TLgOYs6l5Y+Ma6zVWWy9Oyt9TQFONwKoSPoka3H50D3vD5EuNwg==}
+  /listr2@7.0.2:
+    resolution: {integrity: sha512-rJysbR9GKIalhTbVL2tYbF2hVyDnrf7pFUZBwjPaMIdadYHmeT+EVi/Bu3qd7ETQPahTotg2WRCatXwRBW554g==}
     engines: {node: '>=16.0.0'}
     dependencies:
       cli-truncate: 3.1.0
