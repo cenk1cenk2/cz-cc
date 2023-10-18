@@ -1,3 +1,10 @@
+## [1.7.2](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.7.1...v1.7.2) (2023-10-18)
+
+
+### Bug Fixes
+
+* **deps:** update all fast ring minor dependencies ([e1d888a](https://gitlab.kilic.dev/libraries/cz-cc/commit/e1d888ab6fac593d71f5cb6123773f0090452122))
+
 ## [1.7.1](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.7.0...v1.7.1) (2023-09-19)
 
 
