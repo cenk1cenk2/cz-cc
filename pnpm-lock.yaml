@@ -29,7 +29,7 @@ dependencies:
 
 optionalDependencies:
   '@commitlint/load':
-    specifier: ^17.5.0
+    specifier: ^17.5.0 || ^18.0.0
     version: 17.8.1
 
 devDependencies:
