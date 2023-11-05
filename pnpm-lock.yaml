@@ -34,8 +34,8 @@ optionalDependencies:
 
 devDependencies:
   '@cenk1cenk2/eslint-config':
-    specifier: ^2.7.25
-    version: 2.7.25(eslint@8.53.0)(typescript@5.2.2)
+    specifier: ^2.7.26
+    version: 2.7.26(eslint@8.53.0)(typescript@5.2.2)
   eslint:
     specifier: ^8.53.0
     version: 8.53.0
@@ -87,8 +87,8 @@ packages:
     dev: false
     optional: true
 
-  /@cenk1cenk2/eslint-config@2.7.25(eslint@8.53.0)(typescript@5.2.2):
-    resolution: {integrity: sha512-caP+bIWoVElXh6JUjjeDZaPD5IeeyZFuJ+3PV6898sP9WDeqS4Ezi9h8sVMqhHzSXiXnqQwUMyX7KNqSEfMVxw==}
+  /@cenk1cenk2/eslint-config@2.7.26(eslint@8.53.0)(typescript@5.2.2):
+    resolution: {integrity: sha512-wE8WDuYMY0PZlLsrnpEJQm3kRzMUQc42nXAGjXy0fooPWHlm77GSYnhx2kyh0PfrlBowQW1Iz8b/Nx1u3MpkDA==}
     peerDependencies:
       '@nuxtjs/eslint-config': '>= 7'
       '@nuxtjs/eslint-config-typescript': '>= 7'
