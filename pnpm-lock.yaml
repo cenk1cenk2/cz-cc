@@ -30,7 +30,7 @@ dependencies:
 optionalDependencies:
   '@commitlint/load':
     specifier: ^17.5.0 || ^18.0.0
-    version: 18.4.0(typescript@5.2.2)
+    version: 18.4.1(typescript@5.2.2)
 
 devDependencies:
   '@cenk1cenk2/eslint-config':
@@ -140,8 +140,8 @@ packages:
     dev: false
     optional: true
 
-  /@commitlint/load@18.4.0(typescript@5.2.2):
-    resolution: {integrity: sha512-7unGl1HGRNMgWrUPmj8OFkJyuNUMb6xA1i53/OAFKd9l+U3C4WTfoJe3t/TUz8vKZLCaDcWWR/b2cw5HveBBFg==}
+  /@commitlint/load@18.4.1(typescript@5.2.2):
+    resolution: {integrity: sha512-o/plBiPJQgbSq/4ipDpsq4HCmURjBAEjr1EO/p2falr3VhwV0WGXTvb8NlihgI8xtSyO6lHvtycrE535GMLQbA==}
     engines: {node: '>=v18'}
     requiresBuild: true
     dependencies:
@@ -1085,7 +1085,7 @@ packages:
       longest: 2.0.1
       word-wrap: 1.2.5
     optionalDependencies:
-      '@commitlint/load': 18.4.0(typescript@5.2.2)
+      '@commitlint/load': 18.4.1(typescript@5.2.2)
     transitivePeerDependencies:
       - typescript
     dev: false
