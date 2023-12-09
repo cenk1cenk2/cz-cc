@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@listr2/prompt-adapter-enquirer':
-    specifier: ^1.0.2
-    version: 1.0.2(enquirer@2.4.1)
+    specifier: ^2.0.0
+    version: 2.0.0(enquirer@2.4.1)
   commitizen:
     specifier: ^4.3.0
     version: 4.3.0(typescript@5.3.3)
@@ -470,9 +470,9 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@listr2/prompt-adapter-enquirer@1.0.2(enquirer@2.4.1):
-    resolution: {integrity: sha512-+hFHGKuACQ/0FRMmnwRe8QpdXlYJG8LhkKC0/ftf6LptWAZDBuziWnqilWHCcInnQTtUsYXD2Sra1Oxjb5q0Dg==}
-    engines: {node: '>=16.0.0'}
+  /@listr2/prompt-adapter-enquirer@2.0.0(enquirer@2.4.1):
+    resolution: {integrity: sha512-041w06I7nubqKzH6L3DAAlPJRtdA2ygl+OuajMIuClK+kKN+Bu3sFplG6oTN6Gv4WDtZDXqhj3vPCSAc5pg7MA==}
+    engines: {node: '>=18.0.0'}
     peerDependencies:
       enquirer: '>= 2.3.0 < 3'
     dependencies:

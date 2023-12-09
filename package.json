@@ -33,7 +33,7 @@
     "node": ">= 16"
   },
   "dependencies": {
-    "@listr2/prompt-adapter-enquirer": "^1.0.2",
+    "@listr2/prompt-adapter-enquirer": "^2.0.0",
     "commitizen": "^4.3.0",
     "conventional-commit-types": "^3.0.0",
     "enquirer": "^2.4.1",
