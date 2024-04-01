@@ -1,3 +1,12 @@
+## [1.7.6](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.7.5...v1.7.6) (2024-04-01)
+
+
+### Bug Fixes
+
+* **deps:** update all minor dependency updates ([5eb0ff7](https://gitlab.kilic.dev/libraries/cz-cc/commit/5eb0ff76723c154fc53830677b4273489305459f))
+* **deps:** update all minor dependency updates ([7234445](https://gitlab.kilic.dev/libraries/cz-cc/commit/7234445f5915ce22e064109ea4b98e13b18c194a))
+* **deps:** update all minor dependency updates ([d016afa](https://gitlab.kilic.dev/libraries/cz-cc/commit/d016afa0449a7c5cd4bbac1f5aae44b1b1b1e10d))
+
 ## [1.7.5](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.7.4...v1.7.5) (2024-01-29)
 
 
