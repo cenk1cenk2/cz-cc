@@ -1,6 +1,6 @@
 {
   "name": "@cenk1cenk2/cz-cc",
-  "version": "1.7.6",
+  "version": "1.7.7",
   "description": "Commitizen adapter following the conventional-changelog format.",
   "repository": "git@gitlab.kilic.dev:libraries/cz-cc.git",
   "author": "Cenk Kilic <cenk@kilic.dev>",
@@ -56,5 +56,6 @@
     "commitizen": {
       "path": "./dist/index.js"
     }
-  }
+  },
+  "packageManager": "pnpm@9.1.0+sha512.67f5879916a9293e5cf059c23853d571beaf4f753c707f40cb22bed5fb1578c6aad3b6c4107ccb3ba0b35be003eb621a16471ac836c87beb53f9d54bb4612724"
 }
