@@ -13,7 +13,7 @@ importers:
         version: 2.0.8(enquirer@2.4.1)
       commitizen:
         specifier: ^4.3.0
-        version: 4.3.0(@types/node@20.14.0)(typescript@5.4.5)
+        version: 4.3.0(@types/node@20.14.1)(typescript@5.4.5)
       conventional-commit-types:
         specifier: ^3.0.0
         version: 3.0.0
@@ -32,7 +32,7 @@ importers:
     optionalDependencies:
       '@commitlint/load':
         specifier: ^17.5.0 || ^18.0.0 || ^19.0.0
-        version: 19.2.0(@types/node@20.14.0)(typescript@5.4.5)
+        version: 19.2.0(@types/node@20.14.1)(typescript@5.4.5)
     devDependencies:
       '@cenk1cenk2/eslint-config':
         specifier: ^2.7.49
@@ -411,8 +411,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@20.14.0':
-    resolution: {integrity: sha512-5cHBxFGJx6L4s56Bubp4fglrEpmyJypsqI6RgzMfBHWUJQGWAAi8cWcgetEbZXHYXo9C2Fa4EEds/uSyS4cxmA==}
+  '@types/node@20.14.1':
+    resolution: {integrity: sha512-T2MzSGEu+ysB/FkWfqmhV3PLyQlowdptmmgD20C6QxsS8Fmv5SjpZ1ayXaEC0S21/h5UJ9iA6W/5vSNU5l00OA==}
 
   '@typescript-eslint/eslint-plugin@7.12.0':
     resolution: {integrity: sha512-7F91fcbuDf/d3S8o21+r3ZncGIke/+eWk0EpO21LXhDfLahriZF9CGj4fbAetEjlaBdjdSm9a6VeXbpbT6Z40Q==}
@@ -488,8 +488,8 @@ packages:
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
 
-  ajv@8.15.0:
-    resolution: {integrity: sha512-15BTtQUOsSrmHCy+B4VnAiJAJxJ8IFgu6fcjFQF3jQYZ78nLSQthlFg4ehp+NLIyfvFgOlxNsjKIEhydtFPVHQ==}
+  ajv@8.16.0:
+    resolution: {integrity: sha512-F0twR8U1ZU67JIEtekUcLkXkoO5mMMmgGD8sK/xUFzJ805jxHQl92hImFAqqXMyMYjSPOyUPAwHYhB72g5sTXw==}
 
   ansi-colors@4.1.3:
     resolution: {integrity: sha512-/6w/C21Pm1A7aZitlI5Ni/2J6FFQN8i1Cvz3kHABAAbw93v/NlvKdVOqz7CCWz/3iv/JplRSEEZ83XION15ovw==}
@@ -948,9 +948,6 @@ packages:
   fast-levenshtein@2.0.6:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
 
-  fast-uri@2.3.0:
-    resolution: {integrity: sha512-eel5UKGn369gGEWOqBShmFJWfq/xSJvsgDzgLYC845GneayWvXBf0lJCBn5qTABfewy1ZDPoaR5OZCP+kssfuw==}
-
   fastq@1.17.1:
     resolution: {integrity: sha512-sRVD3lWVIXWg6By68ZN7vho9a1pQcN/WBFaAAsDDFzlJjvoGx0P8z7V1t72grFJfJhu3YPZBuu25f7Kaw2jN1w==}
 
@@ -1296,8 +1293,8 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  jackspeak@3.2.3:
-    resolution: {integrity: sha512-htOzIMPbpLid/Gq9/zaz9SfExABxqRe1sSCdxntlO/aMD6u0issZQiY25n2GKQUtJ02j7z5sfptlAOMpWWOmvw==}
+  jackspeak@3.2.5:
+    resolution: {integrity: sha512-a1hopwtr4NawFIrSmFgufzrN1Qy2BAfMJ0yScJBs/olJhTcctCy3YIDx4hTY2DOTJD1pUMTly80kmlYZxjZr5w==}
     engines: {node: '>=14'}
 
   jiti@1.21.0:
@@ -1868,8 +1865,8 @@ packages:
   tsconfig-paths@3.15.0:
     resolution: {integrity: sha512-2Ac2RgzDe/cn48GvOe3M+o82pEFewD3UPbyoUHHdKasHwJKjds4fLXWf/Ux5kATBKN20oaFGu+jbElp1pos0mg==}
 
-  tslib@2.6.2:
-    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
+  tslib@2.6.3:
+    resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
 
   tsup@8.1.0:
     resolution: {integrity: sha512-UFdfCAXukax+U6KzeTNO2kAARHcWxmKsnvSPXUcfA1D+kU05XDccCrkffCQpFaWDsZfV0jMyTsxU39VfCp6EOg==}
@@ -2027,13 +2024,13 @@ snapshots:
   '@commitlint/config-validator@19.0.3':
     dependencies:
       '@commitlint/types': 19.0.3
-      ajv: 8.15.0
+      ajv: 8.16.0
     optional: true
 
   '@commitlint/execute-rule@19.0.0':
     optional: true
 
-  '@commitlint/load@19.2.0(@types/node@20.14.0)(typescript@5.4.5)':
+  '@commitlint/load@19.2.0(@types/node@20.14.1)(typescript@5.4.5)':
     dependencies:
       '@commitlint/config-validator': 19.0.3
       '@commitlint/execute-rule': 19.0.0
@@ -2041,7 +2038,7 @@ snapshots:
       '@commitlint/types': 19.0.3
       chalk: 5.3.0
       cosmiconfig: 9.0.0(typescript@5.4.5)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.14.0)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.14.1)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -2265,14 +2262,14 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.0':
     dependencies:
-      '@types/node': 20.14.0
+      '@types/node': 20.14.1
     optional: true
 
   '@types/estree@1.0.5': {}
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@20.14.0':
+  '@types/node@20.14.1':
     dependencies:
       undici-types: 5.26.5
     optional: true
@@ -2373,12 +2370,12 @@ snapshots:
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
 
-  ajv@8.15.0:
+  ajv@8.16.0:
     dependencies:
       fast-deep-equal: 3.1.3
-      fast-uri: 2.3.0
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
+      uri-js: 4.4.1
     optional: true
 
   ansi-colors@4.1.3: {}
@@ -2581,10 +2578,10 @@ snapshots:
 
   commander@4.1.1: {}
 
-  commitizen@4.3.0(@types/node@20.14.0)(typescript@5.4.5):
+  commitizen@4.3.0(@types/node@20.14.1)(typescript@5.4.5):
     dependencies:
       cachedir: 2.3.0
-      cz-conventional-changelog: 3.3.0(@types/node@20.14.0)(typescript@5.4.5)
+      cz-conventional-changelog: 3.3.0(@types/node@20.14.1)(typescript@5.4.5)
       dedent: 0.7.0
       detect-indent: 6.1.0
       find-node-modules: 2.1.3
@@ -2605,9 +2602,9 @@ snapshots:
 
   conventional-commit-types@3.0.0: {}
 
-  cosmiconfig-typescript-loader@5.0.0(@types/node@20.14.0)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5):
+  cosmiconfig-typescript-loader@5.0.0(@types/node@20.14.1)(cosmiconfig@9.0.0(typescript@5.4.5))(typescript@5.4.5):
     dependencies:
-      '@types/node': 20.14.0
+      '@types/node': 20.14.1
       cosmiconfig: 9.0.0(typescript@5.4.5)
       jiti: 1.21.0
       typescript: 5.4.5
@@ -2629,16 +2626,16 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  cz-conventional-changelog@3.3.0(@types/node@20.14.0)(typescript@5.4.5):
+  cz-conventional-changelog@3.3.0(@types/node@20.14.1)(typescript@5.4.5):
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.3.0(@types/node@20.14.0)(typescript@5.4.5)
+      commitizen: 4.3.0(@types/node@20.14.1)(typescript@5.4.5)
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
       word-wrap: 1.2.5
     optionalDependencies:
-      '@commitlint/load': 19.2.0(@types/node@20.14.0)(typescript@5.4.5)
+      '@commitlint/load': 19.2.0(@types/node@20.14.1)(typescript@5.4.5)
     transitivePeerDependencies:
       - '@types/node'
       - typescript
@@ -2994,9 +2991,6 @@ snapshots:
 
   fast-levenshtein@2.0.6: {}
 
-  fast-uri@2.3.0:
-    optional: true
-
   fastq@1.17.1:
     dependencies:
       reusify: 1.0.4
@@ -3105,7 +3099,7 @@ snapshots:
   glob@10.4.1:
     dependencies:
       foreground-child: 3.1.1
-      jackspeak: 3.2.3
+      jackspeak: 3.2.5
       minimatch: 9.0.4
       minipass: 7.1.2
       path-scurry: 1.11.1
@@ -3348,7 +3342,7 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  jackspeak@3.2.3:
+  jackspeak@3.2.5:
     dependencies:
       '@isaacs/cliui': 8.0.2
     optionalDependencies:
@@ -3731,7 +3725,7 @@ snapshots:
 
   rxjs@7.8.1:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.6.3
 
   safe-array-concat@1.1.2:
     dependencies:
@@ -3925,7 +3919,7 @@ snapshots:
       minimist: 1.2.8
       strip-bom: 3.0.0
 
-  tslib@2.6.2: {}
+  tslib@2.6.3: {}
 
   tsup@8.1.0(typescript@5.4.5):
     dependencies:
