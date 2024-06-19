@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@listr2/prompt-adapter-enquirer':
-        specifier: ^2.0.8
-        version: 2.0.8(enquirer@2.4.1)
+        specifier: ^2.0.9
+        version: 2.0.9(enquirer@2.4.1)
       commitizen:
         specifier: ^4.3.0
         version: 4.3.0(@types/node@20.14.5)(typescript@5.4.5)
@@ -27,8 +27,8 @@ importers:
         specifier: ^1.0.4
         version: 1.0.4
       listr2:
-        specifier: ^8.2.1
-        version: 8.2.1
+        specifier: ^8.2.2
+        version: 8.2.2
     optionalDependencies:
       '@commitlint/load':
         specifier: ^17.5.0 || ^18.0.0 || ^19.0.0
@@ -302,8 +302,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@listr2/prompt-adapter-enquirer@2.0.8':
-    resolution: {integrity: sha512-Z0i6ZVBgVW4k+chMJ61fh9H6S6P+8YHxzUzK13lxY0iv+Qky5OAeP6Qas+HlrVsLrdTgNZJTIyg968WP62hoBw==}
+  '@listr2/prompt-adapter-enquirer@2.0.9':
+    resolution: {integrity: sha512-A40KuRK3g92E3ulJxXatDs7mi/oLscVP3X8U3P8ScAZgFo771MPbxptcb/vfiARQfqjJf1GTArjM6j5v1GTMdA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       enquirer: '>= 2.3.0 < 3'
@@ -1355,8 +1355,8 @@ packages:
     engines: {node: '>=18.12.0'}
     hasBin: true
 
-  listr2@8.2.1:
-    resolution: {integrity: sha512-irTfvpib/rNiD637xeevjO2l3Z5loZmuaRi0L0YE5LfijwVY96oyVn0DFD3o/teAok7nfobMG1THvvcHh/BP6g==}
+  listr2@8.2.2:
+    resolution: {integrity: sha512-sy0dq+JPS+RAFiFk2K8Nbub7khNmeeoFALNUJ4Wzk34wZKAzaOhEXqGWs4RA5aui0RaM6Hgn7VEKhCj0mlKNLA==}
     engines: {node: '>=18.0.0'}
 
   load-tsconfig@0.2.5:
@@ -2195,7 +2195,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@listr2/prompt-adapter-enquirer@2.0.8(enquirer@2.4.1)':
+  '@listr2/prompt-adapter-enquirer@2.0.9(enquirer@2.4.1)':
     dependencies:
       enquirer: 2.4.1
 
@@ -3404,7 +3404,7 @@ snapshots:
       debug: 4.3.5
       execa: 8.0.1
       lilconfig: 3.1.2
-      listr2: 8.2.1
+      listr2: 8.2.2
       micromatch: 4.0.7
       pidtree: 0.6.0
       string-argv: 0.3.2
@@ -3412,7 +3412,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  listr2@8.2.1:
+  listr2@8.2.2:
     dependencies:
       cli-truncate: 4.0.0
       colorette: 2.0.20
