@@ -35,8 +35,8 @@ importers:
         version: 19.2.0(@types/node@20.14.10)(typescript@5.5.3)
     devDependencies:
       '@cenk1cenk2/eslint-config':
-        specifier: ^2.7.54
-        version: 2.7.54(eslint@8.57.0)(typescript@5.5.3)
+        specifier: ^2.7.55
+        version: 2.7.55(eslint@8.57.0)(typescript@5.5.3)
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
@@ -67,8 +67,8 @@ packages:
     resolution: {integrity: sha512-EStJpq4OuY8xYfhGVXngigBJRWxftKX9ksiGDnmlY3o7B/V7KIAc9X4oiK87uPJSc/vs5L869bem5fhZa8caZw==}
     engines: {node: '>=6.9.0'}
 
-  '@cenk1cenk2/eslint-config@2.7.54':
-    resolution: {integrity: sha512-Bo1JJqIMO3xYJT1dhEQBjgZ2q8p++f9EoKv6MTFGQFajZpdrEQGV5WJ11wman79dPCAbtdJEnTUygRjRNQjDKQ==}
+  '@cenk1cenk2/eslint-config@2.7.55':
+    resolution: {integrity: sha512-hNypB/wUb1zTk16faMJE0cvJb7rZtCAHIw0QWnBJpJhxIT6/Jgf9ZuYr/aaRu5GukC7Y6r+GAta16Zpp+XJ7Mg==}
     peerDependencies:
       '@nuxtjs/eslint-config': '>= 7'
       '@nuxtjs/eslint-config-typescript': '>= 7'
@@ -2015,7 +2015,7 @@ snapshots:
       picocolors: 1.0.1
     optional: true
 
-  '@cenk1cenk2/eslint-config@2.7.54(eslint@8.57.0)(typescript@5.5.3)':
+  '@cenk1cenk2/eslint-config@2.7.55(eslint@8.57.0)(typescript@5.5.3)':
     dependencies:
       '@typescript-eslint/eslint-plugin': 7.16.1(@typescript-eslint/parser@7.16.1(eslint@8.57.0)(typescript@5.5.3))(eslint@8.57.0)(typescript@5.5.3)
       '@typescript-eslint/parser': 7.16.1(eslint@8.57.0)(typescript@5.5.3)
