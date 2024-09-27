@@ -12,7 +12,7 @@ importers:
         specifier: ^2.0.11
         version: 2.0.11(enquirer@2.4.1)
       commitizen:
-        specifier: ^4.3.0
+        specifier: ^4.3.1
         version: 4.3.1(@types/node@22.7.4)(typescript@5.6.2)
       conventional-commit-types:
         specifier: ^3.0.0
