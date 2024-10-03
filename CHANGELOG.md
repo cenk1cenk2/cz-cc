@@ -1,3 +1,10 @@
+## [1.7.11](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.7.10...v1.7.11) (2024-10-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency commitizen to ^4.3.1 ([744daa4](https://gitlab.kilic.dev/libraries/cz-cc/commit/744daa411144ea786657a63aa45189cec82e98fe))
+
 ## [1.7.10](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.7.9...v1.7.10) (2024-09-24)
 
 
