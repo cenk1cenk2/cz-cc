@@ -42,10 +42,10 @@
     "listr2": "^8.2.5"
   },
   "devDependencies": {
-    "@cenk1cenk2/eslint-config": "^2.7.59",
+    "@cenk1cenk2/eslint-config": "^2.7.60",
     "eslint": "^8.57.1",
     "lint-staged": "^15.2.11",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.2",
     "simple-git-hooks": "^2.11.1",
     "tsup": "^8.3.5"
   },
