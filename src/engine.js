@@ -7,7 +7,6 @@ import { EOL } from 'os'
 import { join } from 'path'
 
 import { EditorPrompt } from './prompt'
-import { filterSubject, maxSummaryLength } from './utils'
 
 export default function(options) {
   const choices = Object.entries(options.types).map(([key, type]) => {
@@ -67,18 +66,9 @@ export default function(options) {
                 {
                   type: 'Input',
                   name: 'subject',
-                  message: (answers) => {
-                    return `Write a short description (max ${maxSummaryLength(options, answers)} chars):` + EOL
-                  },
+                  message: 'Write a short description:' + EOL,
                   initial: options.defaultSubject,
-                  required: true,
-                  validate: (value) => {
-                    const filteredSubject = filterSubject(value)
-
-                    return filteredSubject.length <= options.maxHeaderWidth && filteredSubject.length > 0
-                      ? true
-                      : `Subject length must be less than or equal to ${options.maxHeaderWidth} characters. Current length is ${filteredSubject.length} characters.`
-                  }
+                  required: true
                 },
 
                 {
@@ -88,8 +78,14 @@ export default function(options) {
                   choices: [
                     { name: 'scope', message: 'add a scope' },
                     { name: 'issue', message: 'resolves issues' },
-                    { name: 'breaking-changes', message: 'introduces breaking changes' },
-                    { name: 'long-description', message: 'add a long description' },
+                    {
+                      name: 'breaking-changes',
+                      message: 'introduces breaking changes'
+                    },
+                    {
+                      name: 'long-description',
+                      message: 'add a long description'
+                    },
                     { name: 'skip-ci', message: 'skip ci/cd setups' }
                   ]
                 }
