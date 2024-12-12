@@ -4,25 +4,25 @@ import { edit } from 'external-editor'
 import { EOL } from 'os'
 
 export class EditorPrompt extends Prompt {
-  constructor (options = {}) {
+  constructor(options = {}) {
     super(options)
     this.value = this.state.initial || ''
   }
 
-  async suffix (addon = '') {
+  async suffix(addon = '') {
     const suffix = this.state.cancelled ? ' — Aborted' : this.state.submitted ? ' — Received' : ' — Press <Enter> to launch ' + addon
 
     return this.styles.dim(suffix)
   }
 
   // Intercept submit and launch the editor
-  async submit () {
+  async submit() {
     this.value = edit(this.value)
 
     return super.submit()
   }
 
-  async render () {
+  async render() {
     const prefix = (await this.prefix()) + ' '
     const message = await this.message()
     const error = await this.error()

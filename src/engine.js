@@ -9,8 +9,8 @@ import { join } from 'path'
 import { EditorPrompt } from './prompt'
 import { filterSubject, maxSummaryLength } from './utils'
 
-export default function (options) {
-  const choices = Object.entries(options.types).map(([ key, type ]) => {
+export default function(options) {
+  const choices = Object.entries(options.types).map(([key, type]) => {
     return {
       name: key,
       hint: type.description,
@@ -19,7 +19,7 @@ export default function (options) {
   })
 
   return {
-    prompter (cz, commit) {
+    prompter(cz, commit) {
       new Listr(
         [
           {
@@ -40,7 +40,7 @@ export default function (options) {
                 } catch {}
               }
             },
-            task: async (ctx, task) => {
+            task: async(ctx, task) => {
               if (
                 await task.prompt(ListrEnquirerPromptAdapter).run({
                   type: 'Toggle',
@@ -54,7 +54,7 @@ export default function (options) {
           },
 
           {
-            task: async (ctx, task) =>
+            task: async(ctx, task) =>
               (ctx.prompts = await task.prompt(ListrEnquirerPromptAdapter).run([
                 {
                   type: 'autocomplete',
@@ -101,7 +101,7 @@ export default function (options) {
               task.newListr([
                 {
                   skip: (ctx) => !ctx.prompts.additional.includes('scope'),
-                  task: async (ctx, task) => {
+                  task: async(ctx, task) => {
                     ctx.prompts.scope = await task.prompt(ListrEnquirerPromptAdapter).run({
                       type: 'Input',
                       message: 'Please state the scope of the change:' + EOL,
@@ -114,8 +114,8 @@ export default function (options) {
                 },
 
                 {
-                  skip: (ctx) => !ctx.prompts.additional.some((property) => [ 'long-description' ].includes(property)),
-                  task: async (ctx, task) => {
+                  skip: (ctx) => !ctx.prompts.additional.some((property) => ['long-description'].includes(property)),
+                  task: async(ctx, task) => {
                     const enquirer = new Enquirer().register('editor', EditorPrompt)
 
                     ctx.prompts.body = await task.prompt(ListrEnquirerPromptAdapter).run(
@@ -134,7 +134,7 @@ export default function (options) {
 
                 {
                   skip: (ctx) => !ctx.prompts.additional.includes('issue'),
-                  task: async (ctx, task) => {
+                  task: async(ctx, task) => {
                     ctx.prompts.issues = await task.prompt(ListrEnquirerPromptAdapter).run({
                       type: 'input',
                       message: 'Add issue references:' + EOL,
@@ -146,7 +146,7 @@ export default function (options) {
 
                 {
                   skip: (ctx) => !ctx.prompts.additional.includes('breaking-changes'),
-                  task: async (ctx, task) => {
+                  task: async(ctx, task) => {
                     ctx.prompts.breaking = await task.prompt(ListrEnquirerPromptAdapter).run({
                       type: 'editor',
                       message: 'Describe the breaking changes:' + EOL
@@ -181,7 +181,7 @@ export default function (options) {
 
           const issues = ctx.prompts.issues
 
-          commit([ head, body, breaking, issues ].filter(Boolean).join(EOL + EOL))
+          commit([head, body, breaking, issues].filter(Boolean).join(EOL + EOL))
         })
         .catch(() => {
           // eslint-disable-next-line no-console

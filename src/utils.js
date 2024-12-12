@@ -1,12 +1,12 @@
-export function headerLength (answers) {
+export function headerLength(answers) {
   return answers.type.length + 2 + (answers.scope ? answers.scope.length + 2 : 0)
 }
 
-export function maxSummaryLength (options, answers) {
+export function maxSummaryLength(options, answers) {
   return options.maxHeaderWidth - headerLength(answers)
 }
 
-export function filterSubject (subject) {
+export function filterSubject(subject) {
   subject = subject.trim()
 
   if (subject.charAt(0).toLowerCase() !== subject.charAt(0)) {
