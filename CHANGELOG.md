@@ -1,3 +1,17 @@
+# [1.8.0](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.7.12...v1.8.0) (2024-12-13)
+
+
+### Bug Fixes
+
+* lockfile ([95151f7](https://gitlab.kilic.dev/libraries/cz-cc/commit/95151f759ab3064892c6d0033b06308de50efc46))
+* relax the rules ([ff668fa](https://gitlab.kilic.dev/libraries/cz-cc/commit/ff668fa3f24015fb8e632791cc067b6f577e946a))
+* update optional dependencies ([c80e525](https://gitlab.kilic.dev/libraries/cz-cc/commit/c80e5252a477130740c4084126af0c24c3b4eb79))
+
+
+### Features
+
+* update ([2ea7a3c](https://gitlab.kilic.dev/libraries/cz-cc/commit/2ea7a3cee620f110f79cfa618f5b47d5ba932431))
+
 ## [1.7.12](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.7.11...v1.7.12) (2024-10-25)
 
 
