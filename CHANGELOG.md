@@ -1,3 +1,10 @@
+## [1.8.1](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.8.0...v1.8.1) (2025-04-11)
+
+
+### Bug Fixes
+
+* **deps:** update all minor dependency updates ([cc6aa47](https://gitlab.kilic.dev/libraries/cz-cc/commit/cc6aa47dd08b91efa80f3a4cdbe84bd51af4fc2f))
+
 # [1.8.0](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.7.12...v1.8.0) (2024-12-13)
 
 
