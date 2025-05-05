@@ -32,7 +32,7 @@ importers:
     devDependencies:
       '@cenk1cenk2/eslint-config':
         specifier: ^3.1.39
-        version: 3.1.39(eslint@9.26.0(jiti@2.4.2))(typescript@5.8.3)
+        version: 3.1.40(eslint@9.26.0(jiti@2.4.2))(typescript@5.8.3)
       eslint:
         specifier: ^9.26.0
         version: 9.26.0(jiti@2.4.2)
@@ -59,8 +59,8 @@ packages:
     resolution: {integrity: sha512-D2hP9eA+Sqx1kBZgzxZh0y1trbuU+JoDkiEwqhQ36nodYqJwyEIhPSdMNd7lOm/4io72luTPWH20Yda0xOuUow==}
     engines: {node: '>=6.9.0'}
 
-  '@cenk1cenk2/eslint-config@3.1.39':
-    resolution: {integrity: sha512-K9UQ+b790y799RUEvKWVGFoiabEKu8nTGowMI2y2CZDwq0vTt39kWsNtY+hxEXsysR0eBPnq/WPbVJBH+2fbUQ==}
+  '@cenk1cenk2/eslint-config@3.1.40':
+    resolution: {integrity: sha512-pDRXOq8ApO774K9VWSU8BPcDlDIxkWEDr0Ntcz8Aw2C4UOUQjNuzDziFrhyV+zjClL8z5pl4+10e+oo20zjfPg==}
     peerDependencies:
       '@vue/eslint-config-typescript': '>= 14.1.1'
       eslint: '>= 9'
@@ -2323,7 +2323,7 @@ snapshots:
   '@babel/helper-validator-identifier@7.27.1':
     optional: true
 
-  '@cenk1cenk2/eslint-config@3.1.39(eslint@9.26.0(jiti@2.4.2))(typescript@5.8.3)':
+  '@cenk1cenk2/eslint-config@3.1.40(eslint@9.26.0(jiti@2.4.2))(typescript@5.8.3)':
     dependencies:
       '@eslint/js': 9.26.0
       '@stylistic/eslint-plugin': 2.13.0(eslint@9.26.0(jiti@2.4.2))(typescript@5.8.3)
