@@ -31,10 +31,10 @@ importers:
         version: 8.3.3
     devDependencies:
       '@cenk1cenk2/eslint-config':
-        specifier: ^3.1.39
+        specifier: ^3.1.40
         version: 3.1.40(eslint@9.27.0(jiti@2.4.2))(typescript@5.8.3)
       eslint:
-        specifier: ^9.26.0
+        specifier: ^9.27.0
         version: 9.27.0(jiti@2.4.2)
       lint-staged:
         specifier: ^15.5.2
@@ -46,7 +46,7 @@ importers:
         specifier: ^2.13.0
         version: 2.13.0
       tsup:
-        specifier: ^8.4.0
+        specifier: ^8.5.0
         version: 8.5.0(jiti@2.4.2)(typescript@5.8.3)(yaml@2.8.0)
 
 packages:
