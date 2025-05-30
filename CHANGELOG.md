@@ -1,3 +1,21 @@
+# [2.0.0](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.8.1...v2.0.0) (2025-05-30)
+
+
+* [object Object](engine): use inquirer instead [skip ci] ([1b87303](https://gitlab.kilic.dev/libraries/cz-cc/commit/1b87303cf7ad3b3a990c130b304dc2d474ead699))
+
+
+### Performance Improvements
+
+* **engine:** migrate to inquirer ([3332d00](https://gitlab.kilic.dev/libraries/cz-cc/commit/3332d00f2e503e476d2c464a0353bddb7dffef59))
+
+
+### BREAKING CHANGES
+
+* **engine:** completely changes the behavior
+* asdfasdfasd
+
+re 123
+
 ## [1.8.1](https://gitlab.kilic.dev/libraries/cz-cc/compare/v1.8.0...v1.8.1) (2025-04-11)
 
 
