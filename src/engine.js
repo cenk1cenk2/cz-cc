@@ -47,18 +47,18 @@ export default function(options) {
                 return {
                   name: key,
                   description: type.description,
-                  value: type
+                  value: key
                 }
               })
 
               ctx.prompts.type = await task.prompt(ListrInquirerPromptAdapter).run(select, {
                 message: 'Type of commit:',
                 choices,
-                default: choices.findIndex((val) => val.value === options.defaultType)
+                default: options.defaultType
               })
 
               ctx.prompts.subject = await task.prompt(ListrInquirerPromptAdapter).run(input, {
-                message: 'Write a short description:' + EOL,
+                message: 'Write a short description:',
                 default: options.defaultSubject,
                 required: true
               })
@@ -69,27 +69,27 @@ export default function(options) {
                   {
                     name: 'scope',
                     value: 'scope',
-                    description: 'add a scope'
+                    description: 'Add a scope to the commit message.'
                   },
                   {
                     name: 'issue',
                     value: 'issue',
-                    description: 'resolves issues'
+                    description: 'Resolve Issues by additional comments.'
                   },
                   {
                     name: 'breaking-changes',
                     value: 'breaking-changes',
-                    description: 'introduces breaking changes'
+                    description: 'Note breaking changes in the commit message.'
                   },
                   {
                     name: 'long-description',
                     value: 'long-description',
-                    description: 'add a long description'
+                    description: 'Add a long description to the commit message.'
                   },
                   {
                     name: 'skip-ci',
                     value: 'skip-ci',
-                    description: 'skip ci/cd setups'
+                    description: 'Skip CI/CD setups.'
                   }
                 ]
               })
@@ -103,7 +103,7 @@ export default function(options) {
                   skip: (ctx) => !ctx.prompts.additional.includes('scope'),
                   task: async(ctx, task) => {
                     ctx.prompts.scope = await task.prompt(ListrInquirerPromptAdapter).run(input, {
-                      message: 'Please state the scope of the change:' + EOL,
+                      message: 'Please state the scope of the change:',
                       default: options.defaultScope,
                       transformer: (value) => {
                         return options.disableScopeLowerCase ? value.trim() : value.trim().toLowerCase()
@@ -116,7 +116,7 @@ export default function(options) {
                   skip: (ctx) => !ctx.prompts.additional.some((property) => ['long-description'].includes(property)),
                   task: async(ctx, task) => {
                     ctx.prompts.body = await task.prompt(ListrInquirerPromptAdapter).run(editor, {
-                      message: 'Please give a long description:' + EOL,
+                      message: 'Please give a long description:',
                       default: options.defaultBody
                     })
                   }
@@ -126,7 +126,7 @@ export default function(options) {
                   skip: (ctx) => !ctx.prompts.additional.includes('issue'),
                   task: async(ctx, task) => {
                     ctx.prompts.issues = await task.prompt(ListrInquirerPromptAdapter).run(input, {
-                      message: 'Add issue references:' + EOL,
+                      message: 'Add issue references:',
                       default: options.defaultIssues
                     })
                   }
@@ -136,7 +136,7 @@ export default function(options) {
                   skip: (ctx) => !ctx.prompts.additional.includes('breaking-changes'),
                   task: async(ctx, task) => {
                     ctx.prompts.breaking = await task.prompt(ListrInquirerPromptAdapter).run(editor, {
-                      message: 'Describe the breaking changes:' + EOL
+                      message: 'Describe the breaking changes:'
                     })
                   }
                 }
@@ -173,8 +173,7 @@ export default function(options) {
 
           commit([head, body, breaking, issues].filter(Boolean).join(EOL + EOL))
         })
-        .catch((e) => {
-          console.error(e)
+        .catch(() => {
           // eslint-disable-next-line no-console
           console.log(color.yellow('Cancelled. Skipping...'))
         })
