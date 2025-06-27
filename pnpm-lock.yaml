@@ -28,8 +28,8 @@ importers:
         version: 8.3.3
     devDependencies:
       '@cenk1cenk2/eslint-config':
-        specifier: ^3.1.46
-        version: 3.1.46(eslint@9.30.0(jiti@2.4.2))(typescript@5.8.3)
+        specifier: ^3.1.47
+        version: 3.1.47(eslint@9.30.0(jiti@2.4.2))(typescript@5.8.3)
       eslint:
         specifier: ^9.30.0
         version: 9.30.0(jiti@2.4.2)
@@ -56,8 +56,8 @@ packages:
     resolution: {integrity: sha512-D2hP9eA+Sqx1kBZgzxZh0y1trbuU+JoDkiEwqhQ36nodYqJwyEIhPSdMNd7lOm/4io72luTPWH20Yda0xOuUow==}
     engines: {node: '>=6.9.0'}
 
-  '@cenk1cenk2/eslint-config@3.1.46':
-    resolution: {integrity: sha512-7gCLvhLMRgmVclMHmb8AWrADF7cn6cMQo6uX9USApa94fqgEF0lB0FfVfh8OnclUQbZNyl5JzIA5mnaKpnmOcg==}
+  '@cenk1cenk2/eslint-config@3.1.47':
+    resolution: {integrity: sha512-yBLExufUZpA4hUJdL+DPlIo+THpXUmJ7HNNSO7dt6GxzmFta4QOUnHLnvK6LQNZd6yswR8W+oBQpMUjkqgVf9A==}
     peerDependencies:
       '@vue/eslint-config-typescript': '>= 14.1.1'
       eslint: '>= 9'
@@ -278,10 +278,6 @@ packages:
 
   '@eslint/eslintrc@3.3.1':
     resolution: {integrity: sha512-gtF186CXhIl1p4pJNGZw8Yc6RlshoePRvE0X91oPGb3vZ8pM3qOS9W9NGPat9LziaBV7XrJWGylNQXkGcnM3IQ==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-
-  '@eslint/js@9.29.0':
-    resolution: {integrity: sha512-3PIF4cBw/y+1u2EazflInpV+lYsSG0aByVIQzAgb1m1MhHFSbqTyNqtBKHgWf/9Ykud+DhILS9EGkmekVhbKoQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/js@9.30.0':
@@ -2316,9 +2312,9 @@ snapshots:
   '@babel/helper-validator-identifier@7.27.1':
     optional: true
 
-  '@cenk1cenk2/eslint-config@3.1.46(eslint@9.30.0(jiti@2.4.2))(typescript@5.8.3)':
+  '@cenk1cenk2/eslint-config@3.1.47(eslint@9.30.0(jiti@2.4.2))(typescript@5.8.3)':
     dependencies:
-      '@eslint/js': 9.29.0
+      '@eslint/js': 9.30.0
       '@stylistic/eslint-plugin': 2.13.0(eslint@9.30.0(jiti@2.4.2))(typescript@5.8.3)
       '@typescript-eslint/eslint-plugin': 8.35.0(@typescript-eslint/parser@8.35.0(eslint@9.30.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.30.0(jiti@2.4.2))(typescript@5.8.3)
       '@typescript-eslint/parser': 8.35.0(eslint@9.30.0(jiti@2.4.2))(typescript@5.8.3)
@@ -2488,8 +2484,6 @@ snapshots:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
-
-  '@eslint/js@9.29.0': {}
 
   '@eslint/js@9.30.0': {}
 
