@@ -24,8 +24,8 @@ importers:
         specifier: ^1.0.4
         version: 1.0.4
       listr2:
-        specifier: ^8.3.3
-        version: 8.3.3
+        specifier: ^9.0.0
+        version: 9.0.0
     devDependencies:
       '@cenk1cenk2/eslint-config':
         specifier: ^3.1.50
@@ -1589,6 +1589,10 @@ packages:
   listr2@8.3.3:
     resolution: {integrity: sha512-LWzX2KsqcB1wqQ4AHgYb4RsDXauQiqhjLk+6hjbaeHG4zpjjVAB6wC/gz6X0l+Du1cN3pUB5ZlrvTbhGSNnUQQ==}
     engines: {node: '>=18.0.0'}
+
+  listr2@9.0.0:
+    resolution: {integrity: sha512-GfY05XaD+8IHEEgmjM+tUzgiDpHW7O+cKDL+RTemW7M9lMbCXVraf11Tro0vK9oRCvJVCkwecEpru9iv0PF8Tg==}
+    engines: {node: '>=20.0.0'}
 
   load-tsconfig@0.2.5:
     resolution: {integrity: sha512-IXO6OCs9yg8tMKzfPZ1YmheJbZCiEsnBdcB03l0OcfK9prKnJb96siuHCr5Fl37/yo9DnKU+TLpxzTUspw9shg==}
@@ -3954,6 +3958,15 @@ snapshots:
       - supports-color
 
   listr2@8.3.3:
+    dependencies:
+      cli-truncate: 4.0.0
+      colorette: 2.0.20
+      eventemitter3: 5.0.1
+      log-update: 6.1.0
+      rfdc: 1.4.1
+      wrap-ansi: 9.0.0
+
+  listr2@9.0.0:
     dependencies:
       cli-truncate: 4.0.0
       colorette: 2.0.20
