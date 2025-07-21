@@ -28,7 +28,7 @@ importers:
         version: 8.3.3
     devDependencies:
       '@cenk1cenk2/eslint-config':
-        specifier: ^3.1.57
+        specifier: ^3.1.58
         version: 3.1.58(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3)
       eslint:
         specifier: ^9.31.0
