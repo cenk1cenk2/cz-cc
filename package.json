@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@inquirer/prompts": "^7.7.1",
-    "@listr2/prompt-adapter-inquirer": "^2.0.22",
+    "@listr2/prompt-adapter-inquirer": "^3.0.1",
     "commitizen": "^4.3.1",
     "conventional-commit-types": "^3.0.0",
     "find-git-root": "^1.0.4",
