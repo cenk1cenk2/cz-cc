@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { ListrInquirerPromptAdapter } from '@listr2/prompt-adapter-inquirer'
 import findGitRoot from 'find-git-root'
 import fs from 'fs'

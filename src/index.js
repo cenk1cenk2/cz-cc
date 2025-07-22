@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { configLoader } from 'commitizen'
 import commitTypes from 'conventional-commit-types'
 

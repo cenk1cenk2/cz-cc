@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   branches: [
     'main',
@@ -29,7 +30,7 @@ module.exports = {
     [
       '@semantic-release/git',
       {
-        assets: [ 'CHANGELOG.md', 'README.md', 'yarn.lock', 'package.json' ]
+        assets: ['CHANGELOG.md', 'README.md', 'yarn.lock', 'package.json']
       }
     ],
     '@semantic-release/gitlab'
