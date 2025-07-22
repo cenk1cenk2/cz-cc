@@ -11,10 +11,10 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsup-node",
-    "dev:start": "tsup-node --watch",
-    "format": "prettier --log-level warn --write src/ && eslint --fix src/",
-    "lint": "eslint src/"
+    "build": "tsdown src/",
+    "dev:start": "tsdown --watch src/",
+    "format": "prettier --log-level warn --write src/ && eslint --fix",
+    "lint": "eslint"
   },
   "simple-git-hooks": {
     "pre-commit": "[ -n \"$SKIP_GIT_HOOKS\" ] && true || pnpm exec lint-staged",
@@ -34,19 +34,19 @@
   },
   "dependencies": {
     "@inquirer/prompts": "^7.7.1",
-    "@listr2/prompt-adapter-inquirer": "^2.0.22",
+    "@listr2/prompt-adapter-inquirer": "^3.0.1",
     "commitizen": "^4.3.1",
     "conventional-commit-types": "^3.0.0",
     "find-git-root": "^1.0.4",
-    "listr2": "^8.3.3"
+    "listr2": "^9.0.1"
   },
   "devDependencies": {
     "@cenk1cenk2/eslint-config": "^3.1.58",
     "eslint": "^9.31.0",
-    "lint-staged": "^15.5.2",
+    "lint-staged": "^16.1.2",
     "prettier": "^3.6.2",
     "simple-git-hooks": "^2.13.0",
-    "tsup": "^8.5.0"
+    "tsdown": "^0.13.0"
   },
   "config": {
     "commitizen": {

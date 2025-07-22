@@ -1,15 +1,14 @@
-import { defineConfig } from 'tsup'
+import { defineConfig } from 'tsdown'
 
 export default defineConfig((options) => ({
   name: !options.watch && 'production',
 
-  entryPoints: [ 'src/index.js' ],
+  entryPoints: ['src/index.js'],
   tsconfig: 'jsconfig.json',
 
   dts: false,
 
-  target: 'es2021',
-  format: [ 'cjs' ],
+  format: ['cjs'],
 
   sourcemap: false,
 
