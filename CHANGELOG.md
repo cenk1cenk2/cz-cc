@@ -1,3 +1,15 @@
+# [2.1.0](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.0.4...v2.1.0) (2025-07-22)
+
+
+### Bug Fixes
+
+* udpate stupid bug with eslint globals ([f85d0e0](https://gitlab.kilic.dev/libraries/cz-cc/commit/f85d0e09983dfdfa8a5f0d8add8e619bfa0b6557))
+
+
+### Features
+
+* migrate build system ([1309c92](https://gitlab.kilic.dev/libraries/cz-cc/commit/1309c9234c344b371e64334171e3976e8f8768f5))
+
 ## [2.0.4](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.0.3...v2.0.4) (2025-07-21)
 
 
