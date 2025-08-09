@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@inquirer/prompts':
-        specifier: ^7.8.0
+        specifier: ^7.8.1
         version: 7.8.1(@types/node@24.2.1)
       '@listr2/prompt-adapter-inquirer':
         specifier: ^3.0.1
