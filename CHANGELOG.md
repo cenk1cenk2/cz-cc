@@ -1,3 +1,10 @@
+## [2.1.2](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.1.1...v2.1.2) (2025-08-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @inquirer/prompts to ^7.8.1 ([50b37b6](https://gitlab.kilic.dev/libraries/cz-cc/commit/50b37b676e3a29296edc5c4679773ea86f13c9ae))
+
 ## [2.1.1](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.1.0...v2.1.1) (2025-07-28)
 
 
