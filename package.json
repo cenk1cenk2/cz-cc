@@ -34,11 +34,11 @@
   },
   "dependencies": {
     "@inquirer/prompts": "^7.8.4",
-    "@listr2/prompt-adapter-inquirer": "^3.0.2",
+    "@listr2/prompt-adapter-inquirer": "^3.0.3",
     "commitizen": "^4.3.1",
     "conventional-commit-types": "^3.0.0",
     "find-git-root": "^1.0.4",
-    "listr2": "^9.0.2"
+    "listr2": "^9.0.3"
   },
   "devDependencies": {
     "@cenk1cenk2/eslint-config": "^3.1.61",
