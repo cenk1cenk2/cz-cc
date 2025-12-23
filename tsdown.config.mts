@@ -3,7 +3,6 @@ import { defineConfig } from 'tsdown'
 export default defineConfig((options) => ({
   name: !options.watch && 'production',
 
-  entryPoints: ['src/index.js'],
   tsconfig: 'jsconfig.json',
 
   dts: false,
@@ -13,6 +12,6 @@ export default defineConfig((options) => ({
   sourcemap: false,
 
   clean: true,
-  minify: true,
-  bundle: true
+  minify: false,
+  unbundle: false
 }))
