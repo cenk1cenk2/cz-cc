@@ -1,3 +1,10 @@
+# [2.2.0](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.1.5...v2.2.0) (2025-12-30)
+
+
+### Features
+
+* update node versiona nd build mechanism ([c5a4c9f](https://gitlab.kilic.dev/libraries/cz-cc/commit/c5a4c9fe8a94e91cb7c7987073d3a847c58772b0))
+
 ## [2.1.5](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.1.4...v2.1.5) (2025-09-04)
 
 
