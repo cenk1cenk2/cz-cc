@@ -13,7 +13,7 @@ importers:
         version: 8.2.0(@types/node@25.0.9)
       '@listr2/prompt-adapter-inquirer':
         specifier: ^3.0.3
-        version: 3.0.5(@inquirer/prompts@8.2.0(@types/node@25.0.9))(@types/node@25.0.9)(listr2@9.0.5)
+        version: 3.0.5(@inquirer/prompts@8.2.0(@types/node@25.0.9))(@types/node@25.0.9)(listr2@10.0.0)
       commitizen:
         specifier: ^4.3.1
         version: 4.3.1(@types/node@25.0.9)(typescript@5.9.3)
@@ -24,8 +24,8 @@ importers:
         specifier: ^1.0.4
         version: 1.0.4
       listr2:
-        specifier: ^9.0.3
-        version: 9.0.5
+        specifier: ^10.0.0
+        version: 10.0.0
     devDependencies:
       '@cenk1cenk2/eslint-config':
         specifier: ^3.1.69
@@ -1488,6 +1488,10 @@ packages:
     engines: {node: '>=20.17'}
     hasBin: true
 
+  listr2@10.0.0:
+    resolution: {integrity: sha512-/hexbwaVUnXaKtJQWjcoMnLQhseLD9uv+5g0Lprtj677jWOX9rJChBVqoN51bwu94QLz6C2q7almMYJ0f97bLQ==}
+    engines: {node: '>=22.0.0'}
+
   listr2@9.0.5:
     resolution: {integrity: sha512-ME4Fb83LgEgwNw96RKNvKV4VTLuXfoKudAmm2lP8Kk87KaMK0/Xrx/aAkMWmT8mDb+3MlFDspfbCs7adjRxA2g==}
     engines: {node: '>=20.0.0'}
@@ -1525,6 +1529,10 @@ packages:
   log-update@6.1.0:
     resolution: {integrity: sha512-9ie8ItPR6tjY5uYJh8K/Zrv/RMZ5VOlOWvtZdEHYSTFKZfIBPQa9tOAEeAWhd+AnIneLJ22w5fjOYtoutpWq5w==}
     engines: {node: '>=18'}
+
+  log-update@7.0.2:
+    resolution: {integrity: sha512-cSSF1K5w9juI2+JeSRAdaTUZJf6cJB0aWwWO1nQQkcWw44+bIfXmhZMwK2eEsv6tXvU3UfKX/kzcX6SP+1tLAw==}
+    engines: {node: '>=20'}
 
   longest@2.0.1:
     resolution: {integrity: sha512-Ajzxb8CM6WAnFjgiloPsI3bF+WCxcvhdIG3KNA2KN962+tdBsHcuQ4k4qX/EcS/2CRkcc0iAkR956Nib6aXU/Q==}
@@ -2412,11 +2420,11 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@listr2/prompt-adapter-inquirer@3.0.5(@inquirer/prompts@8.2.0(@types/node@25.0.9))(@types/node@25.0.9)(listr2@9.0.5)':
+  '@listr2/prompt-adapter-inquirer@3.0.5(@inquirer/prompts@8.2.0(@types/node@25.0.9))(@types/node@25.0.9)(listr2@10.0.0)':
     dependencies:
       '@inquirer/prompts': 8.2.0(@types/node@25.0.9)
       '@inquirer/type': 3.0.10(@types/node@25.0.9)
-      listr2: 9.0.5
+      listr2: 10.0.0
     transitivePeerDependencies:
       - '@types/node'
 
@@ -3659,6 +3667,15 @@ snapshots:
       string-argv: 0.3.2
       yaml: 2.8.2
 
+  listr2@10.0.0:
+    dependencies:
+      cli-truncate: 5.1.1
+      colorette: 2.0.20
+      eventemitter3: 5.0.1
+      log-update: 7.0.2
+      rfdc: 1.4.1
+      wrap-ansi: 9.0.2
+
   listr2@9.0.5:
     dependencies:
       cli-truncate: 5.1.1
@@ -3695,6 +3712,14 @@ snapshots:
       is-unicode-supported: 0.1.0
 
   log-update@6.1.0:
+    dependencies:
+      ansi-escapes: 7.2.0
+      cli-cursor: 5.0.0
+      slice-ansi: 7.1.2
+      strip-ansi: 7.1.2
+      wrap-ansi: 9.0.2
+
+  log-update@7.0.2:
     dependencies:
       ansi-escapes: 7.2.0
       cli-cursor: 5.0.0
