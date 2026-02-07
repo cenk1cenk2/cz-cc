@@ -9,10 +9,10 @@ importers:
   .:
     dependencies:
       '@inquirer/prompts':
-        specifier: ^8.1.0
+        specifier: ^8.2.0
         version: 8.2.0(@types/node@25.2.1)
       '@listr2/prompt-adapter-inquirer':
-        specifier: ^4.0.0
+        specifier: ^4.1.0
         version: 4.1.0(@inquirer/prompts@8.2.0(@types/node@25.2.1))(@types/node@25.2.1)(listr2@10.1.0)
       commitizen:
         specifier: ^4.3.1
@@ -21,10 +21,10 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       find-git-root:
-        specifier: ^1.0.4
+        specifier: ^1.1.0
         version: 1.1.0
       listr2:
-        specifier: ^10.0.0
+        specifier: ^10.1.0
         version: 10.1.0
     devDependencies:
       '@cenk1cenk2/eslint-config':
