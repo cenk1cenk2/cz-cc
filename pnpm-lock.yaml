@@ -13,7 +13,7 @@ importers:
         version: 8.3.0(@types/node@25.3.0)
       '@listr2/prompt-adapter-inquirer':
         specifier: ^4.1.0
-        version: 4.1.0(@inquirer/prompts@8.3.0(@types/node@25.3.0))(@types/node@25.3.0)(listr2@10.1.0)
+        version: 4.1.1(@inquirer/prompts@8.3.0(@types/node@25.3.0))(@types/node@25.3.0)(listr2@10.1.1)
       commitizen:
         specifier: ^4.3.1
         version: 4.3.1(@types/node@25.3.0)(typescript@5.9.3)
@@ -25,7 +25,7 @@ importers:
         version: 1.1.0
       listr2:
         specifier: ^10.1.0
-        version: 10.1.0
+        version: 10.1.1
     devDependencies:
       '@cenk1cenk2/eslint-config':
         specifier: ^3.2.0
@@ -332,12 +332,12 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@listr2/prompt-adapter-inquirer@4.1.0':
-    resolution: {integrity: sha512-gLZw/IQb0dM3U4R3XprZrC8HQT5jiIONiDLXIqy5YSOq17EIV2ZJcaGh+LDKT/FUZsId07Jx4h/1HoV+aG4TOw==}
+  '@listr2/prompt-adapter-inquirer@4.1.1':
+    resolution: {integrity: sha512-hlUMCYxuBrtjsBqzsy9ohzs3SiosQhXQlHltAZepMdLMBsWSPubjzBbBgTWK/glNO2ZJdZp8flhx2uRYf/RFUg==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@inquirer/prompts': '>= 3 < 9'
-      listr2: 10.1.0
+      listr2: 10.1.1
 
   '@napi-rs/wasm-runtime@1.1.1':
     resolution: {integrity: sha512-p64ah1M1ld8xjWv3qbvFwHiFVWrq1yFvV4f7w+mzaqiR4IlSgkqhcRdHwsGgomwzBH51sRY4NEowLxnaBjcW/A==}
@@ -499,10 +499,6 @@ packages:
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
       typescript: '>=4.8.4 <6.0.0'
-
-  '@typescript-eslint/types@8.56.0':
-    resolution: {integrity: sha512-DBsLPs3GsWhX5HylbP9HNG15U0bnwut55Lx12bHB9MpXxQ+R5GC8MwQe+N1UFXxAeQDvEsEDY6ZYwX03K7Z6HQ==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@typescript-eslint/types@8.56.1':
     resolution: {integrity: sha512-dbMkdIUkIkchgGDIv7KLUpa0Mda4IYjo4IAMJUZ+3xNoUXxMsk9YtKpTHSChRS85o+H9ftm51gsK1dZReY9CVw==}
@@ -1430,8 +1426,8 @@ packages:
     engines: {node: '>=20.17'}
     hasBin: true
 
-  listr2@10.1.0:
-    resolution: {integrity: sha512-/6t2KgDYIcCjhELwvrRxi1gaJ4xCGLTjNvh6mSjYenBkrZxggek8EwCbwBU33GMUCpyyrOzz2TzylrO5mTiI1w==}
+  listr2@10.1.1:
+    resolution: {integrity: sha512-4oogpJzRRGtq41B0GKZIldzYCnQTgX2DPM/XvcfNu7g2E7sxaast009150RKFZBnrHAnfMOUaedIqdIOLCCRxQ==}
     engines: {node: '>=22.0.0'}
 
   listr2@9.0.5:
@@ -2033,6 +2029,10 @@ packages:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
 
+  wrap-ansi@10.0.0:
+    resolution: {integrity: sha512-SGcvg80f0wUy2/fXES19feHMz8E0JoXv2uNgHOu4Dgi2OrCy1lqwFYEJz1BLbDI0exjPMe/ZdzZ/YpGECBG/aQ==}
+    engines: {node: '>=20'}
+
   wrap-ansi@7.0.0:
     resolution: {integrity: sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==}
     engines: {node: '>=10'}
@@ -2339,11 +2339,11 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@listr2/prompt-adapter-inquirer@4.1.0(@inquirer/prompts@8.3.0(@types/node@25.3.0))(@types/node@25.3.0)(listr2@10.1.0)':
+  '@listr2/prompt-adapter-inquirer@4.1.1(@inquirer/prompts@8.3.0(@types/node@25.3.0))(@types/node@25.3.0)(listr2@10.1.1)':
     dependencies:
       '@inquirer/prompts': 8.3.0(@types/node@25.3.0)
       '@inquirer/type': 4.0.3(@types/node@25.3.0)
-      listr2: 10.1.0
+      listr2: 10.1.1
     transitivePeerDependencies:
       - '@types/node'
 
@@ -2408,7 +2408,7 @@ snapshots:
   '@stylistic/eslint-plugin@5.9.0(eslint@10.0.2(jiti@2.6.1))':
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@10.0.2(jiti@2.6.1))
-      '@typescript-eslint/types': 8.56.0
+      '@typescript-eslint/types': 8.56.1
       eslint: 10.0.2(jiti@2.6.1)
       eslint-visitor-keys: 4.2.1
       espree: 10.4.0
@@ -2492,8 +2492,6 @@ snapshots:
       typescript: 5.9.3
     transitivePeerDependencies:
       - supports-color
-
-  '@typescript-eslint/types@8.56.0': {}
 
   '@typescript-eslint/types@8.56.1': {}
 
@@ -3564,14 +3562,14 @@ snapshots:
       string-argv: 0.3.2
       yaml: 2.8.2
 
-  listr2@10.1.0:
+  listr2@10.1.1:
     dependencies:
       cli-truncate: 5.1.1
       colorette: 2.0.20
       eventemitter3: 5.0.4
       log-update: 7.1.0
       rfdc: 1.4.1
-      wrap-ansi: 9.0.2
+      wrap-ansi: 10.0.0
 
   listr2@9.0.5:
     dependencies:
@@ -4247,6 +4245,12 @@ snapshots:
       isexe: 2.0.0
 
   word-wrap@1.2.5: {}
+
+  wrap-ansi@10.0.0:
+    dependencies:
+      ansi-styles: 6.2.3
+      string-width: 8.2.0
+      strip-ansi: 7.1.2
 
   wrap-ansi@7.0.0:
     dependencies:
