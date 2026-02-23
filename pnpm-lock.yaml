@@ -12,7 +12,7 @@ importers:
         specifier: ^8.3.0
         version: 8.3.0(@types/node@25.3.0)
       '@listr2/prompt-adapter-inquirer':
-        specifier: ^4.1.0
+        specifier: ^4.1.1
         version: 4.1.1(@inquirer/prompts@8.3.0(@types/node@25.3.0))(@types/node@25.3.0)(listr2@10.1.1)
       commitizen:
         specifier: ^4.3.1
@@ -24,7 +24,7 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
       listr2:
-        specifier: ^10.1.0
+        specifier: ^10.1.1
         version: 10.1.1
     devDependencies:
       '@cenk1cenk2/eslint-config':
