@@ -12,8 +12,8 @@ importers:
         specifier: ^8.3.0
         version: 8.3.0(@types/node@25.3.3)
       '@listr2/prompt-adapter-inquirer':
-        specifier: ^4.1.1
-        version: 4.1.1(@inquirer/prompts@8.3.0(@types/node@25.3.3))(@types/node@25.3.3)(listr2@10.1.1)
+        specifier: ^4.1.2
+        version: 4.1.2(@inquirer/prompts@8.3.0(@types/node@25.3.3))(@types/node@25.3.3)(listr2@10.1.2)
       commitizen:
         specifier: ^4.3.1
         version: 4.3.1(@types/node@25.3.3)(typescript@5.9.3)
@@ -24,8 +24,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
       listr2:
-        specifier: ^10.1.1
-        version: 10.1.1
+        specifier: ^10.1.2
+        version: 10.1.2
     devDependencies:
       '@cenk1cenk2/eslint-config':
         specifier: ^3.2.1
@@ -332,12 +332,12 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@listr2/prompt-adapter-inquirer@4.1.1':
-    resolution: {integrity: sha512-hlUMCYxuBrtjsBqzsy9ohzs3SiosQhXQlHltAZepMdLMBsWSPubjzBbBgTWK/glNO2ZJdZp8flhx2uRYf/RFUg==}
+  '@listr2/prompt-adapter-inquirer@4.1.2':
+    resolution: {integrity: sha512-Gnq4scw3evxbEVTQ5cz7l1zpjDdF35/NOOvTqPRvbGnPNegu9YbRwhFH144o30a0G5q+7iLgz6s1xOg+B5bvhg==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@inquirer/prompts': '>= 3 < 9'
-      listr2: 10.1.1
+      listr2: 10.1.2
 
   '@napi-rs/wasm-runtime@1.1.1':
     resolution: {integrity: sha512-p64ah1M1ld8xjWv3qbvFwHiFVWrq1yFvV4f7w+mzaqiR4IlSgkqhcRdHwsGgomwzBH51sRY4NEowLxnaBjcW/A==}
@@ -781,6 +781,10 @@ packages:
 
   cli-truncate@5.1.1:
     resolution: {integrity: sha512-SroPvNHxUnk+vIW/dOSfNqdy1sPEFkrTk6TUtqLCnBlo3N7TNYYkzzN7uSD6+jVjrdO4+p8nH7JzH6cIvUem6A==}
+    engines: {node: '>=20'}
+
+  cli-truncate@5.2.0:
+    resolution: {integrity: sha512-xRwvIOMGrfOAnM1JYtqQImuaNtDEv9v6oIYAs4LIHwTiKee8uwvIi363igssOC0O5U04i4AlENs79LQLu9tEMw==}
     engines: {node: '>=20'}
 
   cli-width@3.0.0:
@@ -1513,8 +1517,8 @@ packages:
     engines: {node: '>=20.17'}
     hasBin: true
 
-  listr2@10.1.1:
-    resolution: {integrity: sha512-4oogpJzRRGtq41B0GKZIldzYCnQTgX2DPM/XvcfNu7g2E7sxaast009150RKFZBnrHAnfMOUaedIqdIOLCCRxQ==}
+  listr2@10.1.2:
+    resolution: {integrity: sha512-ENXj5KYVtdZigbaWY0+lUCzRZNvKDEbxree+93oaCeSz8GICxgJyOMi6U9mHuiFd3hJ9y0RIDQh8RYttBKOnaQ==}
     engines: {node: '>=22.0.0'}
 
   listr2@9.0.5:
@@ -1545,10 +1549,6 @@ packages:
   log-update@6.1.0:
     resolution: {integrity: sha512-9ie8ItPR6tjY5uYJh8K/Zrv/RMZ5VOlOWvtZdEHYSTFKZfIBPQa9tOAEeAWhd+AnIneLJ22w5fjOYtoutpWq5w==}
     engines: {node: '>=18'}
-
-  log-update@7.2.0:
-    resolution: {integrity: sha512-iLs7dGSyjZiUgvrUvuD3FndAxVJk+TywBkkkwUSm9HdYoskJalWg5qVsEiXeufPvRVPbCUmNQewg798rx+sPXg==}
-    engines: {node: '>=20'}
 
   longest@2.0.1:
     resolution: {integrity: sha512-Ajzxb8CM6WAnFjgiloPsI3bF+WCxcvhdIG3KNA2KN962+tdBsHcuQ4k4qX/EcS/2CRkcc0iAkR956Nib6aXU/Q==}
@@ -2426,11 +2426,11 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@listr2/prompt-adapter-inquirer@4.1.1(@inquirer/prompts@8.3.0(@types/node@25.3.3))(@types/node@25.3.3)(listr2@10.1.1)':
+  '@listr2/prompt-adapter-inquirer@4.1.2(@inquirer/prompts@8.3.0(@types/node@25.3.3))(@types/node@25.3.3)(listr2@10.1.2)':
     dependencies:
       '@inquirer/prompts': 8.3.0(@types/node@25.3.3)
       '@inquirer/type': 4.0.3(@types/node@25.3.3)
-      listr2: 10.1.1
+      listr2: 10.1.2
     transitivePeerDependencies:
       - '@types/node'
 
@@ -2854,6 +2854,11 @@ snapshots:
   cli-truncate@5.1.1:
     dependencies:
       slice-ansi: 7.1.2
+      string-width: 8.2.0
+
+  cli-truncate@5.2.0:
+    dependencies:
+      slice-ansi: 8.0.0
       string-width: 8.2.0
 
   cli-width@3.0.0: {}
@@ -3693,12 +3698,12 @@ snapshots:
       tinyexec: 1.0.2
       yaml: 2.8.2
 
-  listr2@10.1.1:
+  listr2@10.1.2:
     dependencies:
-      cli-truncate: 5.1.1
+      cli-truncate: 5.2.0
       colorette: 2.0.20
       eventemitter3: 5.0.4
-      log-update: 7.2.0
+      log-update: 6.1.0
       rfdc: 1.4.1
       wrap-ansi: 10.0.0
 
@@ -3736,14 +3741,6 @@ snapshots:
       slice-ansi: 7.1.2
       strip-ansi: 7.2.0
       wrap-ansi: 9.0.2
-
-  log-update@7.2.0:
-    dependencies:
-      ansi-escapes: 7.3.0
-      cli-cursor: 5.0.0
-      slice-ansi: 8.0.0
-      strip-ansi: 7.2.0
-      wrap-ansi: 10.0.0
 
   longest@2.0.1: {}
 
