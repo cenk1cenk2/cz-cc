@@ -41,7 +41,7 @@
     "listr2": "^10.1.1"
   },
   "devDependencies": {
-    "@cenk1cenk2/eslint-config": "^3.2.0",
+    "@cenk1cenk2/eslint-config": "^3.2.1",
     "eslint": "^10.0.2",
     "lint-staged": "^16.3.1",
     "prettier": "^3.8.1",
