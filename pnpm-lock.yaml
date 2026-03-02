@@ -13,7 +13,7 @@ importers:
         version: 8.3.0(@types/node@25.3.3)
       '@listr2/prompt-adapter-inquirer':
         specifier: ^4.1.2
-        version: 4.1.2(@inquirer/prompts@8.3.0(@types/node@25.3.3))(@types/node@25.3.3)(listr2@10.1.2)
+        version: 4.1.2(@inquirer/prompts@8.3.0(@types/node@25.3.3))(@types/node@25.3.3)(listr2@10.2.0)
       commitizen:
         specifier: ^4.3.1
         version: 4.3.1(@types/node@25.3.3)(typescript@5.9.3)
@@ -25,7 +25,7 @@ importers:
         version: 1.1.0
       listr2:
         specifier: ^10.1.2
-        version: 10.1.2
+        version: 10.2.0
     devDependencies:
       '@cenk1cenk2/eslint-config':
         specifier: ^3.2.1
@@ -1517,9 +1517,9 @@ packages:
     engines: {node: '>=20.17'}
     hasBin: true
 
-  listr2@10.1.2:
-    resolution: {integrity: sha512-ENXj5KYVtdZigbaWY0+lUCzRZNvKDEbxree+93oaCeSz8GICxgJyOMi6U9mHuiFd3hJ9y0RIDQh8RYttBKOnaQ==}
-    engines: {node: '>=22.0.0'}
+  listr2@10.2.0:
+    resolution: {integrity: sha512-aSL6JaesI+oKdvkxIZxT5lMw9NS8llMQZvz4l+VBYEhzQbe4/q+AXzehKuMEyoZDsgnBXv2aOTlohBs+M38Jpw==}
+    engines: {node: '>=22.13.0'}
 
   listr2@9.0.5:
     resolution: {integrity: sha512-ME4Fb83LgEgwNw96RKNvKV4VTLuXfoKudAmm2lP8Kk87KaMK0/Xrx/aAkMWmT8mDb+3MlFDspfbCs7adjRxA2g==}
@@ -2426,11 +2426,11 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@listr2/prompt-adapter-inquirer@4.1.2(@inquirer/prompts@8.3.0(@types/node@25.3.3))(@types/node@25.3.3)(listr2@10.1.2)':
+  '@listr2/prompt-adapter-inquirer@4.1.2(@inquirer/prompts@8.3.0(@types/node@25.3.3))(@types/node@25.3.3)(listr2@10.2.0)':
     dependencies:
       '@inquirer/prompts': 8.3.0(@types/node@25.3.3)
       '@inquirer/type': 4.0.3(@types/node@25.3.3)
-      listr2: 10.1.2
+      listr2: 10.2.0
     transitivePeerDependencies:
       - '@types/node'
 
@@ -3697,10 +3697,9 @@ snapshots:
       tinyexec: 1.0.2
       yaml: 2.8.2
 
-  listr2@10.1.2:
+  listr2@10.2.0:
     dependencies:
       cli-truncate: 5.2.0
-      colorette: 2.0.20
       eventemitter3: 5.0.4
       log-update: 6.1.0
       rfdc: 1.4.1
