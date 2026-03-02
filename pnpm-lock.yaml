@@ -13,7 +13,7 @@ importers:
         version: 8.3.0(@types/node@25.3.3)
       '@listr2/prompt-adapter-inquirer':
         specifier: ^4.2.0
-        version: 4.2.0(@inquirer/prompts@8.3.0(@types/node@25.3.3))(@types/node@25.3.3)(listr2@10.2.0)
+        version: 4.2.1(@inquirer/prompts@8.3.0(@types/node@25.3.3))(@types/node@25.3.3)(listr2@10.2.1)
       commitizen:
         specifier: ^4.3.1
         version: 4.3.1(@types/node@25.3.3)(typescript@5.9.3)
@@ -25,7 +25,7 @@ importers:
         version: 1.1.0
       listr2:
         specifier: ^10.2.0
-        version: 10.2.0
+        version: 10.2.1
     devDependencies:
       '@cenk1cenk2/eslint-config':
         specifier: ^3.2.1
@@ -332,12 +332,12 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@listr2/prompt-adapter-inquirer@4.2.0':
-    resolution: {integrity: sha512-pUryCYZrqRkbXKBWNTfh/oJDZ24euqToIlZlHSak6tHQlwR68SDzKIRIa8S+PnzVzCJmNY2gdrCYxjsvLaz1pw==}
+  '@listr2/prompt-adapter-inquirer@4.2.1':
+    resolution: {integrity: sha512-z3jVhDIz6/X5rPFAk8r00mOHTxpZljgOKNnrq6FLIoZUbXcPrcW3wfM7aUOxy4NXrUewTchcVZxgxHLZY3vN7Q==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@inquirer/prompts': '>= 3 < 9'
-      listr2: 10.2.0
+      listr2: 10.2.1
 
   '@napi-rs/wasm-runtime@1.1.1':
     resolution: {integrity: sha512-p64ah1M1ld8xjWv3qbvFwHiFVWrq1yFvV4f7w+mzaqiR4IlSgkqhcRdHwsGgomwzBH51sRY4NEowLxnaBjcW/A==}
@@ -1517,8 +1517,8 @@ packages:
     engines: {node: '>=20.17'}
     hasBin: true
 
-  listr2@10.2.0:
-    resolution: {integrity: sha512-aSL6JaesI+oKdvkxIZxT5lMw9NS8llMQZvz4l+VBYEhzQbe4/q+AXzehKuMEyoZDsgnBXv2aOTlohBs+M38Jpw==}
+  listr2@10.2.1:
+    resolution: {integrity: sha512-7I5knELsJKTUjXG+A6BkKAiGkW1i25fNa/xlUl9hFtk15WbE9jndA89xu5FzQKrY5llajE1hfZZFMILXkDHk/Q==}
     engines: {node: '>=22.13.0'}
 
   listr2@9.0.5:
@@ -2426,11 +2426,11 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@listr2/prompt-adapter-inquirer@4.2.0(@inquirer/prompts@8.3.0(@types/node@25.3.3))(@types/node@25.3.3)(listr2@10.2.0)':
+  '@listr2/prompt-adapter-inquirer@4.2.1(@inquirer/prompts@8.3.0(@types/node@25.3.3))(@types/node@25.3.3)(listr2@10.2.1)':
     dependencies:
       '@inquirer/prompts': 8.3.0(@types/node@25.3.3)
       '@inquirer/type': 4.0.3(@types/node@25.3.3)
-      listr2: 10.2.0
+      listr2: 10.2.1
     transitivePeerDependencies:
       - '@types/node'
 
@@ -3697,7 +3697,7 @@ snapshots:
       tinyexec: 1.0.2
       yaml: 2.8.2
 
-  listr2@10.2.0:
+  listr2@10.2.1:
     dependencies:
       cli-truncate: 5.2.0
       eventemitter3: 5.0.4
