@@ -1,3 +1,10 @@
+## [2.2.11](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.2.10...v2.2.11) (2026-03-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @listr2/prompt-adapter-inquirer to ^4.2.2 ([74b9c13](https://gitlab.kilic.dev/libraries/cz-cc/commit/74b9c139e0eeee670707a75a578934a146ed9b19))
+
 ## [2.2.10](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.2.9...v2.2.10) (2026-03-15)
 
 
