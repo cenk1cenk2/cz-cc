@@ -1,3 +1,10 @@
+## [2.2.12](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.2.11...v2.2.12) (2026-04-06)
+
+
+### Bug Fixes
+
+* **deps:** update node all minor dependency updates ([718009f](https://gitlab.kilic.dev/libraries/cz-cc/commit/718009f61dcd0447a11b50ce32cb27324c0975ae))
+
 ## [2.2.11](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.2.10...v2.2.11) (2026-03-17)
 
 
