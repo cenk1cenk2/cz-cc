@@ -42,11 +42,11 @@
   },
   "devDependencies": {
     "@cenk1cenk2/eslint-config": "^3.2.5",
-    "eslint": "^10.3.0",
+    "eslint": "^10.4.0",
     "lint-staged": "^16.4.0",
     "prettier": "^3.8.3",
     "simple-git-hooks": "^2.13.1",
-    "tsdown": "^0.21.10"
+    "tsdown": "^0.22.0"
   },
   "config": {
     "commitizen": {
