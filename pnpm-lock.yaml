@@ -34,7 +34,7 @@ importers:
         specifier: ^10.4.0
         version: 10.4.0(jiti@2.6.1)
       lint-staged:
-        specifier: ^17.0.4
+        specifier: ^17.0.5
         version: 17.0.5
       prettier:
         specifier: ^3.8.3
