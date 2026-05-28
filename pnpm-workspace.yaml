@@ -1,0 +1,10 @@
+packages: []
+
+minimumReleaseAge: 1440
+
+minimumReleaseAgeExclude:
+  - '@cenk1cenk2/*'
+
+allowBuilds:
+  simple-git-hooks: true
+  tsdown: true
