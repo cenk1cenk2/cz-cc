@@ -29,6 +29,8 @@ export default function(options) {
                   // eslint-disable-next-line no-empty
                 } catch {}
               }
+
+              return false
             },
             task: async(ctx, task) => {
               if (

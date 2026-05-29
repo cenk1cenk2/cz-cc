@@ -2,17 +2,16 @@
   "compilerOptions": {
     "target": "es2021",
     "lib": ["es2021"],
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "module": "preserve",
+    "moduleResolution": "bundler",
     "noImplicitAny": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "checkJs": true,
-    "baseUrl": "./src/",
+    "maxNodeModuleJsDepth": 0,
     "resolveJsonModule": true,
-    "paths": {
-      "@root/*": ["./*"]
-    }
+    "types": ["node"]
   },
-  "exclude": ["node_modules"]
+  "include": ["src/**/*.js", "tsdown.config.mts"],
+  "exclude": ["dist", "node_modules"]
 }
