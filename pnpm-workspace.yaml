@@ -8,3 +8,4 @@ minimumReleaseAgeExclude:
 allowBuilds:
   simple-git-hooks: true
   tsdown: true
+  unrs-resolver: true
