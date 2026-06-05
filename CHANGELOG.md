@@ -1,3 +1,10 @@
+## [2.2.17](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.2.16...v2.2.17) (2026-06-05)
+
+
+### Bug Fixes
+
+* **deps:** update node all minor dependency updates to ^8.5.1 ([6c6d1ef](https://gitlab.kilic.dev/libraries/cz-cc/commit/6c6d1ef917cec183810e1b5ea988ec5e822aa20d))
+
 ## [2.2.16](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.2.15...v2.2.16) (2026-06-04)
 
 
