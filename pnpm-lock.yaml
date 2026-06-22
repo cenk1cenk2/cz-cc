@@ -15,7 +15,7 @@ importers:
         specifier: ^4.2.4
         version: 4.2.4(@inquirer/prompts@8.5.2(@types/node@24.13.2))(@types/node@24.13.2)(listr2@10.2.1)
       commitizen:
-        specifier: ^4.3.1
+        specifier: ^4.3.2
         version: 4.3.2(@types/node@24.13.2)(typescript@6.0.3)
       conventional-commit-types:
         specifier: ^3.0.0
