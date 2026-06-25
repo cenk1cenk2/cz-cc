@@ -38,7 +38,7 @@
     "commitizen": "^4.3.2",
     "conventional-commit-types": "^3.0.0",
     "find-git-root": "^1.1.0",
-    "listr2": "^10.2.1"
+    "listr2": "^10.2.2"
   },
   "devDependencies": {
     "@cenk1cenk2/eslint-config": "^3.2.6",
