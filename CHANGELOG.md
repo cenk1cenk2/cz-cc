@@ -1,3 +1,10 @@
+## [2.2.21](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.2.20...v2.2.21) (2026-07-08)
+
+
+### Bug Fixes
+
+* **ci:** change when:always to when:on_success for stage gating (K-658) ([9f16d3f](https://gitlab.kilic.dev/libraries/cz-cc/commit/9f16d3f4794d4bd20d610869e617c9788544de47))
+
 ## [2.2.20](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.2.19...v2.2.20) (2026-06-25)
 
 
