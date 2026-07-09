@@ -11,34 +11,30 @@ variables:
 
 include:
   - project: devops/pipelines
-    ref: node@1.2.0
+    ref: node@2.0.0
     file:
       - /node/install.gitlab-ci.yml
       - /node/build.gitlab-ci.yml
       - /node/lint.gitlab-ci.yml
-    inputs:
-      rules:
-        - when: on_success
 
   - project: devops/pipelines
-    ref: semantic-release@1.6.1
+    ref: semantic-release@2.0.0
     file:
       - /semantic-release/publish.gitlab-ci.yml
-    inputs:
-      rules:
-        - if: '$CI_COMMIT_REF_NAME =~ /^(master|main|alpha|beta|rc|next)$/'
-          interruptible: true
-        - when: never
 
 install:
   stage: install
   extends:
     - .node-install
+  rules:
+    - when: on_success
 
 lint:
   stage: build
   extends:
     - .node-lint
+  rules:
+    - when: on_success
 
 build:
   stage: build
@@ -48,6 +44,8 @@ build:
     - install
   dependencies:
     - install
+  rules:
+    - when: on_success
 
 semantic-release:
   stage: publish
@@ -58,3 +56,7 @@ semantic-release:
     - lint
   dependencies:
     - build
+  rules:
+    - if: '$CI_COMMIT_REF_NAME =~ /^(master|main|alpha|beta|rc|next)$/'
+      interruptible: true
+    - when: never
