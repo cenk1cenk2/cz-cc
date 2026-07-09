@@ -1,3 +1,10 @@
+## [2.2.22](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.2.21...v2.2.22) (2026-07-09)
+
+
+### Bug Fixes
+
+* **ci:** remove unnecessary rules overrides, use template defaults ([02f94bc](https://gitlab.kilic.dev/libraries/cz-cc/commit/02f94bc7061414c7314cd0ca20b6609215f23f78))
+
 ## [2.2.21](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.2.20...v2.2.21) (2026-07-08)
 
 
