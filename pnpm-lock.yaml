@@ -31,7 +31,7 @@ importers:
         specifier: ^3.2.6
         version: 3.2.6(@typescript-eslint/utils@8.64.0(eslint@10.7.0(jiti@2.6.1))(typescript@6.0.3))(eslint@10.7.0(jiti@2.6.1))(typescript@6.0.3)
       '@types/node':
-        specifier: ^24.13.2
+        specifier: ^24.13.3
         version: 24.13.3
       eslint:
         specifier: ^10.6.0
