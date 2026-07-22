@@ -1,3 +1,10 @@
+## [2.2.23](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.2.22...v2.2.23) (2026-07-22)
+
+
+### Bug Fixes
+
+* **deps:** bump listr2 to v11.0.0 and @listr2/prompt-adapter-inquirer to v4.2.5 ([15d7298](https://gitlab.kilic.dev/libraries/cz-cc/commit/15d72984c133f7125f8a396f6b168ca29bfd8c38))
+
 ## [2.2.22](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.2.21...v2.2.22) (2026-07-09)
 
 
