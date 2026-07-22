@@ -4,6 +4,8 @@ minimumReleaseAge: 1440
 
 minimumReleaseAgeExclude:
   - '@cenk1cenk2/*'
+  - 'listr2'
+  - '@listr2/*'
 
 allowBuilds:
   simple-git-hooks: true
