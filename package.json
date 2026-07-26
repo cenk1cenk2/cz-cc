@@ -47,7 +47,7 @@
     "lint-staged": "^17.1.0",
     "prettier": "^3.9.5",
     "simple-git-hooks": "^2.13.1",
-    "tsdown": "^0.22.9",
+    "tsdown": "^0.22.11",
     "typescript": "^6.0.3"
   },
   "config": {
