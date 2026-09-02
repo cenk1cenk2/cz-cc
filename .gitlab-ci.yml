@@ -47,6 +47,10 @@ semantic-release:
     - lint
   dependencies:
     - build
+  before_script:
+    # @semantic-release/npm never writes ~/.npmrc — it writes a tempfile and passes it via --userconfig to its own npm calls only
+    # so this authenticated npmrc is what `npm stage publish` uses, regardless of the npmPublish setting
+    - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
   rules:
     - if: '$CI_COMMIT_REF_NAME =~ /^(master|main|alpha|beta|rc|next)$/'
       interruptible: true
