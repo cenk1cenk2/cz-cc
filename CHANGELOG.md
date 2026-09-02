@@ -1,3 +1,10 @@
+# [2.3.0](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.2.24...v2.3.0) (2026-09-02)
+
+
+### Features
+
+* **ci:** publish packages via npm staged publishing ([590e63d](https://gitlab.kilic.dev/libraries/cz-cc/commit/590e63d7c6c4d0aa5b17974e2db3cc8a1dd2a457))
+
 ## [2.2.24](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.2.23...v2.2.24) (2026-08-26)
 
 
