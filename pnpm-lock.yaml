@@ -37,7 +37,7 @@ importers:
         specifier: ^10.9.1
         version: 10.9.1(jiti@2.6.1)(supports-color@7.2.0)
       lint-staged:
-        specifier: ^17.3.0
+        specifier: ^17.4.1
         version: 17.4.1
       prettier:
         specifier: ^3.9.6
