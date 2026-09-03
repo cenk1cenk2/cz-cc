@@ -33,7 +33,7 @@
     "node": ">= 24"
   },
   "dependencies": {
-    "@inquirer/prompts": "^8.6.0",
+    "@inquirer/prompts": "^8.7.0",
     "@listr2/prompt-adapter-inquirer": "^4.2.7",
     "commitizen": "^4.3.2",
     "conventional-commit-types": "^3.0.0",
