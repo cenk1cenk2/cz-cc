@@ -3,11 +3,19 @@ import { configLoader } from 'commitizen'
 import commitTypes from 'conventional-commit-types'
 
 import engine from './engine'
+import { PRESETS } from './presets'
 
 function bootstrap() {
   const config = configLoader.load() || {}
 
+  const preset = process.env.CZ_PRESET || config.preset || PRESETS.conventionalcommits
+
+  if (!Object.hasOwn(PRESETS, preset)) {
+    throw new Error(`Unknown preset "${preset}", expected one of: ${Object.keys(PRESETS).join(', ')}.`)
+  }
+
   const options = {
+    preset,
     types: config.types || commitTypes.types,
     defaultType: process.env.CZ_TYPE || config.defaultType || 'fix',
     defaultScope: process.env.CZ_SCOPE || config.defaultScope,

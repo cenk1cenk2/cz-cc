@@ -7,6 +7,8 @@ import { EOL } from 'os'
 import { join } from 'path'
 import { confirm, select, input, checkbox, editor } from '@inquirer/prompts'
 
+import { PRESETS } from './presets'
+
 export default function(options) {
   return {
     prompter(cz, commit) {
@@ -79,10 +81,19 @@ export default function(options) {
                     value: 'issue',
                     description: 'Resolve Issues by additional comments.'
                   },
+                  ...(options.preset === PRESETS.conventionalcommits
+                    ? [
+                      {
+                        name: 'breaking-marker',
+                        value: 'breaking-marker',
+                        description: 'Mark the commit as breaking with the "!" marker in the header.'
+                      }
+                    ]
+                    : []),
                   {
                     name: 'breaking-changes',
                     value: 'breaking-changes',
-                    description: 'Note breaking changes in the commit message.'
+                    description: 'Describe the breaking changes in a footer of the commit message.'
                   },
                   {
                     name: 'long-description',
@@ -159,8 +170,11 @@ export default function(options) {
           // parentheses are only needed when a scope is present
           const scope = ctx.prompts.scope ? `(${ctx.prompts.scope})` : ''
 
+          // the marker is exclusive to the conventionalcommits header pattern, angular signals breaking changes through the footer alone
+          const breakingMarker = options.preset === PRESETS.conventionalcommits && ctx.prompts.additional.includes('breaking-marker') ? '!' : ''
+
           // Hard limit this line in the validate
-          let head = ctx.prompts.type + scope + ': ' + ctx.prompts.subject
+          let head = ctx.prompts.type + scope + breakingMarker + ': ' + ctx.prompts.subject
 
           if (ctx.prompts.additional.includes('skip-ci')) {
             head = head + ' [skip ci]'
