@@ -1,3 +1,13 @@
+## [3.0.0](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.3.3...v3.0.0) (2026-09-10)
+
+### ⚠ BREAKING CHANGES
+
+* make conventionalcommits the default prompt preset
+
+### Features
+
+* make conventionalcommits the default prompt preset ([e84a047](https://gitlab.kilic.dev/libraries/cz-cc/commit/e84a0476462dbd89c5f54dfdaee46f057f640332))
+
 ## [2.3.3](https://gitlab.kilic.dev/libraries/cz-cc/compare/v2.3.2...v2.3.3) (2026-09-09)
 
 
