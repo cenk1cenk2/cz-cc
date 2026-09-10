@@ -108,14 +108,16 @@ The following environment varibles can be used to override any default configura
 
 ## Breaking Changes
 
-The `preset` configuration decides how a breaking change is captured, which has to match the preset the release tooling analyzes commits with.
+Breaking changes are declared through the additional actions of the prompt, and the `preset` configuration decides which of the two mechanisms are offered there. It has to match the preset the release tooling analyzes commits with.
 
-- `conventionalcommits` (**default**) asks whether the commit is a breaking change right after the description and appends the `!` marker after the type and the optional scope, as in `feat(api)!: drop the legacy token endpoint`. The `BREAKING CHANGE` footer stays available through the additional actions and both may be used together, since the specification treats the marker and the footer as independent signals.
-- `angular` drops the marker prompt entirely and signals breaking changes through the `BREAKING CHANGE` footer alone, which is the behaviour of every release before v3.
+- `conventionalcommits` (**default**) offers both. `breaking-marker` appends the `!` marker after the type and the optional scope, as in `feat(api)!: drop the legacy token endpoint`, and `breaking-changes` appends a `BREAKING CHANGE` footer. The specification treats them as independent signals, so either one on its own marks the commit as breaking and selecting both is valid.
+- `angular` offers `breaking-changes` alone, since the `!` marker is not part of its header pattern. This is the behaviour of every release before v3.
+
+Selecting neither leaves the commit non-breaking, so an ordinary commit still skips the whole subject in one pass.
 
 ### Migration to v3
 
-`conventionalcommits` became the default in v3, so commits made through the adapter can now carry the `!` marker in the header. Two things to check:
+`conventionalcommits` became the default in v3, so commits made through the adapter can now carry the `!` marker in the header once `breaking-marker` is selected. Two things to check:
 
 - The release tooling has to analyze commits with the `conventionalcommits` preset, otherwise the `!` marker is not read as a major bump. `@semantic-release/commit-analyzer` and `commitlint` both take a `preset` of their own.
 - `header-max-length` counts the extra character, and any tooling matching commit headers with a custom regular expression has to allow the `!` before the colon.
