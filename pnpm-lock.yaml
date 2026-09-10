@@ -1469,8 +1469,8 @@ packages:
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
-  obug@2.2.0:
-    resolution: {integrity: sha512-DTPFAXAAdIRLFcFfIszRGvMSOvCK1Ghp7AnQfeVK8jc+olCr7Bk1SjHgRmMDeWNFE0rdo3rmx+I0RSjhPUDSWQ==}
+  obug@2.2.1:
+    resolution: {integrity: sha512-XrsrhT5sybtKI6wakr2SPOlGZWWYbUXZ7a0jT8/QOeAPau+1X/bSegNe5YR75oJmEZQbKningirmGOEJCIk61Q==}
     engines: {node: '>=12.20.0'}
 
   once@1.4.0:
@@ -3144,7 +3144,7 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  obug@2.2.0: {}
+  obug@2.2.1: {}
 
   once@1.4.0:
     dependencies:
@@ -3263,7 +3263,7 @@ snapshots:
     dependencies:
       dts-resolver: 3.0.0
       get-tsconfig: 5.0.0-beta.5
-      obug: 2.2.0
+      obug: 2.2.1
       rolldown: 1.2.7
       yuku-ast: 0.8.7
       yuku-codegen: 0.8.7
@@ -3389,7 +3389,7 @@ snapshots:
       empathic: 2.0.1
       hookable: 6.1.1
       import-without-cache: 0.4.0
-      obug: 2.2.0
+      obug: 2.2.1
       picomatch: 4.0.7
       rolldown: 1.2.7
       rolldown-plugin-dts: 0.27.14(rolldown@1.2.7)(typescript@6.0.3)
