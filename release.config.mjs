@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-undef
-module.exports = {
+export default {
   extends: '@cenk1cenk2/semantic-release-config',
   plugins: [
     ['@cenk1cenk2/semantic-release-config/presets/npm', { publish: 'staged', client: 'pnpm' }],
