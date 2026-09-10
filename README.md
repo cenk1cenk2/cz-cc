@@ -11,6 +11,8 @@
 - [Configuration](#configuration)
   - [package.json](#packagejson)
   - [Environment Variables](#environment-variables)
+- [Breaking Changes](#breaking-changes)
+  - [Migration to v3](#migration-to-v3)
 - [Commitlint](#commitlint)
 
 <!-- tocstop -->
@@ -68,6 +70,7 @@ Like commitizen, you specify the configuration of cz-conventional-changelog thro
     "config": {
         "commitizen": {
             "path": "./node_modules/@cenk1cenk2/cz-cc",
+            "preset": "conventionalcommits",
             "maxHeaderWidth": 100,
             "maxLineWidth": 100,
             "defaultType": "",
@@ -89,16 +92,45 @@ Like commitizen, you specify the configuration of cz-conventional-changelog thro
 }
 ```
 
+`preset` selects how breaking changes are prompted for and rendered, either `conventionalcommits` (default) or `angular`. See [Breaking Changes](#breaking-changes).
+
 ### Environment Variables
 
 The following environment varibles can be used to override any default configuration or package.json based configuration.
 
+- CZ_PRESET = preset
 - CZ_TYPE = defaultType
 - CZ_SCOPE = defaultScope
 - CZ_SUBJECT = defaultSubject
 - CZ_BODY = defaultBody
 - CZ_MAX_HEADER_WIDTH = maxHeaderWidth
 - CZ_MAX_LINE_WIDTH = maxLineWidth
+
+## Breaking Changes
+
+The `preset` configuration decides how a breaking change is captured, which has to match the preset the release tooling analyzes commits with.
+
+- `conventionalcommits` (**default**) asks whether the commit is a breaking change right after the description and appends the `!` marker after the type and the optional scope, as in `feat(api)!: drop the legacy token endpoint`. The `BREAKING CHANGE` footer stays available through the additional actions and both may be used together, since the specification treats the marker and the footer as independent signals.
+- `angular` drops the marker prompt entirely and signals breaking changes through the `BREAKING CHANGE` footer alone, which is the behaviour of every release before v3.
+
+### Migration to v3
+
+`conventionalcommits` became the default in v3, so commits made through the adapter can now carry the `!` marker in the header. Two things to check:
+
+- The release tooling has to analyze commits with the `conventionalcommits` preset, otherwise the `!` marker is not read as a major bump. `@semantic-release/commit-analyzer` and `commitlint` both take a `preset` of their own.
+- `header-max-length` counts the extra character, and any tooling matching commit headers with a custom regular expression has to allow the `!` before the colon.
+
+To keep the previous behaviour, pin the preset back:
+
+```json5
+{
+  "config": {
+    "commitizen": {
+      "preset": "angular"
+    }
+  }
+}
+```
 
 ## Commitlint
 

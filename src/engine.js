@@ -7,6 +7,8 @@ import { EOL } from 'os'
 import { join } from 'path'
 import { confirm, select, input, checkbox, editor } from '@inquirer/prompts'
 
+import { PRESETS } from './presets'
+
 export default function(options) {
   return {
     prompter(cz, commit) {
@@ -66,6 +68,13 @@ export default function(options) {
                 required: true
               })
 
+              if (options.preset === PRESETS.conventionalcommits) {
+                ctx.prompts.breakingMarker = await task.prompt(ListrInquirerPromptAdapter).run(confirm, {
+                  message: 'Is this a breaking change?',
+                  default: false
+                })
+              }
+
               ctx.prompts.additional = await task.prompt(ListrInquirerPromptAdapter).run(checkbox, {
                 message: 'Please select additional actions.',
                 choices: [
@@ -82,7 +91,7 @@ export default function(options) {
                   {
                     name: 'breaking-changes',
                     value: 'breaking-changes',
-                    description: 'Note breaking changes in the commit message.'
+                    description: 'Describe the breaking changes in a footer of the commit message.'
                   },
                   {
                     name: 'long-description',
@@ -159,8 +168,11 @@ export default function(options) {
           // parentheses are only needed when a scope is present
           const scope = ctx.prompts.scope ? `(${ctx.prompts.scope})` : ''
 
+          // the marker is exclusive to the conventionalcommits preset, angular signals breaking changes through the footer alone
+          const breakingMarker = ctx.prompts.breakingMarker ? '!' : ''
+
           // Hard limit this line in the validate
-          let head = ctx.prompts.type + scope + ': ' + ctx.prompts.subject
+          let head = ctx.prompts.type + scope + breakingMarker + ': ' + ctx.prompts.subject
 
           if (ctx.prompts.additional.includes('skip-ci')) {
             head = head + ' [skip ci]'
