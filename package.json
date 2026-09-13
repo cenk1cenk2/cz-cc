@@ -43,8 +43,8 @@
   "devDependencies": {
     "@cenk1cenk2/eslint-config": "^3.3.2",
     "@types/node": "^24.13.3",
-    "eslint": "^10.9.1",
-    "lint-staged": "^17.4.1",
+    "eslint": "^10.10.0",
+    "lint-staged": "^17.5.0",
     "prettier": "^3.9.6",
     "simple-git-hooks": "^2.14.0",
     "tsdown": "^0.23.0",
