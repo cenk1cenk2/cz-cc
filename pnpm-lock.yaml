@@ -28,8 +28,8 @@ importers:
         version: 11.1.0
     devDependencies:
       '@cenk1cenk2/eslint-config':
-        specifier: ^3.3.2
-        version: 3.3.2(@typescript-eslint/utils@8.70.0(eslint@10.10.0(jiti@2.6.1)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.10.0(jiti@2.6.1)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
+        specifier: ^3.3.5
+        version: 3.3.5(@typescript-eslint/utils@8.70.0(eslint@10.10.0(jiti@2.6.1)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.10.0(jiti@2.6.1)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
       '@types/node':
         specifier: ^24.13.3
         version: 24.13.4
@@ -68,8 +68,8 @@ packages:
   '@cacheable/utils@2.5.0':
     resolution: {integrity: sha512-buipgOVDkkPXNR5+xBpDw7Zk2n1EvU7qBJCNUcL7rhQ//kfpOXPAvQ511Os0vpLYJ1pZnvudNytkQt2hst3wqA==}
 
-  '@cenk1cenk2/eslint-config@3.3.2':
-    resolution: {integrity: sha512-JXSNZAwXcrX12OpnAGa4Y6LsbhQPYjZLlJQ8x33eGpMyg/Xwd2nGxtUFljzm1KWaP+UPE6fAY3ZMfe/58WVM9g==}
+  '@cenk1cenk2/eslint-config@3.3.5':
+    resolution: {integrity: sha512-D7KnuDJqsh1/sMy6n069/On0QYAzReLAd5ZvC0UxRS7RJN1mloPl3EZLh6+Lc51+2Mz1+oReZkHTrAbWO8ZW2g==}
     peerDependencies:
       '@vue/eslint-config-typescript': '>= 14.1.1'
       eslint: '>= 9'
@@ -1864,7 +1864,7 @@ snapshots:
       hashery: 1.5.1
       keyv: 5.6.0
 
-  '@cenk1cenk2/eslint-config@3.3.2(@typescript-eslint/utils@8.70.0(eslint@10.10.0(jiti@2.6.1)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.10.0(jiti@2.6.1)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
+  '@cenk1cenk2/eslint-config@3.3.5(@typescript-eslint/utils@8.70.0(eslint@10.10.0(jiti@2.6.1)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.10.0(jiti@2.6.1)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
       '@eslint/js': 10.0.1(eslint@10.10.0(jiti@2.6.1)(supports-color@7.2.0))
       '@stylistic/eslint-plugin': 5.10.0(eslint@10.10.0(jiti@2.6.1)(supports-color@7.2.0))
