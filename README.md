@@ -42,12 +42,19 @@ commitizen init @cenk1cenk2/cz-cc --yarn --dev
 commitizen init @cenk1cenk2/cz-cc --dev
 ```
 
-- Add git-hooks.
+- Add git-hooks with [hk](https://hk.jdx.dev).
 
-```json
-{
-  "simple-git-hooks": {
-    "prepare-commit-msg": "[ -t 1 ] && exec < /dev/tty && git cz --hook || true"
+```pkl
+amends "package://github.com/jdx/hk/releases/download/v2.0.1/hk@2.0.1#/Config.pkl"
+
+hooks {
+  ["prepare-commit-msg"] {
+    steps {
+      ["commitizen"] {
+        fix = "git cz --hook"
+        interactive = true
+      }
+    }
   }
 }
 ```
@@ -126,9 +133,9 @@ To keep the previous behaviour, pin the preset back:
 
 ```json5
 {
-  "config": {
-    "commitizen": {
-      "preset": "angular"
+  config: {
+    commitizen: {
+      preset: 'angular'
     }
   }
 }

@@ -1,0 +1,26 @@
+amends "package://github.com/jdx/hk/releases/download/v2.0.1/hk@2.0.1#/Config.pkl"
+import "package://github.com/jdx/hk/releases/download/v2.0.1/hk@2.0.1#/Builtins.pkl"
+
+hooks {
+  ["pre-commit"] {
+    fix = true
+    stash = "git"
+    steps {
+      ["prettier"] = (Builtins.prettier) {
+        glob = List("*.js", "*.json", "*.md")
+      }
+      ["eslint"] = (Builtins.eslint) {
+        glob = List("*.js")
+        depends = List("prettier")
+      }
+    }
+  }
+  ["prepare-commit-msg"] {
+    steps {
+      ["commitizen"] {
+        fix = "git cz --hook"
+        interactive = true
+      }
+    }
+  }
+}
