@@ -4,6 +4,7 @@ import "package://github.com/jdx/hk/releases/download/v2.0.1/hk@2.0.1#/Builtins.
 hooks {
   ["pre-commit"] {
     fix = true
+    stash = "git"
     steps {
       ["prettier"] = (Builtins.prettier) {
         glob = List("*.ts", "*.js", "*.tsx", "*.jsx", "*.json", "*.md")
