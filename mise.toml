@@ -1,5 +1,2 @@
-[tools]
-hk = "latest"
-
 [env]
 _.path = ["node_modules/.bin"]
