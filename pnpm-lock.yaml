@@ -12,8 +12,8 @@ importers:
         specifier: ^8.7.3
         version: 8.7.3(@types/node@24.19.2)
       '@listr2/prompt-adapter-inquirer':
-        specifier: ^4.2.7
-        version: 4.2.7(@inquirer/prompts@8.7.3(@types/node@24.19.2))(@types/node@24.19.2)(listr2@11.1.1)
+        specifier: ^4.3.0
+        version: 4.3.0(@inquirer/prompts@8.7.3(@types/node@24.19.2))(@types/node@24.19.2)(listr2@11.1.1)
       commitizen:
         specifier: ^4.3.2
         version: 4.3.2(@types/node@24.19.2)(typescript@6.0.3)
@@ -326,12 +326,12 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@listr2/prompt-adapter-inquirer@4.2.7':
-    resolution: {integrity: sha512-k180vxSv2KqmnDxoato6pCqEJsov4U5C0EVmldZkAdNeVBxY48A/LM6TCNPGIzDK/iZSfsZP0Mw+gbWc5hXLyA==}
+  '@listr2/prompt-adapter-inquirer@4.3.0':
+    resolution: {integrity: sha512-sue60S34owiqeJ+YdW4DK6puBxWJScDI+dG/j09dDF6qWd3h+Lxf0l0CoS9RMO10LUPY4ermGY5zikcDlBklXw==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@inquirer/prompts': '>= 3 < 9'
-      listr2: 11.1.0
+      listr2: 11.2.0
 
   '@napi-rs/wasm-runtime@1.2.5':
     resolution: {integrity: sha512-HshSvXzmBxNzqejd3k/KemgQ3hdREUYFRRrgxOZ+gPljDIsO2SDZrVZMd4Z/HsxudQbE62OVyVFE8z9BCurfjA==}
@@ -2041,7 +2041,7 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@listr2/prompt-adapter-inquirer@4.2.7(@inquirer/prompts@8.7.3(@types/node@24.19.2))(@types/node@24.19.2)(listr2@11.1.1)':
+  '@listr2/prompt-adapter-inquirer@4.3.0(@inquirer/prompts@8.7.3(@types/node@24.19.2))(@types/node@24.19.2)(listr2@11.1.1)':
     dependencies:
       '@inquirer/prompts': 8.7.3(@types/node@24.19.2)
       '@inquirer/type': 4.2.0(@types/node@24.19.2)
