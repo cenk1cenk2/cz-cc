@@ -28,7 +28,7 @@ importers:
         version: 11.2.0
     devDependencies:
       '@cenk1cenk2/eslint-config':
-        specifier: ^3.3.8
+        specifier: ^3.3.9
         version: 3.3.9(@typescript-eslint/utils@8.71.1(eslint@10.12.0(jiti@2.6.1)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.12.0(jiti@2.6.1)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
       '@types/node':
         specifier: ^24.19.1
