@@ -14,7 +14,8 @@
     "build": "tsdown src/index.js",
     "dev:start": "tsdown --watch src/index.js",
     "format": "prettier --log-level warn --write src/ && eslint --fix",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit -p jsconfig.json"
   },
   "engines": {
     "node": ">= 24"

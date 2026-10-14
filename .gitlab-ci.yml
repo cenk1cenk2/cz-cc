@@ -15,6 +15,7 @@ include:
       - /node/install.gitlab-ci.yml
       - /node/build.gitlab-ci.yml
       - /node/lint.gitlab-ci.yml
+      - /node/run.gitlab-ci.yml
 
   - project: devops/pipelines
     ref: semantic-release@2.5.2
@@ -29,6 +30,11 @@ lint:
   stage: build
   extends:
     - .node-lint
+typecheck:
+  stage: build
+  extends: .node-run
+  variables:
+    NODE_COMMAND_SCRIPT: typecheck
 build:
   stage: build
   extends:
