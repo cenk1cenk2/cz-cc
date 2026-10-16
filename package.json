@@ -41,5 +41,5 @@
       "path": "./dist/index.cjs"
     }
   },
-  "packageManager": "pnpm@12.11.0"
+  "packageManager": "pnpm@12.11.1"
 }
