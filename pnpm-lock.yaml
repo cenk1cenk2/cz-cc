@@ -13,7 +13,7 @@ importers:
         version: 8.7.3(@types/node@24.19.2)
       '@listr2/prompt-adapter-inquirer':
         specifier: ^4.3.2
-        version: 4.3.2(@inquirer/prompts@8.7.3(@types/node@24.19.2))(@types/node@24.19.2)(listr2@11.2.0)
+        version: 4.3.2(@inquirer/prompts@8.7.3(@types/node@24.19.2))(@types/node@24.19.2)(listr2@11.3.0)
       commitizen:
         specifier: ^4.3.2
         version: 4.3.2(@types/node@24.19.2)(typescript@6.0.3)
@@ -24,8 +24,8 @@ importers:
         specifier: ^1.1.0
         version: 1.1.0
       listr2:
-        specifier: ^11.2.0
-        version: 11.2.0
+        specifier: ^11.3.0
+        version: 11.3.0
     devDependencies:
       '@cenk1cenk2/eslint-config':
         specifier: ^3.3.9
@@ -1315,8 +1315,8 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
-  listr2@11.2.0:
-    resolution: {integrity: sha512-+H/hEo9EA7tyLY0ZihpDg76jHWolc0nCjbjnXFguSm4Epk+WYtL1w1tYs1kjEo229NmhgLmUrncyn81K1vBoRw==}
+  listr2@11.3.0:
+    resolution: {integrity: sha512-QsZAxWEFhl/SIkDsY53F7K33RvSj46TbmJ3b69JCpCtQbfMSPJzCwdwF2rRvEY//sPBI2deOLOzOhzMiUIK7pQ==}
     engines: {node: '>=22.13.0'}
 
   load-tsconfig@0.2.5:
@@ -2041,11 +2041,11 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@listr2/prompt-adapter-inquirer@4.3.2(@inquirer/prompts@8.7.3(@types/node@24.19.2))(@types/node@24.19.2)(listr2@11.2.0)':
+  '@listr2/prompt-adapter-inquirer@4.3.2(@inquirer/prompts@8.7.3(@types/node@24.19.2))(@types/node@24.19.2)(listr2@11.3.0)':
     dependencies:
       '@inquirer/prompts': 8.7.3(@types/node@24.19.2)
       '@inquirer/type': 4.2.0(@types/node@24.19.2)
-      listr2: 11.2.0
+      listr2: 11.3.0
     transitivePeerDependencies:
       - '@types/node'
 
@@ -2951,7 +2951,7 @@ snapshots:
   lines-and-columns@1.2.4:
     optional: true
 
-  listr2@11.2.0:
+  listr2@11.3.0:
     dependencies:
       cli-truncate: 6.1.1
       log-update: 8.0.0
