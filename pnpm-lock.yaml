@@ -186,8 +186,8 @@ importers:
         version: 11.4.0
     devDependencies:
       '@cenk1cenk2/eslint-config':
-        specifier: ^3.3.9
-        version: 3.3.9(@typescript-eslint/utils@8.71.2(eslint@10.13.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
+        specifier: ^3.4.1
+        version: 3.4.1(@typescript-eslint/utils@8.71.2(eslint@10.13.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
       '@types/node':
         specifier: ^24.19.2
         version: 24.19.2
@@ -220,8 +220,8 @@ packages:
   '@cacheable/utils@2.5.0':
     resolution: {integrity: sha512-buipgOVDkkPXNR5+xBpDw7Zk2n1EvU7qBJCNUcL7rhQ//kfpOXPAvQ511Os0vpLYJ1pZnvudNytkQt2hst3wqA==}
 
-  '@cenk1cenk2/eslint-config@3.3.9':
-    resolution: {integrity: sha512-bw9kO4KHBhSQlE+hToMn0gApum+vXbvtIA92d44YJ3vQIlzWxznZDVNY+oJN1nv48XZyTIaMn5wcTKiqLeLVqg==}
+  '@cenk1cenk2/eslint-config@3.4.1':
+    resolution: {integrity: sha512-XNfMbR9qOD41pItd26CndWjV4FtYcpeb8RqFU+F+gN5ECdZKpvhLU+wbFFnNoTBRqwQmgewiJyGKVonY3BD1JA==}
     peerDependencies:
       '@vue/eslint-config-typescript': '>= 14.1.1'
       eslint: '>= 9'
@@ -1934,7 +1934,7 @@ snapshots:
       hashery: 1.5.1
       keyv: 5.6.0
 
-  '@cenk1cenk2/eslint-config@3.3.9(@typescript-eslint/utils@8.71.2(eslint@10.13.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
+  '@cenk1cenk2/eslint-config@3.4.1(@typescript-eslint/utils@8.71.2(eslint@10.13.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.13.0(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)':
     dependencies:
       '@eslint/js': 10.0.1(eslint@10.13.0(jiti@2.7.0)(supports-color@7.2.0))
       '@stylistic/eslint-plugin': 5.10.0(eslint@10.13.0(jiti@2.7.0)(supports-color@7.2.0))
