@@ -53,6 +53,7 @@ semantic-release:
   needs:
     - build
     - lint
+    - typecheck
   dependencies:
     - build
   rules:
