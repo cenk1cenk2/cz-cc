@@ -31,8 +31,8 @@
   "devDependencies": {
     "@cenk1cenk2/eslint-config": "^3.4.8",
     "@types/node": "^26.6.6",
-    "eslint": "^10.14.0",
-    "prettier": "^3.9.10",
+    "eslint": "^10.15.0",
+    "prettier": "^3.10.1",
     "tsdown": "^0.23.7",
     "typescript": "^6.0.3"
   },
